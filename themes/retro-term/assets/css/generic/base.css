@@ -85,15 +85,23 @@ a:hover {
     inset-block-start: var(--rt-step-sm);
     inset-inline-start: var(--rt-step-sm);
     z-index: 20;
-    padding: var(--rt-step-sm) var(--rt-step-md);
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    overflow: hidden;
     color: var(--rt-on-primary);
+    white-space: nowrap;
     background: var(--rt-primary-bright);
-    clip-path: var(--rt-chamfer-sm);
-    transform: translateY(-150%);
+    border: 1px solid var(--rt-primary-bright);
+    clip-path: inset(50%);
 }
 
 .skip-link:focus {
-    transform: translateY(0);
+    width: auto;
+    height: auto;
+    padding: var(--rt-step-sm) var(--rt-step-md);
+    overflow: visible;
+    clip-path: var(--rt-chamfer-sm);
 }
 
 @media (prefers-reduced-motion: reduce) {

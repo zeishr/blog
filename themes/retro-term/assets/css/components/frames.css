@@ -1,0 +1,73 @@
+.site-header,
+.hero-copy,
+.list-header,
+.article-header,
+.card,
+.content-card,
+.term-card,
+.empty-state,
+.terminal-panel,
+.site-footer__panel,
+.button,
+.u-chamfer-lg,
+.u-chamfer-sm {
+    --rt-frame-chamfer: 10px;
+    --rt-frame-color: var(--rt-border-primary);
+    position: relative;
+}
+
+.button,
+.u-chamfer-sm {
+    --rt-frame-chamfer: 6px;
+}
+
+.button {
+    --rt-frame-color: var(--rt-primary);
+}
+
+.button--primary {
+    --rt-frame-color: var(--rt-primary-bright);
+}
+
+.terminal-panel {
+    --rt-frame-color: var(--rt-border-muted);
+}
+
+.card {
+    --rt-frame-color: var(--rt-border-primary);
+}
+
+.site-header::before,
+.hero-copy::before,
+.list-header::before,
+.article-header::before,
+.card::before,
+.content-card::before,
+.term-card::before,
+.empty-state::before,
+.terminal-panel::before,
+.site-footer__panel::before,
+.button::before,
+.u-chamfer-lg::before,
+.u-chamfer-sm::before {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    content: "";
+    background:
+        linear-gradient(
+                to bottom right,
+                transparent calc(50% - 0.5px),
+                var(--rt-frame-color) calc(50% - 0.5px) calc(50% + 0.5px),
+                transparent calc(50% + 0.5px)
+            )
+            top left / var(--rt-frame-chamfer) var(--rt-frame-chamfer) no-repeat,
+        linear-gradient(
+                to bottom right,
+                transparent calc(50% - 0.5px),
+                var(--rt-frame-color) calc(50% - 0.5px) calc(50% + 0.5px),
+                transparent calc(50% + 0.5px)
+            )
+            bottom right / var(--rt-frame-chamfer) var(--rt-frame-chamfer)
+            no-repeat;
+}
