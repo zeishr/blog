@@ -6,7 +6,6 @@
 # Check Just documentation for more information:
 # https://just.systems/man/en/introduction.html
 
-
 # ------------------------------
 # Settings
 # ------------------------------
@@ -19,20 +18,11 @@ set allow-duplicate-recipes
 hugo := require("hugo")
 
 # ------------------------------
-# Variables
-# ------------------------------
-ROOT_DIR := source_directory()
-
-# ------------------------------
 # Tasks
 # ------------------------------
 [doc("Default task - will be run when no task is specified.")]
 default:
     @just --list
-
-[doc("Updates the blog theme to the latest version.")]
-update-theme:
-    {{ hugo }} mod get -u
 
 [doc("Builds the blog.")]
 build:

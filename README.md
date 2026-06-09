@@ -2,7 +2,7 @@
 
 This is my personal blog where I share posts about my projects, research and other topics that I find interesting. I also share some of my writeups from CTFs and other challenges.
 
-It is powered by [Hugo](https://gohugo.io/) and [Blowfish](https://blowfish.page/) theme, hosted on [GitHub Pages](https://pages.github.com/).
+It is powered by [Hugo](https://gohugo.io/) hosted on [GitHub Pages](https://pages.github.com/).
 
 ## 📍 Prerequisites
 
@@ -38,16 +38,7 @@ You can then deploy the `public` directory to your web server or hosting provide
 
 This is automatically done by GitHub Actions when you push to the `main` branch, see the `.github/workflows/hugo.yaml` file for more information.
 
-### Update Blowfish theme
-
-To update the theme, you can use the following command:
-
-```bash
-hugo mod get -u
-# or if you have just installed
-just update-theme
-```
 
 ## 📜 License
 
-This project is licensed under the GPL-3.0 License - see the LICENSE file for details.
+This work is licensed under a [Creative Commons Attribution 4.0 International License][LICENSE].

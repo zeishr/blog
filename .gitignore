@@ -4,3 +4,6 @@ resources/_gen/
 
 # Lock
 .hugo_build.lock
+
+# Old content
+.old
