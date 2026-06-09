@@ -1,0 +1,14 @@
+{{ define "main" }}
+  <section class="not-found terminal-panel sl" aria-labelledby="not-found-title">
+    <div class="terminal-panel__chrome">
+      <span>route lookup</span>
+      <span>404</span>
+    </div>
+    <div class="not-found__body">
+      <p class="eyebrow">error-container</p>
+      <h1 id="not-found-title">record not found</h1>
+      <p>The requested path is not indexed in this archive.</p>
+      <a class="button button--primary" href="{{ site.Home.RelPermalink }}">return home</a>
+    </div>
+  </section>
+{{ end }}

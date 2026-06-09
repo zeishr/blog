@@ -1,0 +1,7 @@
+{{- if gt .TotalPages 1 -}}
+  <nav class="pagination" aria-label="pagination">
+    {{- if .HasPrev }}<a class="button button--ghost" href="{{ .Prev.URL }}">prev</a>{{ end -}}
+    <span class="pagination__status">page {{ .PageNumber }} / {{ .TotalPages }}</span>
+    {{- if .HasNext }}<a class="button button--ghost" href="{{ .Next.URL }}">next</a>{{ end -}}
+  </nav>
+{{- end }}

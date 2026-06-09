@@ -1,3 +1,73 @@
 baseURL = 'https://example.org/'
-locale = 'en-us'
-title = 'My New Hugo Project'
+locale = 'en-US'
+title = 'retro.term'
+theme = 'retro-term'
+copyright = '© 2026 retro.term'
+summaryLength = 24
+enableRobotsTXT = true
+
+[pagination]
+  pagerSize = 6
+
+[taxonomies]
+  tag = 'tags'
+  series = 'series'
+
+[menus]
+  [[menus.main]]
+    name = 'Home'
+    pageRef = '/'
+    weight = 10
+
+  [[menus.main]]
+    name = 'Posts'
+    pageRef = '/posts'
+    weight = 20
+
+  [[menus.main]]
+    name = 'Projects'
+    pageRef = '/projects'
+    weight = 30
+
+  [[menus.main]]
+    name = 'About'
+    pageRef = '/about'
+    weight = 40
+
+  [[menus.main]]
+    name = 'Tags'
+    pageRef = '/tags'
+    weight = 50
+
+[markup]
+  [markup.highlight]
+    noClasses = false
+
+[module]
+  [module.hugoVersion]
+    extended = true
+    min = '0.162.1'
+
+[params]
+  author = 'Abel'
+  description = 'A technical blog and portfolio for systems, security, and software architecture notes.'
+  terminalPrompt = 'guest@retro-term:~$'
+  statusLabel = 'system online'
+  statusCode = '0x2A'
+  buildLabel = 'hugo v0.162.1 extended'
+
+  [params.home]
+    eyebrow = 'retro-futurist technical log'
+    title = 'notes from the command line'
+    intro = 'A compact field notebook for systems design, software architecture, security research, and experiments.'
+    primaryActionLabel = 'read posts'
+    primaryActionURL = '/posts/'
+    secondaryActionLabel = 'view projects'
+    secondaryActionURL = '/projects/'
+    terminalTitle = 'boot sequence'
+    terminalLines = [
+      'mount /notes --mode=read',
+      'load portfolio index',
+      'sync threat models',
+      'ready.'
+    ]

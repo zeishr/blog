@@ -1,15 +1,10 @@
+@import "settings/tokens.css";
+@import "generic/base.css";
+@import "elements/prose.css";
+@import "components/buttons.css";
+@import "components/cards.css";
+@import "components/terminal.css";
 @import "components/header.css";
 @import "components/footer.css";
-
-body {
-  color: #222;
-  font-family: sans-serif;
-  line-height: 1.5;
-  margin: 1rem;
-  max-width: 768px;
-}
-
-a {
-  color: #00e;
-  text-decoration: none;
-}
+@import "components/layout.css";
+@import "utilities.css";

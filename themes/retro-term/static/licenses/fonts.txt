@@ -1,0 +1,24 @@
+Font licenses and sources
+=========================
+
+This site self-hosts the fonts listed below. The font files and license
+texts are copied into the generated Hugo site automatically from the theme's
+static directory.
+
+Hanken Grotesk
+--------------
+License: SIL Open Font License, Version 1.1
+License file: /fonts/hanken-grotesk/OFL.txt
+Source: https://github.com/google/fonts/tree/main/ofl/hankengrotesk
+Bundled files:
+- /fonts/hanken-grotesk/HankenGrotesk[wght].ttf
+- /fonts/hanken-grotesk/HankenGrotesk-Italic[wght].ttf
+
+JetBrains Mono
+--------------
+License: SIL Open Font License, Version 1.1
+License file: /fonts/jetbrains-mono/OFL.txt
+Source: https://github.com/JetBrains/JetBrainsMono
+Bundled files:
+- /fonts/jetbrains-mono/JetBrainsMono[wght].woff2
+- /fonts/jetbrains-mono/JetBrainsMono-Italic[wght].woff2

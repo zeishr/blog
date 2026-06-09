@@ -1,10 +1,19 @@
-{{ define "main" }}
-  <h1>{{ .Title }}</h1>
-  {{ .Content }}
-  {{ range .Pages }}
-    <section>
-      <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
-      {{ .Summary }}
-    </section>
-  {{ end }}
-{{ end }}
+{{ define "main" }} {{- $pages := .Pages.ByDate.Reverse -}} {{- $paginator :=
+.Paginate $pages -}}
+<section class="list-header sl" aria-labelledby="section-title">
+    <p class="eyebrow">{{ default "archive" .Section }}</p>
+    <h1 id="section-title">{{ .Title }}</h1>
+    {{ with .Description }}
+    <p>{{ . }}</p>
+    {{ end }} {{ with .Content }}
+    <div class="prose">{{ . }}</div>
+    {{ end }}
+</section>
+
+<div class="post-list">
+    {{ range $paginator.Pages }} {{ partial "post-card.html" . }} {{ else }}
+    <p class="empty-state">no records indexed in this section yet.</p>
+    {{ end }}
+</div>
+
+{{ partial "pagination.html" $paginator }} {{ end }}

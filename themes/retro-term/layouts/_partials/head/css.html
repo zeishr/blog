@@ -1,5 +1,6 @@
 {{- with resources.Get "css/main.css" }}
   {{- $opts := dict
+    "targetPath" "css/retro-term.css"
     "minify" (cond hugo.IsDevelopment false true)
     "sourceMap" (cond hugo.IsDevelopment "linked" "none")
   }}

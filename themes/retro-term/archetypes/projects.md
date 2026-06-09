@@ -3,5 +3,12 @@ date = '{{ .Date }}'
 draft = true
 title = '{{ replace .File.ContentBaseName "-" " " | title }}'
 description = ''
-tags = []
+tags = ['project']
+status = 'active'
 +++
+
+## problem
+
+## approach
+
+## outcome

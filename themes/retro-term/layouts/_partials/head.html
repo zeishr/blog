@@ -1,5 +1,14 @@
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width">
-<title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ printf "%s | %s" .Title site.Title }}{{ end }}</title>
-{{ partialCached "head/css.html" . }}
-{{ partialCached "head/js.html" . }}
+{{- $title := cond .IsHome site.Title (printf "%s | %s" .Title site.Title) -}}
+{{- $description := or .Description site.Params.description -}}
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>{{ $title }}</title>
+{{ with $description }}<meta name="description" content="{{ . }}" />{{ end }}
+<meta name="theme-color" content="#131313" />
+<link rel="canonical" href="{{ .Permalink }}" />
+<link rel="license" href="{{ `licenses/fonts.txt` | relURL }}" />
+<link rel="license" href="{{ `fonts/hanken-grotesk/OFL.txt` | relURL }}" />
+<link rel="license" href="{{ `fonts/jetbrains-mono/OFL.txt` | relURL }}" />
+{{ hugo.Generator }}
+<link rel="stylesheet" href="{{ `css/fonts.css` | relURL }}" />
+{{ partialCached "head/css.html" . }} {{ partialCached "head/js.html" . }}

@@ -1,9 +1,62 @@
-{{ define "main" }}
-  {{ .Content }}
-  {{ range site.RegularPages }}
-    <section>
-      <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
-      {{ .Summary }}
-    </section>
-  {{ end }}
+{{ define "main" }} {{- $home := site.Params.home -}} {{- $primaryURL := default
+"/posts/" $home.primaryActionURL | relURL -}} {{- $secondaryURL := default
+"/projects/" $home.secondaryActionURL | relURL -}}
+
+<section class="hero-grid" aria-labelledby="home-title">
+    <div class="hero-copy">
+        <p class="eyebrow">{{ default "system log" $home.eyebrow }}</p>
+        <h1 id="home-title">{{ default site.Title $home.title }}</h1>
+        <p class="hero-copy__intro">
+            {{ default site.Params.description $home.intro }}
+        </p>
+        <div class="action-row">
+            <a class="button button--primary" href="{{ $primaryURL }}"
+                >{{ default "read posts" $home.primaryActionLabel }}</a
+            >
+            <a class="button button--ghost" href="{{ $secondaryURL }}"
+                >{{ default "view projects" $home.secondaryActionLabel }}</a
+            >
+        </div>
+    </div>
+
+    {{ partial "terminal-panel.html" (dict "title" (default "boot sequence"
+    $home.terminalTitle) "lines" $home.terminalLines "prompt"
+    site.Params.terminalPrompt) }}
+</section>
+
+{{ with .Content }}
+<section class="content-card prose">{{ . }}</section>
+{{ end }} {{- $posts := first 4 ((where site.RegularPages "Section"
+"posts").ByDate.Reverse) -}}
+<section class="section-block" aria-labelledby="recent-posts-title">
+    <div class="section-heading">
+        <p class="eyebrow">latest records</p>
+        <h2 id="recent-posts-title">recent posts</h2>
+        <a class="section-heading__link" href="{{ `/posts/` | relURL }}"
+            >view all</a
+        >
+    </div>
+    <div class="card-grid">
+        {{ range $posts }} {{ partial "post-card.html" . }} {{ else }}
+        <p class="empty-state">no posts indexed yet.</p>
+        {{ end }}
+    </div>
+</section>
+
+{{- $projects := first 3 ((where site.RegularPages "Section"
+"projects").ByDate.Reverse) -}}
+<section class="section-block" aria-labelledby="projects-title">
+    <div class="section-heading">
+        <p class="eyebrow">portfolio index</p>
+        <h2 id="projects-title">selected projects</h2>
+        <a class="section-heading__link" href="{{ `/projects/` | relURL }}"
+            >view all</a
+        >
+    </div>
+    <div class="card-grid card-grid--compact">
+        {{ range $projects }} {{ partial "post-card.html" . }} {{ else }}
+        <p class="empty-state">no projects indexed yet.</p>
+        {{ end }}
+    </div>
+</section>
 {{ end }}

@@ -1,0 +1,18 @@
+{{- $summary := or .Description (.Summary | plainify) -}}
+<article class="card post-card">
+  <header class="post-card__header">
+    <div class="meta-row">
+      <span>{{ default .Kind .Section }}</span>
+      {{- if not .Date.IsZero -}}
+        <time datetime="{{ .Date | time.Format "2006-01-02T15:04:05-07:00" }}">{{ .Date | time.Format "2006.01.02" }}</time>
+      {{- end -}}
+      {{- if gt .ReadingTime 0 -}}
+        <span>{{ .ReadingTime }} min read</span>
+      {{- end -}}
+    </div>
+    <h2 class="post-card__title"><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
+  </header>
+
+  {{ with $summary }}<p class="post-card__summary">{{ . | truncate 168 }}</p>{{ end }}
+  {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
+</article>

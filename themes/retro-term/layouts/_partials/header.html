@@ -1,2 +1,23 @@
-<h1>{{ site.Title }}</h1>
-{{ partial "menu.html" (dict "menuID" "main" "page" .) }}
+<header class="site-header sl" role="banner">
+    <div class="site-header__status" aria-label="site status">
+        <span class="status-chip"
+            ><span class="status-chip__dot" aria-hidden="true"></span>{{ default
+            "system online" site.Params.statusLabel }}</span
+        >
+        <span>{{ default "0x2A" site.Params.statusCode }}</span>
+        <span>{{ now.Format "2006-01-02 15:04" }} UTC</span>
+    </div>
+
+    <div class="site-header__main">
+        <a
+            class="site-brand"
+            href="{{ site.Home.RelPermalink }}"
+            aria-label="{{ site.Title }} home"
+        >
+            <span class="site-brand__mark" aria-hidden="true">▰</span>
+            <span class="site-brand__text">{{ site.Title }}</span>
+        </a>
+
+        {{ partial "menu.html" (dict "menuID" "main" "page" .) }}
+    </div>
+</header>

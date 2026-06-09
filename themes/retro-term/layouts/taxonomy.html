@@ -1,7 +1,20 @@
 {{ define "main" }}
-  <h1>{{ .Title }}</h1>
-  {{ .Content }}
-  {{ range .Pages }}
-    <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
-  {{ end }}
+<section class="list-header sl" aria-labelledby="taxonomy-title">
+    <p class="eyebrow">taxonomy index</p>
+    <h1 id="taxonomy-title">{{ .Title }}</h1>
+    {{ with .Content }}
+    <div class="prose">{{ . }}</div>
+    {{ end }}
+</section>
+
+<div class="term-grid">
+    {{ range .Data.Terms.Alphabetical }}
+    <a class="term-card" href="{{ .Page.RelPermalink }}">
+        <span>#{{ .Page.LinkTitle }}</span>
+        <span>{{ .Count }} records</span>
+    </a>
+    {{ else }}
+    <p class="empty-state">no taxonomy terms indexed yet.</p>
+    {{ end }}
+</div>
 {{ end }}

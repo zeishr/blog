@@ -24,9 +24,9 @@ hugo := require("hugo")
 default:
     @just --list
 
-[doc("Builds the blog.")]
+[doc("Builds the blog for production.")]
 build:
-    {{ hugo }} ---buildDrafts
+    {{ hugo }} --gc --minify
     @echo "Build complete. Check the public directory."
 
 [doc("Runs the blog in development mode.")]

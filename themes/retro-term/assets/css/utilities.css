@@ -1,0 +1,15 @@
+.u-muted {
+  color: var(--rt-text-secondary);
+}
+
+.u-system-font {
+  font-family: var(--rt-font-system);
+}
+
+.u-chamfer-lg {
+  clip-path: var(--rt-chamfer-lg);
+}
+
+.u-chamfer-sm {
+  clip-path: var(--rt-chamfer-sm);
+}

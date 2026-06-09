@@ -1,10 +1,25 @@
 {{ define "main" }}
-  <h1>{{ .Title }}</h1>
+  <article class="article-shell">
+    <header class="article-header sl">
+      <p class="eyebrow">{{ with .Params.kicker }}{{ . }}{{ else }}{{ default "page" .Section }}{{ end }}</p>
+      <h1>{{ .Title }}</h1>
+      {{ with .Description }}<p class="article-header__summary">{{ . }}</p>{{ end }}
 
-  {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
-  {{ $dateHuman := .Date | time.Format ":date_long" }}
-  <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
+      <div class="meta-row meta-row--wrap">
+        {{- if not .Date.IsZero -}}
+          <time datetime="{{ .Date | time.Format "2006-01-02T15:04:05-07:00" }}">{{ .Date | time.Format "2006.01.02" }}</time>
+        {{- end -}}
+        {{- if gt .ReadingTime 0 -}}
+          <span>{{ .ReadingTime }} min read</span>
+        {{- end -}}
+        {{ with .Params.status }}<span class="status-chip"><span class="status-chip__dot" aria-hidden="true"></span>{{ . }}</span>{{ end }}
+      </div>
 
-  {{ .Content }}
-  {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
+      {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
+    </header>
+
+    <div class="prose article-content">
+      {{ .Content }}
+    </div>
+  </article>
 {{ end }}
