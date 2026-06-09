@@ -8,33 +8,78 @@
 .empty-state,
 .terminal-panel,
 .site-footer__panel,
-.button,
-.u-chamfer-lg,
-.u-chamfer-sm {
-    --rt-frame-chamfer: 10px;
-    --rt-frame-color: var(--rt-border-primary);
-    position: relative;
-}
-
-.button,
-.u-chamfer-sm {
-    --rt-frame-chamfer: 6px;
-}
-
 .button {
-    --rt-frame-color: var(--rt-primary);
+    --rt-frame-width: 1px;
+    --rt-frame-chamfer: 10px;
+    --rt-frame-inner-chamfer: calc(
+        var(--rt-frame-chamfer) - var(--rt-frame-width)
+    );
+    --rt-frame-color: var(--rt-border-primary);
+    --rt-frame-fill: var(--rt-surface-base);
+    --rt-frame-inner-shadow: none;
+    position: relative;
+    isolation: isolate;
+    background: var(--rt-frame-color);
+    border: 0;
 }
 
-.button--primary {
-    --rt-frame-color: var(--rt-primary-bright);
+.site-header,
+.hero-copy,
+.list-header,
+.article-header,
+.site-footer__panel {
+    --rt-frame-fill: var(--rt-surface-base);
+}
+
+.card,
+.content-card,
+.term-card,
+.empty-state {
+    --rt-frame-fill: var(--rt-surface-card);
+}
+
+.card {
+    --rt-card-accent: var(--rt-border-muted);
+    --rt-frame-inner-shadow: inset 2px 0 0 var(--rt-card-accent);
+}
+
+.card:hover {
+    --rt-card-accent: var(--rt-primary);
+    --rt-frame-fill: color-mix(
+        in srgb,
+        var(--rt-surface-card),
+        var(--rt-primary) 4%
+    );
 }
 
 .terminal-panel {
     --rt-frame-color: var(--rt-border-muted);
+    --rt-frame-fill: var(--rt-surface-elevated);
 }
 
-.card {
-    --rt-frame-color: var(--rt-border-primary);
+.button {
+    --rt-frame-chamfer: 6px;
+    --rt-frame-color: var(--rt-primary);
+    --rt-frame-fill: var(--rt-surface-base);
+}
+
+.button:hover {
+    --rt-frame-fill: var(--rt-surface-elevated);
+}
+
+.button--primary {
+    --rt-frame-color: var(--rt-primary-bright);
+    --rt-frame-fill: var(--rt-primary-bright);
+}
+
+.button--primary:hover {
+    --rt-frame-fill: var(--rt-primary);
+}
+
+.card:hover,
+.button:hover,
+.button--primary:hover {
+    background: var(--rt-frame-color);
 }
 
 .site-header::before,
@@ -47,27 +92,23 @@
 .empty-state::before,
 .terminal-panel::before,
 .site-footer__panel::before,
-.button::before,
-.u-chamfer-lg::before,
-.u-chamfer-sm::before {
+.button::before {
     position: absolute;
-    inset: 0;
+    inset: var(--rt-frame-width);
+    z-index: -1;
     pointer-events: none;
     content: "";
-    background:
-        linear-gradient(
-                to bottom right,
-                transparent calc(50% - 0.5px),
-                var(--rt-frame-color) calc(50% - 0.5px) calc(50% + 0.5px),
-                transparent calc(50% + 0.5px)
-            )
-            top left / var(--rt-frame-chamfer) var(--rt-frame-chamfer) no-repeat,
-        linear-gradient(
-                to bottom right,
-                transparent calc(50% - 0.5px),
-                var(--rt-frame-color) calc(50% - 0.5px) calc(50% + 0.5px),
-                transparent calc(50% + 0.5px)
-            )
-            bottom right / var(--rt-frame-chamfer) var(--rt-frame-chamfer)
-            no-repeat;
+    background-color: var(--rt-frame-fill);
+    clip-path: polygon(
+        var(--rt-frame-inner-chamfer) 0,
+        100% 0,
+        100% calc(100% - var(--rt-frame-inner-chamfer)),
+        calc(100% - var(--rt-frame-inner-chamfer)) 100%,
+        0 100%,
+        0 var(--rt-frame-inner-chamfer)
+    );
+    box-shadow: var(--rt-frame-inner-shadow);
+    transition:
+        background-color 160ms ease,
+        box-shadow 160ms ease;
 }
