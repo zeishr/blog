@@ -1,0 +1,643 @@
+# Hugo templates, functions, and methods sources
+
+
+Jina reader prefix: `https://r.jina.ai/`.
+Filtered by: /templates/, /functions/, /methods/, /render-hooks/, /shortcodes/, /quick-reference/.
+Page count: 617.
+
+Use this file to find the canonical Hugo documentation URL for a topic, then open the grouped reference file for fetched markdown content.
+
+## functions
+
+- [Functions](https://gohugo.io/functions/) `/functions/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2025-04-10T13:04:51+02:00)_
+- [Cast functions](https://gohugo.io/functions/cast/) `/functions/cast/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2025-04-10T13:04:51+02:00)_
+- [cast.ToFloat](https://gohugo.io/functions/cast/tofloat/) `/functions/cast/tofloat/` — Converts a value to a decimal floating-point number (base 10). _(modified 2025-04-10T13:04:51+02:00)_
+- [cast.ToInt](https://gohugo.io/functions/cast/toint/) `/functions/cast/toint/` — Converts a value to a decimal integer (base 10). _(modified 2025-04-10T13:04:51+02:00)_
+- [cast.ToString](https://gohugo.io/functions/cast/tostring/) `/functions/cast/tostring/` — Converts a value to a string. _(modified 2025-04-10T13:04:51+02:00)_
+- [Collections functions](https://gohugo.io/functions/collections/) `/functions/collections/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2026-02-14T12:14:33+01:00)_
+- [collections.After](https://gohugo.io/functions/collections/after/) `/functions/collections/after/` — Returns a slice containing the elements after the first N elements of the given slice. _(modified 2026-05-31T13:39:09-07:00)_
+- [collections.Append](https://gohugo.io/functions/collections/append/) `/functions/collections/append/` — Returns a slice by adding one or more elements, or an entire second slice, to the end of the given slice. _(modified 2026-02-14T12:14:33+01:00)_
+- [collections.Apply](https://gohugo.io/functions/collections/apply/) `/functions/collections/apply/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2026-02-14T12:14:33+01:00)_
+- [collections.Complement](https://gohugo.io/functions/collections/complement/) `/functions/collections/complement/` — Returns a slice by identifying elements in the last given slice that do not appear in any of the preceding slices. _(modified 2026-06-05T09:14:31-07:00)_
+- [collections.D](https://gohugo.io/functions/collections/d/) `/functions/collections/d/` — Returns a sorted slice of unique random integers based on a given seed, count, and maximum value. _(modified 2026-06-05T09:14:31-07:00)_
+- [collections.Delimit](https://gohugo.io/functions/collections/delimit/) `/functions/collections/delimit/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2026-02-14T12:14:33+01:00)_
+- [collections.Dictionary](https://gohugo.io/functions/collections/dictionary/) `/functions/collections/dictionary/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2026-05-27T11:32:25-07:00)_
+- [collections.First](https://gohugo.io/functions/collections/first/) `/functions/collections/first/` — Returns the first N elements of the given slice or string. _(modified 2026-02-14T12:14:33+01:00)_
+- [collections.Group](https://gohugo.io/functions/collections/group/) `/functions/collections/group/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2026-05-31T13:39:09-07:00)_
+- [collections.In](https://gohugo.io/functions/collections/in/) `/functions/collections/in/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2026-02-14T12:14:33+01:00)_
+- [collections.Index](https://gohugo.io/functions/collections/indexfunction/) `/functions/collections/indexfunction/` — Returns an element or value from the given slice or map at the specified key(s). _(modified 2026-02-14T12:14:33+01:00)_
+- [collections.Intersect](https://gohugo.io/functions/collections/intersect/) `/functions/collections/intersect/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2026-05-31T13:39:09-07:00)_
+- [collections.IsSet](https://gohugo.io/functions/collections/isset/) `/functions/collections/isset/` — Reports whether a specific key or index exists in the given map or slice. _(modified 2026-02-25T10:29:05+01:00)_
+- [collections.KeyVals](https://gohugo.io/functions/collections/keyvals/) `/functions/collections/keyvals/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2026-05-31T13:39:09-07:00)_
+- [collections.Last](https://gohugo.io/functions/collections/last/) `/functions/collections/last/` — Returns the last N elements of the given slice or string. _(modified 2026-06-05T09:14:31-07:00)_
+- [collections.Merge](https://gohugo.io/functions/collections/merge/) `/functions/collections/merge/` — Returns a map by combining two or more given maps. _(modified 2026-06-05T09:14:31-07:00)_
+- [collections.NewScratch](https://gohugo.io/functions/collections/newscratch/) `/functions/collections/newscratch/` — Returns a locally scoped persistent data structure for storing and manipulating keyed values. _(modified 2026-05-28T12:03:21-07:00)_
+- [collections.Querify](https://gohugo.io/functions/collections/querify/) `/functions/collections/querify/` — Returns a URL query string from the given map, slice, or sequence of key-value pairs. _(modified 2026-02-25T10:29:05+01:00)_
+- [collections.Reverse](https://gohugo.io/functions/collections/reverse/) `/functions/collections/reverse/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2026-02-14T12:14:33+01:00)_
+- [collections.Seq](https://gohugo.io/functions/collections/seq/) `/functions/collections/seq/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2026-02-14T12:14:33+01:00)_
+- [collections.Shuffle](https://gohugo.io/functions/collections/shuffle/) `/functions/collections/shuffle/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2026-02-14T12:14:33+01:00)_
+- [collections.Slice](https://gohugo.io/functions/collections/slice/) `/functions/collections/slice/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2026-02-14T12:14:33+01:00)_
+- [collections.Sort](https://gohugo.io/functions/collections/sort/) `/functions/collections/sort/` — Returns a sorted map or slice by reordering the given collection by a key and order. _(modified 2026-06-05T09:14:31-07:00)_
+- [collections.SymDiff](https://gohugo.io/functions/collections/symdiff/) `/functions/collections/symdiff/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2026-02-14T12:14:33+01:00)_
+- [collections.Union](https://gohugo.io/functions/collections/union/) `/functions/collections/union/` — Returns a slice containing the unique elements from two given slices. _(modified 2026-05-31T13:39:09-07:00)_
+- [collections.Uniq](https://gohugo.io/functions/collections/uniq/) `/functions/collections/uniq/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2026-02-14T12:14:33+01:00)_
+- [collections.Where](https://gohugo.io/functions/collections/where/) `/functions/collections/where/` — Returns a slice by filtering the given slice based on a key, operator, and value. _(modified 2026-06-05T09:14:31-07:00)_
+- [Compare functions](https://gohugo.io/functions/compare/) `/functions/compare/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2025-04-10T13:04:51+02:00)_
+- [compare.Conditional](https://gohugo.io/functions/compare/conditional/) `/functions/compare/conditional/` — Returns one of two arguments depending on the value of the control argument. _(modified 2026-06-05T09:14:31-07:00)_
+- [compare.Default](https://gohugo.io/functions/compare/default/) `/functions/compare/default/` — Returns the second argument if set, else the first argument. _(modified 2026-06-05T09:14:31-07:00)_
+- [compare.Eq](https://gohugo.io/functions/compare/eq/) `/functions/compare/eq/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2025-04-10T13:04:51+02:00)_
+- [compare.Ge](https://gohugo.io/functions/compare/ge/) `/functions/compare/ge/` — Returns the boolean truth of arg1 >= arg2 && arg1 >= arg3. _(modified 2025-04-10T13:04:51+02:00)_
+- [compare.Gt](https://gohugo.io/functions/compare/gt/) `/functions/compare/gt/` — Returns the boolean truth of arg1 > arg2 && arg1 > arg3. _(modified 2025-04-10T13:04:51+02:00)_
+- [compare.Le](https://gohugo.io/functions/compare/le/) `/functions/compare/le/` — Returns the boolean truth of arg1 <= arg2 && arg1 <= arg3. _(modified 2025-04-10T13:04:51+02:00)_
+- [compare.Lt](https://gohugo.io/functions/compare/lt/) `/functions/compare/lt/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2025-04-10T13:04:51+02:00)_
+- [compare.Ne](https://gohugo.io/functions/compare/ne/) `/functions/compare/ne/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2025-04-10T13:04:51+02:00)_
+- [Crypto functions](https://gohugo.io/functions/crypto/) `/functions/crypto/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2025-04-10T13:04:51+02:00)_
+- [crypto.HMAC](https://gohugo.io/functions/crypto/hmac/) `/functions/crypto/hmac/` — Returns a cryptographic hash that uses a key to sign a message. _(modified 2025-04-10T13:04:51+02:00)_
+- [crypto.MD5](https://gohugo.io/functions/crypto/md5/) `/functions/crypto/md5/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2026-06-05T09:14:31-07:00)_
+- [crypto.SHA1](https://gohugo.io/functions/crypto/sha1/) `/functions/crypto/sha1/` — Hugo Documentation _(modified 2025-04-10T13:04:51+02:00)_
+- [crypto.SHA256](https://gohugo.io/functions/crypto/sha256/) `/functions/crypto/sha256/` — Hugo Documentation _(modified 2025-04-10T13:04:51+02:00)_
+- [CSS functions](https://gohugo.io/functions/css/) `/functions/css/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2025-04-10T13:04:51+02:00)_
+- [css.Build](https://gohugo.io/functions/css/build/) `/functions/css/build/` — Bundle, transform, and minify CSS resources. _(modified 2026-06-05T09:14:31-07:00)_
+- [css.PostCSS](https://gohugo.io/functions/css/postcss/) `/functions/css/postcss/` — Processes the given resource with PostCSS using any PostCSS plugin. _(modified 2026-06-05T09:14:31-07:00)_
+- [css.Quoted](https://gohugo.io/functions/css/quoted/) `/functions/css/quoted/` — Returns the given string, setting its data type to indicate that it must be quoted when used in CSS. _(modified 2026-03-24T08:35:21-07:00)_
+- [css.Sass](https://gohugo.io/functions/css/sass/) `/functions/css/sass/` — Transpiles Sass to CSS. _(modified 2026-06-05T09:14:31-07:00)_
+- [css.TailwindCSS](https://gohugo.io/functions/css/tailwindcss/) `/functions/css/tailwindcss/` — Processes the given resource with the Tailwind CSS CLI. _(modified 2026-06-05T09:14:31-07:00)_
+- [css.Unquoted](https://gohugo.io/functions/css/unquoted/) `/functions/css/unquoted/` — Returns the given string, setting its data type to indicate that it must not be quoted when used in CSS. _(modified 2026-03-24T08:35:21-07:00)_
+- [Debug functions](https://gohugo.io/functions/debug/) `/functions/debug/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2025-04-10T13:04:51+02:00)_
+- [debug.Dump](https://gohugo.io/functions/debug/dump/) `/functions/debug/dump/` — Returns an object dump as a string. _(modified 2026-02-25T10:29:05+01:00)_
+- [debug.Timer](https://gohugo.io/functions/debug/timer/) `/functions/debug/timer/` — Creates a named timer that reports elapsed time to the console. _(modified 2026-02-25T10:29:05+01:00)_
+- [debug.VisualizeSpaces](https://gohugo.io/functions/debug/visualizespaces/) `/functions/debug/visualizespaces/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2025-12-19T10:07:30+01:00)_
+- [Diagram functions](https://gohugo.io/functions/diagrams/) `/functions/diagrams/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2025-04-10T13:04:51+02:00)_
+- [diagrams.Goat](https://gohugo.io/functions/diagrams/goat/) `/functions/diagrams/goat/` — Returns an SVGDiagram object created from the given GoAT markup and options. _(modified 2026-06-05T09:14:31-07:00)_
+- [Encoding functions](https://gohugo.io/functions/encoding/) `/functions/encoding/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2025-04-10T13:04:51+02:00)_
+- [encoding.Base64Decode](https://gohugo.io/functions/encoding/base64decode/) `/functions/encoding/base64decode/` — Returns the base64 decoding of the given content. _(modified 2025-04-10T13:04:51+02:00)_
+- [encoding.Base64Encode](https://gohugo.io/functions/encoding/base64encode/) `/functions/encoding/base64encode/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2025-04-10T13:04:51+02:00)_
+- [encoding.Jsonify](https://gohugo.io/functions/encoding/jsonify/) `/functions/encoding/jsonify/` — Encodes the given object to JSON. _(modified 2026-05-25T08:47:05-07:00)_
+- [Fmt functions](https://gohugo.io/functions/fmt/) `/functions/fmt/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2025-04-10T13:04:51+02:00)_
+- [fmt.Errorf](https://gohugo.io/functions/fmt/errorf/) `/functions/fmt/errorf/` — Log an ERROR from a template. _(modified 2026-06-05T09:14:31-07:00)_
+- [fmt.Erroridf](https://gohugo.io/functions/fmt/erroridf/) `/functions/fmt/erroridf/` — Log a suppressible ERROR from a template. _(modified 2026-06-05T09:14:31-07:00)_
+- [fmt.Print](https://gohugo.io/functions/fmt/print/) `/functions/fmt/print/` — Hugo Documentation _(modified 2025-04-10T13:04:51+02:00)_
+- [fmt.Printf](https://gohugo.io/functions/fmt/printf/) `/functions/fmt/printf/` — Formats a string using the standard `fmt.Sprintf` function. _(modified 2025-04-10T13:04:51+02:00)_
+- [fmt.Println](https://gohugo.io/functions/fmt/println/) `/functions/fmt/println/` — Hugo Documentation _(modified 2025-12-19T10:07:30+01:00)_
+- [fmt.Warnf](https://gohugo.io/functions/fmt/warnf/) `/functions/fmt/warnf/` — Log a WARNING from a template. _(modified 2026-06-05T09:14:31-07:00)_
+- [fmt.Warnidf](https://gohugo.io/functions/fmt/warnidf/) `/functions/fmt/warnidf/` — Log a suppressible WARNING from a template. _(modified 2026-06-05T09:14:31-07:00)_
+- [Global functions](https://gohugo.io/functions/global/) `/functions/global/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2025-04-10T13:04:51+02:00)_
+- [page](https://gohugo.io/functions/global/page/) `/functions/global/page/` — Provides global access to a Page object. _(modified 2026-06-05T09:14:31-07:00)_
+- [site](https://gohugo.io/functions/global/site/) `/functions/global/site/` — Provides global access to the current Site object. _(modified 2025-04-10T13:04:51+02:00)_
+- [Go template functions, operators, and statements](https://gohugo.io/functions/go-template/) `/functions/go-template/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2025-04-10T13:04:51+02:00)_
+- [and](https://gohugo.io/functions/go-template/and/) `/functions/go-template/and/` — Returns the first falsy argument. If all arguments are truthy, returns the last argument. _(modified 2026-02-14T12:14:33+01:00)_
+- [block](https://gohugo.io/functions/go-template/block/) `/functions/go-template/block/` — Defines a template and executes it in place. _(modified 2025-08-23T12:39:28+02:00)_
+- [break](https://gohugo.io/functions/go-template/break/) `/functions/go-template/break/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2025-04-10T13:04:51+02:00)_
+- [continue](https://gohugo.io/functions/go-template/continue/) `/functions/go-template/continue/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2025-04-10T13:04:51+02:00)_
+- [define](https://gohugo.io/functions/go-template/define/) `/functions/go-template/define/` — Defines a template. _(modified 2026-06-05T09:14:31-07:00)_
+- [else](https://gohugo.io/functions/go-template/else/) `/functions/go-template/else/` — Begins an alternate block for if, with, and range statements. _(modified 2026-06-05T09:14:31-07:00)_
+- [end](https://gohugo.io/functions/go-template/end/) `/functions/go-template/end/` — Terminates if, with, range, block, and define statements. _(modified 2026-06-05T09:14:31-07:00)_
+- [if](https://gohugo.io/functions/go-template/if/) `/functions/go-template/if/` — Executes the block if the expression is truthy. _(modified 2026-06-05T09:14:31-07:00)_
+- [len](https://gohugo.io/functions/go-template/len/) `/functions/go-template/len/` — Returns the length of a string, slice, map, or collection. _(modified 2025-04-10T13:04:51+02:00)_
+- [not](https://gohugo.io/functions/go-template/not/) `/functions/go-template/not/` — Returns the boolean negation of its single argument. _(modified 2025-04-10T13:04:51+02:00)_
+- [or](https://gohugo.io/functions/go-template/or/) `/functions/go-template/or/` — Returns the first truthy argument. If all arguments are falsy, returns the last argument. _(modified 2026-02-14T12:14:33+01:00)_
+- [range](https://gohugo.io/functions/go-template/range/) `/functions/go-template/range/` — Iterates over a non-empty collection, binds context (the dot) to successive elements, and executes the block. _(modified 2026-06-05T09:14:31-07:00)_
+- [return](https://gohugo.io/functions/go-template/return/) `/functions/go-template/return/` — Used within partial templates, terminates template execution and returns the given value, if any. _(modified 2026-06-05T09:14:31-07:00)_
+- [template](https://gohugo.io/functions/go-template/template/) `/functions/go-template/template/` — Executes the given template, optionally passing context. _(modified 2026-06-05T09:14:31-07:00)_
+- [try](https://gohugo.io/functions/go-template/try/) `/functions/go-template/try/` — Returns a TryValue object after evaluating the given expression. _(modified 2026-06-05T09:14:31-07:00)_
+- [urlquery](https://gohugo.io/functions/go-template/urlquery/) `/functions/go-template/urlquery/` — Returns the escaped value of the textual representation of its arguments in a form suitable for embedding in a URL query. _(modified 2025-04-10T13:04:51+02:00)_
+- [with](https://gohugo.io/functions/go-template/with/) `/functions/go-template/with/` — Binds context (the dot) to the expression and executes the block if expression is truthy. _(modified 2026-06-05T09:14:31-07:00)_
+- [Hash functions](https://gohugo.io/functions/hash/) `/functions/hash/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2025-04-10T13:04:51+02:00)_
+- [hash.FNV32a](https://gohugo.io/functions/hash/fnv32a/) `/functions/hash/fnv32a/` — Hugo Documentation _(modified 2026-03-24T09:23:32-07:00)_
+- [hash.XxHash](https://gohugo.io/functions/hash/xxhash/) `/functions/hash/xxhash/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2026-06-05T09:14:31-07:00)_
+- [Hugo functions](https://gohugo.io/functions/hugo/) `/functions/hugo/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2025-04-10T13:04:51+02:00)_
+- [hugo.BuildDate](https://gohugo.io/functions/hugo/builddate/) `/functions/hugo/builddate/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2026-06-05T09:14:31-07:00)_
+- [hugo.CommitHash](https://gohugo.io/functions/hugo/commithash/) `/functions/hugo/commithash/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2025-04-10T13:04:51+02:00)_
+- [hugo.Data](https://gohugo.io/functions/hugo/data/) `/functions/hugo/data/` — Returns a data structure composed from the files in the data directory. _(modified 2026-06-05T09:14:31-07:00)_
+- [hugo.Deps](https://gohugo.io/functions/hugo/deps/) `/functions/hugo/deps/` — HUGO News Docs Themes Community GitHub Built with Hugo v0.163.0 _(modified 2026-05-28T11:02:30-07:00)_
+- [hugo.Environment](https://gohugo.io/functions/hugo/environment/) `/functions/hugo/environment/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2026-02-25T10:29:05+01:00)_
+- [hugo.Generator](https://gohugo.io/functions/hugo/generator/) `/functions/hugo/generator/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2026-06-08T07:53:30-07:00)_
+- [hugo.GoVersion](https://gohugo.io/functions/hugo/goversion/) `/functions/hugo/goversion/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2025-04-10T13:04:51+02:00)_
+- [hugo.IsDevelopment](https://gohugo.io/functions/hugo/isdevelopment/) `/functions/hugo/isdevelopment/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2025-12-19T10:07:30+01:00)_
+- [hugo.IsExtended](https://gohugo.io/functions/hugo/isextended/) `/functions/hugo/isextended/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2025-04-10T13:04:51+02:00)_
+- [hugo.IsMultihost](https://gohugo.io/functions/hugo/ismultihost/) `/functions/hugo/ismultihost/` — Reports whether each configured language has a unique base URL. _(modified 2026-03-16T11:13:34-07:00)_
+- [hugo.IsMultilingual](https://gohugo.io/functions/hugo/ismultilingual/) `/functions/hugo/ismultilingual/` — Reports whether there are two or more configured languages. _(modified 2026-03-16T11:13:34-07:00)_
+- [hugo.IsProduction](https://gohugo.io/functions/hugo/isproduction/) `/functions/hugo/isproduction/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2025-04-10T13:04:51+02:00)_
+- [hugo.IsServer](https://gohugo.io/functions/hugo/isserver/) `/functions/hugo/isserver/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2025-12-19T10:07:30+01:00)_
+- [hugo.Sites](https://gohugo.io/functions/hugo/sites/) `/functions/hugo/sites/` — Returns a collection of all sites for all dimensions. _(modified 2026-03-16T11:13:34-07:00)_
+- [hugo.Store](https://gohugo.io/functions/hugo/store/) `/functions/hugo/store/` — Returns a globally scoped persistent data structure for storing and manipulating keyed values. _(modified 2026-05-28T12:03:21-07:00)_
+- [hugo.Version](https://gohugo.io/functions/hugo/version/) `/functions/hugo/version/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2026-06-08T07:53:30-07:00)_
+- [hugo.WorkingDir](https://gohugo.io/functions/hugo/workingdir/) `/functions/hugo/workingdir/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2025-04-10T13:04:51+02:00)_
+- [Image functions](https://gohugo.io/functions/images/) `/functions/images/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2025-04-10T13:04:51+02:00)_
+- [images.AutoOrient](https://gohugo.io/functions/images/autoorient/) `/functions/images/autoorient/` — Returns an image filter that rotates and flips an image as needed per its Exif orientation tag. _(modified 2026-02-14T12:14:33+01:00)_
+- [images.Brightness](https://gohugo.io/functions/images/brightness/) `/functions/images/brightness/` — Returns an image filter that changes the brightness of an image. _(modified 2025-04-10T13:04:51+02:00)_
+- [images.ColorBalance](https://gohugo.io/functions/images/colorbalance/) `/functions/images/colorbalance/` — Returns an image filter that changes the color balance of an image. _(modified 2025-04-10T13:04:51+02:00)_
+- [images.Colorize](https://gohugo.io/functions/images/colorize/) `/functions/images/colorize/` — Returns an image filter that produces a colorized version of an image. _(modified 2025-04-10T13:04:51+02:00)_
+- [images.Config](https://gohugo.io/functions/images/config/) `/functions/images/config/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2026-02-27T08:51:14-08:00)_
+- [images.Contrast](https://gohugo.io/functions/images/contrast/) `/functions/images/contrast/` — Returns an image filter that changes the contrast of an image. _(modified 2025-04-10T13:04:51+02:00)_
+- [images.Dither](https://gohugo.io/functions/images/dither/) `/functions/images/dither/` — Returns an image filter that dithers an image. _(modified 2026-06-05T09:14:31-07:00)_
+- [images.Filter](https://gohugo.io/functions/images/filter/) `/functions/images/filter/` — Applies one or more image filters to the given image resource. _(modified 2026-02-27T08:51:14-08:00)_
+- [images.Gamma](https://gohugo.io/functions/images/gamma/) `/functions/images/gamma/` — Returns an image filter that performs gamma correction on an image. _(modified 2025-04-10T13:04:51+02:00)_
+- [images.GaussianBlur](https://gohugo.io/functions/images/gaussianblur/) `/functions/images/gaussianblur/` — Returns an image filter that applies a gaussian blur to an image. _(modified 2025-04-10T13:04:51+02:00)_
+- [images.Grayscale](https://gohugo.io/functions/images/grayscale/) `/functions/images/grayscale/` — Returns an image filter that produces a grayscale version of an image. _(modified 2025-04-10T13:04:51+02:00)_
+- [images.Hue](https://gohugo.io/functions/images/hue/) `/functions/images/hue/` — Returns an image filter that rotates the hue of an image. _(modified 2025-04-10T13:04:51+02:00)_
+- [images.Invert](https://gohugo.io/functions/images/invert/) `/functions/images/invert/` — Returns an image filter that negates the colors of an image. _(modified 2025-04-10T13:04:51+02:00)_
+- [images.Mask](https://gohugo.io/functions/images/mask/) `/functions/images/mask/` — Returns an image filter that applies a mask to the source image. _(modified 2026-06-05T09:14:31-07:00)_
+- [images.Opacity](https://gohugo.io/functions/images/opacity/) `/functions/images/opacity/` — Returns an image filter that changes the opacity of an image. _(modified 2026-05-24T12:17:18-07:00)_
+- [images.Overlay](https://gohugo.io/functions/images/overlay/) `/functions/images/overlay/` — Returns an image filter that overlays the source image at the given coordinates, relative to the upper left corner. _(modified 2025-04-10T13:04:51+02:00)_
+- [images.Padding](https://gohugo.io/functions/images/padding/) `/functions/images/padding/` — Returns an image filter that resizes the image canvas without resizing the image. _(modified 2026-06-05T09:14:31-07:00)_
+- [images.Pixelate](https://gohugo.io/functions/images/pixelate/) `/functions/images/pixelate/` — Returns an image filter that applies a pixelation effect to an image. _(modified 2025-04-10T13:04:51+02:00)_
+- [images.Process](https://gohugo.io/functions/images/process/) `/functions/images/process/` — Returns an image filter that processes an image according to the given processing specification. _(modified 2026-06-05T09:14:31-07:00)_
+- [images.QR](https://gohugo.io/functions/images/qr/) `/functions/images/qr/` — Encodes the given text into a QR code using the specified options, returning an image resource. _(modified 2026-06-05T09:14:31-07:00)_
+- [images.Saturation](https://gohugo.io/functions/images/saturation/) `/functions/images/saturation/` — Returns an image filter that changes the saturation of an image. _(modified 2025-04-10T13:04:51+02:00)_
+- [images.Sepia](https://gohugo.io/functions/images/sepia/) `/functions/images/sepia/` — Returns an image filter that produces a sepia-toned version of an image. _(modified 2025-04-10T13:04:51+02:00)_
+- [images.Sigmoid](https://gohugo.io/functions/images/sigmoid/) `/functions/images/sigmoid/` — Returns an image filter that changes the contrast of an image using a sigmoidal function. _(modified 2025-04-10T13:04:51+02:00)_
+- [images.Text](https://gohugo.io/functions/images/text/) `/functions/images/text/` — Returns an image filter that adds text to an image. _(modified 2026-06-05T09:14:31-07:00)_
+- [images.UnsharpMask](https://gohugo.io/functions/images/unsharpmask/) `/functions/images/unsharpmask/` — Returns an image filter that sharpens an image. _(modified 2025-04-10T13:04:51+02:00)_
+- [Inflect functions](https://gohugo.io/functions/inflect/) `/functions/inflect/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2025-04-10T13:04:51+02:00)_
+- [inflect.Humanize](https://gohugo.io/functions/inflect/humanize/) `/functions/inflect/humanize/` — Returns the humanized version of the input with the first letter capitalized. _(modified 2025-04-10T13:04:51+02:00)_
+- [inflect.Pluralize](https://gohugo.io/functions/inflect/pluralize/) `/functions/inflect/pluralize/` — Hugo Documentation _(modified 2025-04-10T13:04:51+02:00)_
+- [inflect.Singularize](https://gohugo.io/functions/inflect/singularize/) `/functions/inflect/singularize/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2025-04-10T13:04:51+02:00)_
+- [JavaScript functions](https://gohugo.io/functions/js/) `/functions/js/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2025-04-10T13:04:51+02:00)_
+- [js.Babel](https://gohugo.io/functions/js/babel/) `/functions/js/babel/` — Compile the given JavaScript resource with Babel. _(modified 2026-06-05T09:14:31-07:00)_
+- [js.Batch](https://gohugo.io/functions/js/batch/) `/functions/js/batch/` — Build JavaScript bundle groups with global code splitting and flexible hooks/runners setup. _(modified 2026-06-05T09:14:31-07:00)_
+- [js.Build](https://gohugo.io/functions/js/build/) `/functions/js/build/` — Bundle, transpile, tree shake, and minify JavaScript resources. _(modified 2026-06-05T09:14:31-07:00)_
+- [Lang functions](https://gohugo.io/functions/lang/) `/functions/lang/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2025-04-10T13:04:51+02:00)_
+- [lang.FormatAccounting](https://gohugo.io/functions/lang/formataccounting/) `/functions/lang/formataccounting/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2025-04-10T13:04:51+02:00)_
+- [lang.FormatCurrency](https://gohugo.io/functions/lang/formatcurrency/) `/functions/lang/formatcurrency/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2025-04-10T13:04:51+02:00)_
+- [lang.FormatNumber](https://gohugo.io/functions/lang/formatnumber/) `/functions/lang/formatnumber/` — Returns a numeric representation of a number with the given precision for the current language and region. _(modified 2025-04-10T13:04:51+02:00)_
+- [lang.FormatNumberCustom](https://gohugo.io/functions/lang/formatnumbercustom/) `/functions/lang/formatnumbercustom/` — Returns a numeric representation of a number with the given precision using negative, decimal, and grouping options. _(modified 2026-06-05T09:14:31-07:00)_
+- [lang.FormatPercent](https://gohugo.io/functions/lang/formatpercent/) `/functions/lang/formatpercent/` — Returns a percentage representation of a number with the given precision for the current language and region. _(modified 2025-04-10T13:04:51+02:00)_
+- [lang.Merge](https://gohugo.io/functions/lang/merge/) `/functions/lang/merge/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2025-07-07T13:17:48+02:00)_
+- [lang.Translate](https://gohugo.io/functions/lang/translate/) `/functions/lang/translate/` — Translates a string using the translation tables in the i18n directory. _(modified 2026-05-25T08:47:05-07:00)_
+- [Math functions](https://gohugo.io/functions/math/) `/functions/math/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2025-04-10T13:04:51+02:00)_
+- [math.Abs](https://gohugo.io/functions/math/abs/) `/functions/math/abs/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2025-04-10T13:04:51+02:00)_
+- [math.Acos](https://gohugo.io/functions/math/acos/) `/functions/math/acos/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2026-04-04T13:04:55-07:00)_
+- [math.Add](https://gohugo.io/functions/math/add/) `/functions/math/add/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2025-04-10T13:04:51+02:00)_
+- [math.Asin](https://gohugo.io/functions/math/asin/) `/functions/math/asin/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2026-04-04T13:04:55-07:00)_
+- [math.Atan](https://gohugo.io/functions/math/atan/) `/functions/math/atan/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2026-04-04T13:04:55-07:00)_
+- [math.Atan2](https://gohugo.io/functions/math/atan2/) `/functions/math/atan2/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2026-04-04T13:04:55-07:00)_
+- [math.Ceil](https://gohugo.io/functions/math/ceil/) `/functions/math/ceil/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2025-04-10T13:04:51+02:00)_
+- [math.Cos](https://gohugo.io/functions/math/cos/) `/functions/math/cos/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2026-04-04T13:04:55-07:00)_
+- [math.Counter](https://gohugo.io/functions/math/counter/) `/functions/math/counter/` — Increments and returns a global counter. _(modified 2026-06-05T09:14:31-07:00)_
+- [math.Div](https://gohugo.io/functions/math/div/) `/functions/math/div/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2025-04-10T13:04:51+02:00)_
+- [math.Floor](https://gohugo.io/functions/math/floor/) `/functions/math/floor/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2025-04-10T13:04:51+02:00)_
+- [math.Log](https://gohugo.io/functions/math/log/) `/functions/math/log/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2025-04-10T13:04:51+02:00)_
+- [math.Max](https://gohugo.io/functions/math/max/) `/functions/math/max/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2025-04-10T13:04:51+02:00)_
+- [math.MaxInt64](https://gohugo.io/functions/math/maxint64/) `/functions/math/maxint64/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2025-07-07T13:17:48+02:00)_
+- [math.Min](https://gohugo.io/functions/math/min/) `/functions/math/min/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2025-04-10T13:04:51+02:00)_
+- [math.Mod](https://gohugo.io/functions/math/mod/) `/functions/math/mod/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2025-04-10T13:04:51+02:00)_
+- [math.ModBool](https://gohugo.io/functions/math/modbool/) `/functions/math/modbool/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2025-04-10T13:04:51+02:00)_
+- [math.Mul](https://gohugo.io/functions/math/mul/) `/functions/math/mul/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2025-04-10T13:04:51+02:00)_
+- [math.Pi](https://gohugo.io/functions/math/pi/) `/functions/math/pi/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2026-04-04T13:04:55-07:00)_
+- [math.Pow](https://gohugo.io/functions/math/pow/) `/functions/math/pow/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2025-04-10T13:04:51+02:00)_
+- [math.Product](https://gohugo.io/functions/math/product/) `/functions/math/product/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2025-04-10T13:04:51+02:00)_
+- [math.Rand](https://gohugo.io/functions/math/rand/) `/functions/math/rand/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2025-12-19T10:07:30+01:00)_
+- [math.Round](https://gohugo.io/functions/math/round/) `/functions/math/round/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2025-04-10T13:04:51+02:00)_
+- [math.Sin](https://gohugo.io/functions/math/sin/) `/functions/math/sin/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2026-04-04T13:04:55-07:00)_
+- [math.Sqrt](https://gohugo.io/functions/math/sqrt/) `/functions/math/sqrt/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2025-04-10T13:04:51+02:00)_
+- [math.Sub](https://gohugo.io/functions/math/sub/) `/functions/math/sub/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2025-04-10T13:04:51+02:00)_
+- [math.Sum](https://gohugo.io/functions/math/sum/) `/functions/math/sum/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2025-04-10T13:04:51+02:00)_
+- [math.Tan](https://gohugo.io/functions/math/tan/) `/functions/math/tan/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2026-04-04T13:04:55-07:00)_
+- [math.ToDegrees](https://gohugo.io/functions/math/todegrees/) `/functions/math/todegrees/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2026-04-04T13:04:55-07:00)_
+- [math.ToRadians](https://gohugo.io/functions/math/toradians/) `/functions/math/toradians/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2026-04-04T13:04:55-07:00)_
+- [OpenAPI functions](https://gohugo.io/functions/openapi3/) `/functions/openapi3/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2025-04-10T13:04:51+02:00)_
+- [openapi3.Unmarshal](https://gohugo.io/functions/openapi3/unmarshal/) `/functions/openapi3/unmarshal/` — Unmarshals the given resource into an OpenAPI 3 Description. _(modified 2026-06-05T09:14:31-07:00)_
+- [OS functions](https://gohugo.io/functions/os/) `/functions/os/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2025-04-10T13:04:51+02:00)_
+- [os.FileExists](https://gohugo.io/functions/os/fileexists/) `/functions/os/fileexists/` — Reports whether the file or directory exists. _(modified 2026-05-31T13:39:09-07:00)_
+- [os.Getenv](https://gohugo.io/functions/os/getenv/) `/functions/os/getenv/` — Returns the value of an environment variable, or an empty string if the environment variable is not set. _(modified 2026-05-31T13:39:09-07:00)_
+- [os.ReadDir](https://gohugo.io/functions/os/readdir/) `/functions/os/readdir/` — Returns an array of FileInfo structures sorted by file name, one element for each directory entry. _(modified 2026-06-05T09:14:31-07:00)_
+- [os.ReadFile](https://gohugo.io/functions/os/readfile/) `/functions/os/readfile/` — Returns the contents of a file. _(modified 2026-05-31T13:39:09-07:00)_
+- [os.Stat](https://gohugo.io/functions/os/stat/) `/functions/os/stat/` — Returns a FileInfo structure describing a file or directory. _(modified 2026-06-05T09:14:31-07:00)_
+- [Partial functions](https://gohugo.io/functions/partials/) `/functions/partials/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2025-04-10T13:04:51+02:00)_
+- [partials.Include](https://gohugo.io/functions/partials/include/) `/functions/partials/include/` — Executes the given template, optionally passing context. If the partial template contains a return statement, returns the given value, else returns the rendered output. _(modified 2026-06-05T09:14:31-07:00)_
+- [partials.IncludeCached](https://gohugo.io/functions/partials/includecached/) `/functions/partials/includecached/` — Executes the given template and caches the result, optionally passing one or more variant keys. If the partial template contains a return statement, returns the given value, else returns the rendered output. _(modified 2026-06-05T09:14:31-07:00)_
+- [Path functions](https://gohugo.io/functions/path/) `/functions/path/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2025-04-10T13:04:51+02:00)_
+- [path.Base](https://gohugo.io/functions/path/base/) `/functions/path/base/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2025-04-10T13:04:51+02:00)_
+- [path.BaseName](https://gohugo.io/functions/path/basename/) `/functions/path/basename/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2025-04-10T13:04:51+02:00)_
+- [path.Clean](https://gohugo.io/functions/path/clean/) `/functions/path/clean/` — Replaces path separators with slashes (`/`) and returns the shortest path name equivalent to the given path. _(modified 2026-06-05T09:14:31-07:00)_
+- [path.Dir](https://gohugo.io/functions/path/dir/) `/functions/path/dir/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2025-04-10T13:04:51+02:00)_
+- [path.Ext](https://gohugo.io/functions/path/ext/) `/functions/path/ext/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2025-04-10T13:04:51+02:00)_
+- [path.Join](https://gohugo.io/functions/path/join/) `/functions/path/join/` — Replaces path separators with slashes (`/`), joins the given path elements into a single path, and returns the shortest path name equivalent to the result. _(modified 2026-06-05T09:14:31-07:00)_
+- [path.Split](https://gohugo.io/functions/path/split/) `/functions/path/split/` — Replaces path separators with slashes (`/`) and splits the resulting path immediately following the final slash, separating it into a directory and file name component. _(modified 2025-04-10T13:04:51+02:00)_
+- [Reflect functions](https://gohugo.io/functions/reflect/) `/functions/reflect/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2025-04-10T13:04:51+02:00)_
+- [reflect.IsImageResource](https://gohugo.io/functions/reflect/isimageresource/) `/functions/reflect/isimageresource/` — Reports whether the given value is a Resource object representing an image as defined by its media type. _(modified 2026-02-27T08:51:14-08:00)_
+- [reflect.IsImageResourceProcessable](https://gohugo.io/functions/reflect/isimageresourceprocessable/) `/functions/reflect/isimageresourceprocessable/` — Reports whether the given value is a Resource object representing an image from which Hugo can extract dimensions and perform processing such as converting, resizing, cropping, or filtering. _(modified 2026-02-27T08:51:14-08:00)_
+- [reflect.IsImageResourceWithMeta](https://gohugo.io/functions/reflect/isimageresourcewithmeta/) `/functions/reflect/isimageresourcewithmeta/` — Reports whether the given value is a Resource object representing an image from which Hugo can extract dimensions and, if present, Exif, IPTC, and XMP data. _(modified 2026-02-27T08:51:14-08:00)_
+- [reflect.IsMap](https://gohugo.io/functions/reflect/ismap/) `/functions/reflect/ismap/` — Hugo Documentation _(modified 2025-04-10T13:04:51+02:00)_
+- [reflect.IsPage](https://gohugo.io/functions/reflect/ispage/) `/functions/reflect/ispage/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2026-02-14T12:14:33+01:00)_
+- [reflect.IsResource](https://gohugo.io/functions/reflect/isresource/) `/functions/reflect/isresource/` — Reports whether the given value is a Resource object. _(modified 2026-02-14T12:14:33+01:00)_
+- [reflect.IsSite](https://gohugo.io/functions/reflect/issite/) `/functions/reflect/issite/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2026-02-14T12:14:33+01:00)_
+- [reflect.IsSlice](https://gohugo.io/functions/reflect/isslice/) `/functions/reflect/isslice/` — Hugo Documentation _(modified 2025-04-10T13:04:51+02:00)_
+- [Resource functions](https://gohugo.io/functions/resources/) `/functions/resources/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2025-04-10T13:04:51+02:00)_
+- [resources.ByType](https://gohugo.io/functions/resources/bytype/) `/functions/resources/bytype/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2026-06-05T09:14:31-07:00)_
+- [resources.Concat](https://gohugo.io/functions/resources/concat/) `/functions/resources/concat/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2026-06-05T09:14:31-07:00)_
+- [resources.Copy](https://gohugo.io/functions/resources/copy/) `/functions/resources/copy/` — Copies the given resource to the target path. _(modified 2026-05-25T11:18:50-07:00)_
+- [resources.ExecuteAsTemplate](https://gohugo.io/functions/resources/executeastemplate/) `/functions/resources/executeastemplate/` — Returns a resource created from a Go template, parsed and executed with the given context. _(modified 2026-06-05T09:14:31-07:00)_
+- [resources.Fingerprint](https://gohugo.io/functions/resources/fingerprint/) `/functions/resources/fingerprint/` — Cryptographically hashes the content of the given resource. _(modified 2026-06-05T09:14:31-07:00)_
+- [resources.FromString](https://gohugo.io/functions/resources/fromstring/) `/functions/resources/fromstring/` — Returns a resource created from a string. _(modified 2026-06-08T07:53:30-07:00)_
+- [resources.Get](https://gohugo.io/functions/resources/get/) `/functions/resources/get/` — Returns a global resource from the given path, or nil if none found. _(modified 2026-06-05T09:14:31-07:00)_
+- [resources.GetMatch](https://gohugo.io/functions/resources/getmatch/) `/functions/resources/getmatch/` — Returns the first global resource from paths matching the given glob pattern, or nil if none found. _(modified 2026-06-05T09:14:31-07:00)_
+- [resources.GetRemote](https://gohugo.io/functions/resources/getremote/) `/functions/resources/getremote/` — Returns a remote resource from the given URL, or nil if none found. _(modified 2026-06-05T09:14:31-07:00)_
+- [resources.Match](https://gohugo.io/functions/resources/match/) `/functions/resources/match/` — Returns a collection of global resources from paths matching the given glob pattern, or nil if none found. _(modified 2026-06-05T09:14:31-07:00)_
+- [resources.Minify](https://gohugo.io/functions/resources/minify/) `/functions/resources/minify/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2025-04-10T13:04:51+02:00)_
+- [resources.PostProcess](https://gohugo.io/functions/resources/postprocess/) `/functions/resources/postprocess/` — Processes the given resource after the build. _(modified 2026-06-05T09:14:31-07:00)_
+- [Safe functions](https://gohugo.io/functions/safe/) `/functions/safe/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2025-04-10T13:04:51+02:00)_
+- [safe.CSS](https://gohugo.io/functions/safe/css/) `/functions/safe/css/` — Declares the given string as a safe CSS string. _(modified 2026-06-05T09:14:31-07:00)_
+- [safe.HTML](https://gohugo.io/functions/safe/html/) `/functions/safe/html/` — Declares the given string as a safeHTML string. _(modified 2026-06-05T09:14:31-07:00)_
+- [safe.HTMLAttr](https://gohugo.io/functions/safe/htmlattr/) `/functions/safe/htmlattr/` — Declares the given key-value pair as a safe HTML attribute. _(modified 2026-06-05T09:14:31-07:00)_
+- [safe.JS](https://gohugo.io/functions/safe/js/) `/functions/safe/js/` — Declares the given string as a safe JavaScript expression. _(modified 2026-06-05T09:14:31-07:00)_
+- [safe.JSStr](https://gohugo.io/functions/safe/jsstr/) `/functions/safe/jsstr/` — Declares the given string as a safe JavaScript string. _(modified 2026-06-05T09:14:31-07:00)_
+- [safe.URL](https://gohugo.io/functions/safe/url/) `/functions/safe/url/` — Declares the given string as a safe URL or URL substring. _(modified 2026-06-05T09:14:31-07:00)_
+- [String functions](https://gohugo.io/functions/strings/) `/functions/strings/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2025-04-10T13:04:51+02:00)_
+- [strings.Chomp](https://gohugo.io/functions/strings/chomp/) `/functions/strings/chomp/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2025-04-10T13:04:51+02:00)_
+- [strings.Contains](https://gohugo.io/functions/strings/contains/) `/functions/strings/contains/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2025-04-10T13:04:51+02:00)_
+- [strings.ContainsAny](https://gohugo.io/functions/strings/containsany/) `/functions/strings/containsany/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2025-04-10T13:04:51+02:00)_
+- [strings.ContainsNonSpace](https://gohugo.io/functions/strings/containsnonspace/) `/functions/strings/containsnonspace/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2026-06-05T09:14:31-07:00)_
+- [strings.Count](https://gohugo.io/functions/strings/count/) `/functions/strings/count/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2025-04-10T13:04:51+02:00)_
+- [strings.CountRunes](https://gohugo.io/functions/strings/countrunes/) `/functions/strings/countrunes/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2026-06-05T09:14:31-07:00)_
+- [strings.CountWords](https://gohugo.io/functions/strings/countwords/) `/functions/strings/countwords/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2025-12-19T10:07:30+01:00)_
+- [strings.Diff](https://gohugo.io/functions/strings/diff/) `/functions/strings/diff/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2026-02-14T12:14:33+01:00)_
+- [strings.FindRE](https://gohugo.io/functions/strings/findre/) `/functions/strings/findre/` — Returns a slice of strings that match the regular expression. _(modified 2026-06-05T09:14:31-07:00)_
+- [strings.FindRESubmatch](https://gohugo.io/functions/strings/findresubmatch/) `/functions/strings/findresubmatch/` — Returns a slice of all successive matches of the regular expression. Each element is a slice of strings holding the text of the leftmost match of the regular expression and the matches, if any, of its subexpressions. _(modified 2026-06-05T09:14:31-07:00)_
+- [strings.FirstUpper](https://gohugo.io/functions/strings/firstupper/) `/functions/strings/firstupper/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2025-04-10T13:04:51+02:00)_
+- [strings.HasPrefix](https://gohugo.io/functions/strings/hasprefix/) `/functions/strings/hasprefix/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2025-04-10T13:04:51+02:00)_
+- [strings.HasSuffix](https://gohugo.io/functions/strings/hassuffix/) `/functions/strings/hassuffix/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2025-04-10T13:04:51+02:00)_
+- [strings.Repeat](https://gohugo.io/functions/strings/repeat/) `/functions/strings/repeat/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2025-12-19T10:07:30+01:00)_
+- [strings.Replace](https://gohugo.io/functions/strings/replace/) `/functions/strings/replace/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2025-04-10T13:04:51+02:00)_
+- [strings.ReplacePairs](https://gohugo.io/functions/strings/replacepairs/) `/functions/strings/replacepairs/` — Returns a copy of a string with multiple replacements performed in a single pass, using a slice of old and new string pairs. _(modified 2026-03-16T11:14:52-07:00)_
+- [strings.ReplaceRE](https://gohugo.io/functions/strings/replacere/) `/functions/strings/replacere/` — Returns a copy of INPUT, replacing all occurrences of a regular expression with a replacement pattern. _(modified 2026-06-05T09:14:31-07:00)_
+- [strings.RuneCount](https://gohugo.io/functions/strings/runecount/) `/functions/strings/runecount/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2026-06-05T09:14:31-07:00)_
+- [strings.SliceString](https://gohugo.io/functions/strings/slicestring/) `/functions/strings/slicestring/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2026-06-05T09:14:31-07:00)_
+- [strings.Split](https://gohugo.io/functions/strings/split/) `/functions/strings/split/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2026-06-05T09:14:31-07:00)_
+- [strings.Substr](https://gohugo.io/functions/strings/substr/) `/functions/strings/substr/` — Returns a substring of the given string, beginning with the start position and ending after the given length. _(modified 2025-04-10T13:04:51+02:00)_
+- [strings.Title](https://gohugo.io/functions/strings/title/) `/functions/strings/title/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2026-06-05T09:14:31-07:00)_
+- [strings.ToLower](https://gohugo.io/functions/strings/tolower/) `/functions/strings/tolower/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2025-12-19T10:07:30+01:00)_
+- [strings.ToUpper](https://gohugo.io/functions/strings/toupper/) `/functions/strings/toupper/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2025-12-19T10:07:30+01:00)_
+- [strings.Trim](https://gohugo.io/functions/strings/trim/) `/functions/strings/trim/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2025-12-19T10:07:30+01:00)_
+- [strings.TrimLeft](https://gohugo.io/functions/strings/trimleft/) `/functions/strings/trimleft/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2025-04-10T13:04:51+02:00)_
+- [strings.TrimPrefix](https://gohugo.io/functions/strings/trimprefix/) `/functions/strings/trimprefix/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2025-04-10T13:04:51+02:00)_
+- [strings.TrimRight](https://gohugo.io/functions/strings/trimright/) `/functions/strings/trimright/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2025-04-10T13:04:51+02:00)_
+- [strings.TrimSpace](https://gohugo.io/functions/strings/trimspace/) `/functions/strings/trimspace/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2026-06-05T09:14:31-07:00)_
+- [strings.TrimSuffix](https://gohugo.io/functions/strings/trimsuffix/) `/functions/strings/trimsuffix/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2025-04-10T13:04:51+02:00)_
+- [strings.Truncate](https://gohugo.io/functions/strings/truncate/) `/functions/strings/truncate/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2026-05-31T13:39:09-07:00)_
+- [Template functions](https://gohugo.io/functions/templates/) `/functions/templates/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2025-04-10T13:04:51+02:00)_
+- [templates.Current](https://gohugo.io/functions/templates/current/) `/functions/templates/current/` — Returns information about the currently executing template. _(modified 2026-05-28T11:02:30-07:00)_
+- [templates.Defer](https://gohugo.io/functions/templates/defer/) `/functions/templates/defer/` — Defer execution of a template until after all sites and output formats have been rendered. _(modified 2026-06-05T09:14:31-07:00)_
+- [templates.Exists](https://gohugo.io/functions/templates/exists/) `/functions/templates/exists/` — Reports whether a template file exists under the given path relative to the layouts directory. _(modified 2025-07-07T13:17:48+02:00)_
+- [templates.Inner](https://gohugo.io/functions/templates/inner/) `/functions/templates/inner/` — Executes the content block enclosed by a partial call. _(modified 2026-02-14T12:14:33+01:00)_
+- [Time functions](https://gohugo.io/functions/time/) `/functions/time/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2025-04-10T13:04:51+02:00)_
+- [time.AsTime](https://gohugo.io/functions/time/astime/) `/functions/time/astime/` — Returns the given string representation of a date/time value as a time.Time value. _(modified 2026-06-05T09:14:31-07:00)_
+- [time.Duration](https://gohugo.io/functions/time/duration/) `/functions/time/duration/` — Returns a time.Duration value using the given time unit and number. _(modified 2026-06-05T09:14:31-07:00)_
+- [time.Format](https://gohugo.io/functions/time/format/) `/functions/time/format/` — Returns the given date/time as a formatted and localized string. _(modified 2026-06-05T09:14:31-07:00)_
+- [time.In](https://gohugo.io/functions/time/in/) `/functions/time/in/` — Returns the given date/time as represented in the specified IANA time zone. _(modified 2026-06-05T09:14:31-07:00)_
+- [time.Now](https://gohugo.io/functions/time/now/) `/functions/time/now/` — Returns the current local time. _(modified 2026-06-05T09:14:31-07:00)_
+- [time.ParseDuration](https://gohugo.io/functions/time/parseduration/) `/functions/time/parseduration/` — Returns a time.Duration value by parsing the given duration string. _(modified 2026-06-05T09:14:31-07:00)_
+- [Transform functions](https://gohugo.io/functions/transform/) `/functions/transform/` — 1. [Docs](https://gohugo.io/documentation/) 2. [Functions](https://gohugo.io/functions/) 3. transform _(modified 2025-04-10T13:04:51+02:00)_
+- [transform.CanHighlight](https://gohugo.io/functions/transform/canhighlight/) `/functions/transform/canhighlight/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2026-04-29T10:39:40-07:00)_
+- [transform.Emojify](https://gohugo.io/functions/transform/emojify/) `/functions/transform/emojify/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2026-06-05T09:14:31-07:00)_
+- [transform.Highlight](https://gohugo.io/functions/transform/highlight/) `/functions/transform/highlight/` — Renders code with a syntax highlighter. _(modified 2026-06-05T09:14:31-07:00)_
+- [transform.HighlightCodeBlock](https://gohugo.io/functions/transform/highlightcodeblock/) `/functions/transform/highlightcodeblock/` — Highlights code received in context within a code block render hook. _(modified 2026-06-05T09:14:31-07:00)_
+- [transform.HTMLEscape](https://gohugo.io/functions/transform/htmlescape/) `/functions/transform/htmlescape/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2026-06-05T09:14:31-07:00)_
+- [transform.HTMLToMarkdown](https://gohugo.io/functions/transform/htmltomarkdown/) `/functions/transform/htmltomarkdown/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2026-06-05T10:13:37-07:00)_
+- [transform.HTMLUnescape](https://gohugo.io/functions/transform/htmlunescape/) `/functions/transform/htmlunescape/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2026-06-05T09:14:31-07:00)_
+- [transform.Markdownify](https://gohugo.io/functions/transform/markdownify/) `/functions/transform/markdownify/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2026-06-05T09:14:31-07:00)_
+- [transform.Plainify](https://gohugo.io/functions/transform/plainify/) `/functions/transform/plainify/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2025-04-10T13:04:51+02:00)_
+- [transform.PortableText](https://gohugo.io/functions/transform/portabletext/) `/functions/transform/portabletext/` — Converts Portable Text to Markdown. _(modified 2026-06-05T10:13:37-07:00)_
+- [transform.Remarshal](https://gohugo.io/functions/transform/remarshal/) `/functions/transform/remarshal/` — Marshals a string of serialized data, or a map, into a string of serialized data in the specified format. _(modified 2026-03-16T11:13:34-07:00)_
+- [transform.ToMath](https://gohugo.io/functions/transform/tomath/) `/functions/transform/tomath/` — Renders mathematical equations and expressions written in the LaTeX markup language. _(modified 2026-06-08T07:53:30-07:00)_
+- [transform.Unmarshal](https://gohugo.io/functions/transform/unmarshal/) `/functions/transform/unmarshal/` — HUGO News Docs Themes Community GitHub Built with Hugo v0.163.0 _(modified 2026-06-05T09:14:31-07:00)_
+- [transform.XMLEscape](https://gohugo.io/functions/transform/xmlescape/) `/functions/transform/xmlescape/` — Returns the given string, removing disallowed characters then escaping the result to its XML equivalent. _(modified 2026-06-05T09:14:31-07:00)_
+- [URL functions](https://gohugo.io/functions/urls/) `/functions/urls/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2025-04-10T13:04:51+02:00)_
+- [urls.AbsLangURL](https://gohugo.io/functions/urls/abslangurl/) `/functions/urls/abslangurl/` — Returns an absolute URL with a language prefix, if any. _(modified 2026-02-25T10:29:05+01:00)_
+- [urls.AbsURL](https://gohugo.io/functions/urls/absurl/) `/functions/urls/absurl/` — Returns an absolute URL. _(modified 2026-06-05T09:14:31-07:00)_
+- [urls.Anchorize](https://gohugo.io/functions/urls/anchorize/) `/functions/urls/anchorize/` — Returns the given string, sanitized for usage in an HTML id attribute. _(modified 2026-05-25T08:47:05-07:00)_
+- [urls.JoinPath](https://gohugo.io/functions/urls/joinpath/) `/functions/urls/joinpath/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2026-06-05T09:14:31-07:00)_
+- [urls.Parse](https://gohugo.io/functions/urls/parse/) `/functions/urls/parse/` — Parses a URL into a URL structure. _(modified 2026-06-05T09:14:31-07:00)_
+- [urls.PathEscape](https://gohugo.io/functions/urls/pathescape/) `/functions/urls/pathescape/` — Returns the given string, applying percent-encoding to special characters and reserved delimiters so it can be safely used as a segment within a URL path. _(modified 2026-03-08T13:56:30-07:00)_
+- [urls.PathUnescape](https://gohugo.io/functions/urls/pathunescape/) `/functions/urls/pathunescape/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2026-03-08T13:56:30-07:00)_
+- [urls.Ref](https://gohugo.io/functions/urls/ref/) `/functions/urls/ref/` — Returns the absolute URL of the page with the given path, language, and output format. _(modified 2025-04-10T13:04:51+02:00)_
+- [urls.RelLangURL](https://gohugo.io/functions/urls/rellangurl/) `/functions/urls/rellangurl/` — Returns a relative URL with a language prefix, if any. _(modified 2026-02-25T10:29:05+01:00)_
+- [urls.RelRef](https://gohugo.io/functions/urls/relref/) `/functions/urls/relref/` — Returns the relative URL of the page with the given path, language, and output format. _(modified 2025-04-10T13:04:51+02:00)_
+- [urls.RelURL](https://gohugo.io/functions/urls/relurl/) `/functions/urls/relurl/` — Returns a relative URL. _(modified 2026-06-05T09:14:31-07:00)_
+- [urls.URLize](https://gohugo.io/functions/urls/urlize/) `/functions/urls/urlize/` — Returns the given string, sanitized for usage in a URL. _(modified 2026-06-05T09:14:31-07:00)_
+
+## methods
+
+- [Methods](https://gohugo.io/methods/) `/methods/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2025-04-10T13:04:51+02:00)_
+- [Duration methods](https://gohugo.io/methods/duration/) `/methods/duration/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2026-02-25T10:29:05+01:00)_
+- [Abs](https://gohugo.io/methods/duration/abs/) `/methods/duration/abs/` — Hugo Documentation _(modified 2025-04-10T13:04:51+02:00)_
+- [Hours](https://gohugo.io/methods/duration/hours/) `/methods/duration/hours/` — Hugo Documentation _(modified 2025-04-10T13:04:51+02:00)_
+- [Microseconds](https://gohugo.io/methods/duration/microseconds/) `/methods/duration/microseconds/` — Hugo Documentation _(modified 2025-04-10T13:04:51+02:00)_
+- [Milliseconds](https://gohugo.io/methods/duration/milliseconds/) `/methods/duration/milliseconds/` — Hugo Documentation _(modified 2025-04-10T13:04:51+02:00)_
+- [Minutes](https://gohugo.io/methods/duration/minutes/) `/methods/duration/minutes/` — Hugo Documentation _(modified 2025-04-10T13:04:51+02:00)_
+- [Nanoseconds](https://gohugo.io/methods/duration/nanoseconds/) `/methods/duration/nanoseconds/` — Hugo Documentation _(modified 2025-04-10T13:04:51+02:00)_
+- [Round](https://gohugo.io/methods/duration/round/) `/methods/duration/round/` — Hugo Documentation _(modified 2025-04-10T13:04:51+02:00)_
+- [Seconds](https://gohugo.io/methods/duration/seconds/) `/methods/duration/seconds/` — Hugo Documentation _(modified 2025-04-10T13:04:51+02:00)_
+- [Truncate](https://gohugo.io/methods/duration/truncate/) `/methods/duration/truncate/` — Hugo Documentation _(modified 2025-04-10T13:04:51+02:00)_
+- [Menu entry methods](https://gohugo.io/methods/menu-entry/) `/methods/menu-entry/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2025-04-10T13:04:51+02:00)_
+- [Children](https://gohugo.io/methods/menu-entry/children/) `/methods/menu-entry/children/` — Returns a collection of child menu entries, if any, under the given menu entry. _(modified 2026-02-25T10:29:05+01:00)_
+- [HasChildren](https://gohugo.io/methods/menu-entry/haschildren/) `/methods/menu-entry/haschildren/` — Reports whether the given menu entry has child menu entries. _(modified 2026-02-25T10:29:05+01:00)_
+- [Identifier](https://gohugo.io/methods/menu-entry/identifier/) `/methods/menu-entry/identifier/` — Returns the `identifier` property of the given menu entry. _(modified 2026-06-05T09:14:31-07:00)_
+- [KeyName](https://gohugo.io/methods/menu-entry/keyname/) `/methods/menu-entry/keyname/` — Returns the `identifier` property of the given menu entry, falling back to its `name` property. _(modified 2026-06-05T09:14:31-07:00)_
+- [Menu](https://gohugo.io/methods/menu-entry/menu/) `/methods/menu-entry/menu/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2026-06-05T09:14:31-07:00)_
+- [Name](https://gohugo.io/methods/menu-entry/name/) `/methods/menu-entry/name/` — Returns the `name` property of the given menu entry. _(modified 2026-06-05T09:14:31-07:00)_
+- [Page](https://gohugo.io/methods/menu-entry/page/) `/methods/menu-entry/page/` — Returns the Page object associated with the given menu entry. _(modified 2026-06-05T09:14:31-07:00)_
+- [PageRef](https://gohugo.io/methods/menu-entry/pageref/) `/methods/menu-entry/pageref/` — Returns the `pageRef` property of the given menu entry. _(modified 2026-06-05T09:14:31-07:00)_
+- [Params](https://gohugo.io/methods/menu-entry/params/) `/methods/menu-entry/params/` — Returns the `params` property of the given menu entry. _(modified 2026-06-05T09:14:31-07:00)_
+- [Parent](https://gohugo.io/methods/menu-entry/parent/) `/methods/menu-entry/parent/` — Returns the `parent` property of the given menu entry. _(modified 2025-04-10T13:04:51+02:00)_
+- [Post](https://gohugo.io/methods/menu-entry/post/) `/methods/menu-entry/post/` — Returns the `post` property of the given menu entry. _(modified 2025-04-10T13:04:51+02:00)_
+- [Pre](https://gohugo.io/methods/menu-entry/pre/) `/methods/menu-entry/pre/` — Returns the `pre` property of the given menu entry. _(modified 2025-04-10T13:04:51+02:00)_
+- [Title](https://gohugo.io/methods/menu-entry/title/) `/methods/menu-entry/title/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2026-06-05T09:14:31-07:00)_
+- [URL](https://gohugo.io/methods/menu-entry/url/) `/methods/menu-entry/url/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2026-06-05T09:14:31-07:00)_
+- [Weight](https://gohugo.io/methods/menu-entry/weight/) `/methods/menu-entry/weight/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2026-06-05T09:14:31-07:00)_
+- [Menu methods](https://gohugo.io/methods/menu/) `/methods/menu/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2025-04-10T13:04:51+02:00)_
+- [ByName](https://gohugo.io/methods/menu/byname/) `/methods/menu/byname/` — Returns the given menu with its entries sorted by name. _(modified 2026-06-05T09:14:31-07:00)_
+- [ByWeight](https://gohugo.io/methods/menu/byweight/) `/methods/menu/byweight/` — Returns the given menu with its entries sorted by weight, then by name, then by identifier. _(modified 2026-06-05T09:14:31-07:00)_
+- [Limit](https://gohugo.io/methods/menu/limit/) `/methods/menu/limit/` — Returns the given menu, limited to the first N entries. _(modified 2025-04-10T13:04:51+02:00)_
+- [Reverse](https://gohugo.io/methods/menu/reverse/) `/methods/menu/reverse/` — Returns the given menu, reversing the sort order of its entries. _(modified 2025-04-10T13:04:51+02:00)_
+- [Output format methods](https://gohugo.io/methods/output-format/) `/methods/output-format/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2026-02-14T12:14:33+01:00)_
+- [MediaType](https://gohugo.io/methods/output-format/mediatype/) `/methods/output-format/mediatype/` — Returns the media type of the given output format. _(modified 2026-05-28T11:02:30-07:00)_
+- [Name](https://gohugo.io/methods/output-format/name/) `/methods/output-format/name/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2026-02-14T12:14:33+01:00)_
+- [Permalink](https://gohugo.io/methods/output-format/permalink/) `/methods/output-format/permalink/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2026-02-14T12:14:33+01:00)_
+- [Rel](https://gohugo.io/methods/output-format/rel/) `/methods/output-format/rel/` — Returns the rel value of the given output format, either the default or as defined in your project configuration. _(modified 2026-02-25T10:29:05+01:00)_
+- [RelPermalink](https://gohugo.io/methods/output-format/relpermalink/) `/methods/output-format/relpermalink/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2026-02-14T12:14:33+01:00)_
+- [Page methods](https://gohugo.io/methods/page/) `/methods/page/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2025-04-10T13:04:51+02:00)_
+- [Aliases](https://gohugo.io/methods/page/aliases/) `/methods/page/aliases/` — Returns the aliases defined in front matter as server-relative URLs, resolved according to the current content dimension. _(modified 2026-03-16T11:13:34-07:00)_
+- [AllTranslations](https://gohugo.io/methods/page/alltranslations/) `/methods/page/alltranslations/` — Returns all translations of the given page, including the current language, sorted by language weight then language name. _(modified 2026-05-18T16:01:58-07:00)_
+- [AlternativeOutputFormats](https://gohugo.io/methods/page/alternativeoutputformats/) `/methods/page/alternativeoutputformats/` — Returns a slice of OutputFormat objects, excluding the current output format, each representing one of the output formats enabled for the given page. _(modified 2026-06-05T09:14:31-07:00)_
+- [Ancestors](https://gohugo.io/methods/page/ancestors/) `/methods/page/ancestors/` — Returns a collection of Page objects, one for each ancestor section of the given page. _(modified 2025-04-10T13:04:51+02:00)_
+- [BundleType](https://gohugo.io/methods/page/bundletype/) `/methods/page/bundletype/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2026-06-05T09:14:31-07:00)_
+- [CodeOwners](https://gohugo.io/methods/page/codeowners/) `/methods/page/codeowners/` — Returns of slice of code owners for the given page, derived from the CODEOWNERS file in the root of the project directory. _(modified 2026-06-05T09:14:31-07:00)_
+- [Content](https://gohugo.io/methods/page/content/) `/methods/page/content/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2025-04-10T13:04:51+02:00)_
+- [ContentWithoutSummary](https://gohugo.io/methods/page/contentwithoutsummary/) `/methods/page/contentwithoutsummary/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2026-06-05T09:14:31-07:00)_
+- [CurrentSection](https://gohugo.io/methods/page/currentsection/) `/methods/page/currentsection/` — Returns the Page object of the section in which the given page resides. _(modified 2025-04-10T13:04:51+02:00)_
+- [Data](https://gohugo.io/methods/page/data/) `/methods/page/data/` — Returns a unique data object for each page kind. _(modified 2026-06-05T09:14:31-07:00)_
+- [Date](https://gohugo.io/methods/page/date/) `/methods/page/date/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2026-06-05T09:14:31-07:00)_
+- [Description](https://gohugo.io/methods/page/description/) `/methods/page/description/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2026-06-05T09:14:31-07:00)_
+- [Draft](https://gohugo.io/methods/page/draft/) `/methods/page/draft/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2026-02-25T10:29:05+01:00)_
+- [Eq](https://gohugo.io/methods/page/eq/) `/methods/page/eq/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2025-07-07T13:17:48+02:00)_
+- [ExpiryDate](https://gohugo.io/methods/page/expirydate/) `/methods/page/expirydate/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2026-06-05T09:14:31-07:00)_
+- [File](https://gohugo.io/methods/page/file/) `/methods/page/file/` — For pages backed by a file, returns file information for the given page. _(modified 2026-06-05T09:14:31-07:00)_
+- [FirstSection](https://gohugo.io/methods/page/firstsection/) `/methods/page/firstsection/` — Returns the Page object of the top-level section of which the given page is a descendant. _(modified 2025-04-10T13:04:51+02:00)_
+- [Fragments](https://gohugo.io/methods/page/fragments/) `/methods/page/fragments/` — Returns a data structure of the fragments in the given page. _(modified 2026-05-31T13:39:09-07:00)_
+- [FuzzyWordCount](https://gohugo.io/methods/page/fuzzywordcount/) `/methods/page/fuzzywordcount/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2026-06-05T09:14:31-07:00)_
+- [GetPage](https://gohugo.io/methods/page/getpage/) `/methods/page/getpage/` — Returns a Page object from the given path. _(modified 2026-06-05T09:14:31-07:00)_
+- [GetTerms](https://gohugo.io/methods/page/getterms/) `/methods/page/getterms/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2025-04-10T13:04:51+02:00)_
+- [GitInfo](https://gohugo.io/methods/page/gitinfo/) `/methods/page/gitinfo/` — Provides access to commit metadata for a given page. _(modified 2026-06-05T09:14:31-07:00)_
+- [HasMenuCurrent](https://gohugo.io/methods/page/hasmenucurrent/) `/methods/page/hasmenucurrent/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2026-06-05T09:14:31-07:00)_
+- [HasShortcode](https://gohugo.io/methods/page/hasshortcode/) `/methods/page/hasshortcode/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2026-06-05T09:14:31-07:00)_
+- [HeadingsFiltered](https://gohugo.io/methods/page/headingsfiltered/) `/methods/page/headingsfiltered/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2026-06-05T09:14:31-07:00)_
+- [InSection](https://gohugo.io/methods/page/insection/) `/methods/page/insection/` — Reports whether the given page is in the given section. _(modified 2026-06-05T09:14:31-07:00)_
+- [IsAncestor](https://gohugo.io/methods/page/isancestor/) `/methods/page/isancestor/` — Reports whether PAGE1 is an ancestor of PAGE2. _(modified 2026-06-05T09:14:31-07:00)_
+- [IsBranch](https://gohugo.io/methods/page/isbranch/) `/methods/page/isbranch/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2026-06-08T07:53:30-07:00)_
+- [IsDescendant](https://gohugo.io/methods/page/isdescendant/) `/methods/page/isdescendant/` — Reports whether PAGE1 is a descendant of PAGE2. _(modified 2026-06-05T09:14:31-07:00)_
+- [IsHome](https://gohugo.io/methods/page/ishome/) `/methods/page/ishome/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2025-04-10T13:04:51+02:00)_
+- [IsMenuCurrent](https://gohugo.io/methods/page/ismenucurrent/) `/methods/page/ismenucurrent/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2026-06-05T09:14:31-07:00)_
+- [IsNode](https://gohugo.io/methods/page/isnode/) `/methods/page/isnode/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2026-06-08T07:53:30-07:00)_
+- [IsPage](https://gohugo.io/methods/page/ispage/) `/methods/page/ispage/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2025-04-10T13:04:51+02:00)_
+- [IsSection](https://gohugo.io/methods/page/issection/) `/methods/page/issection/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2025-04-10T13:04:51+02:00)_
+- [IsTranslated](https://gohugo.io/methods/page/istranslated/) `/methods/page/istranslated/` — Reports whether the given page has one or more translations. _(modified 2026-03-16T11:13:34-07:00)_
+- [Keywords](https://gohugo.io/methods/page/keywords/) `/methods/page/keywords/` — Returns a slice of keywords as defined in front matter. _(modified 2026-06-05T09:14:31-07:00)_
+- [Kind](https://gohugo.io/methods/page/kind/) `/methods/page/kind/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2025-04-10T13:04:51+02:00)_
+- [Language](https://gohugo.io/methods/page/language/) `/methods/page/language/` — Returns the Language object for the given page. _(modified 2026-06-05T09:14:31-07:00)_
+- [Lastmod](https://gohugo.io/methods/page/lastmod/) `/methods/page/lastmod/` — Returns the last modification date of the given page. _(modified 2026-06-05T09:14:31-07:00)_
+- [Layout](https://gohugo.io/methods/page/layout/) `/methods/page/layout/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2026-06-05T09:14:31-07:00)_
+- [Len](https://gohugo.io/methods/page/len/) `/methods/page/len/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2025-04-10T13:04:51+02:00)_
+- [LinkTitle](https://gohugo.io/methods/page/linktitle/) `/methods/page/linktitle/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2026-06-05T09:14:31-07:00)_
+- [Next](https://gohugo.io/methods/page/next/) `/methods/page/next/` — Returns the next page in a site’s collection of regular pages, relative to the current page. _(modified 2025-04-10T13:04:51+02:00)_
+- [NextInSection](https://gohugo.io/methods/page/nextinsection/) `/methods/page/nextinsection/` — Returns the next regular page in a section, relative to the given page. _(modified 2025-04-10T13:04:51+02:00)_
+- [OutputFormats](https://gohugo.io/methods/page/outputformats/) `/methods/page/outputformats/` — Returns a slice of OutputFormat objects, each representing one of the output formats enabled for the given page. _(modified 2026-06-05T10:13:37-07:00)_
+- [Page](https://gohugo.io/methods/page/page/) `/methods/page/page/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2025-08-23T12:39:28+02:00)_
+- [Pages](https://gohugo.io/methods/page/pages/) `/methods/page/pages/` — Returns a collection of regular pages within the current section, and section pages of immediate descendant sections. _(modified 2026-06-05T09:14:31-07:00)_
+- [Paginate](https://gohugo.io/methods/page/paginate/) `/methods/page/paginate/` — Paginates a collection of pages. _(modified 2026-06-05T09:14:31-07:00)_
+- [Paginator](https://gohugo.io/methods/page/paginator/) `/methods/page/paginator/` — Paginates the collection of regular pages received in context. _(modified 2026-06-05T09:14:31-07:00)_
+- [Param](https://gohugo.io/methods/page/param/) `/methods/page/param/` — Returns a page parameter with the given key, falling back to a site parameter if present. _(modified 2025-04-10T13:04:51+02:00)_
+- [Params](https://gohugo.io/methods/page/params/) `/methods/page/params/` — Returns a map of custom parameters as defined in the front matter of the given page. _(modified 2026-06-05T09:14:31-07:00)_
+- [Parent](https://gohugo.io/methods/page/parent/) `/methods/page/parent/` — Returns the Page object of the parent section of the given page. _(modified 2026-06-05T09:14:31-07:00)_
+- [Path](https://gohugo.io/methods/page/path/) `/methods/page/path/` — Returns the logical path of the given page. _(modified 2026-06-05T09:14:31-07:00)_
+- [Permalink](https://gohugo.io/methods/page/permalink/) `/methods/page/permalink/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2026-02-25T10:29:05+01:00)_
+- [Plain](https://gohugo.io/methods/page/plain/) `/methods/page/plain/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2026-06-05T09:14:31-07:00)_
+- [PlainWords](https://gohugo.io/methods/page/plainwords/) `/methods/page/plainwords/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2026-06-05T09:14:31-07:00)_
+- [Prev](https://gohugo.io/methods/page/prev/) `/methods/page/prev/` — Returns the previous page in a site’s collection of regular pages, relative to the current page. _(modified 2025-04-10T13:04:51+02:00)_
+- [PrevInSection](https://gohugo.io/methods/page/previnsection/) `/methods/page/previnsection/` — Returns the previous regular page in a section, relative to the given page. _(modified 2025-04-10T13:04:51+02:00)_
+- [PublishDate](https://gohugo.io/methods/page/publishdate/) `/methods/page/publishdate/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2026-06-05T09:14:31-07:00)_
+- [RawContent](https://gohugo.io/methods/page/rawcontent/) `/methods/page/rawcontent/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2026-06-05T09:14:31-07:00)_
+- [ReadingTime](https://gohugo.io/methods/page/readingtime/) `/methods/page/readingtime/` — Returns the estimated reading time, in minutes, for the given page. _(modified 2026-03-16T11:13:34-07:00)_
+- [Ref](https://gohugo.io/methods/page/ref/) `/methods/page/ref/` — Returns the absolute URL of the page with the given path, language, and output format. _(modified 2025-04-10T13:04:51+02:00)_
+- [RegularPages](https://gohugo.io/methods/page/regularpages/) `/methods/page/regularpages/` — Returns a collection of regular pages within the current section. _(modified 2026-06-05T09:14:31-07:00)_
+- [RegularPagesRecursive](https://gohugo.io/methods/page/regularpagesrecursive/) `/methods/page/regularpagesrecursive/` — Returns a collection of regular pages within the current section, and regular pages within all descendant sections. _(modified 2025-04-10T13:04:51+02:00)_
+- [RelPermalink](https://gohugo.io/methods/page/relpermalink/) `/methods/page/relpermalink/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2026-02-25T10:29:05+01:00)_
+- [RelRef](https://gohugo.io/methods/page/relref/) `/methods/page/relref/` — Returns the relative URL of the page with the given path, language, and output format. _(modified 2025-04-10T13:04:51+02:00)_
+- [Render](https://gohugo.io/methods/page/render/) `/methods/page/render/` — Renders the given template with the given page as context. _(modified 2026-06-05T09:14:31-07:00)_
+- [RenderShortcodes](https://gohugo.io/methods/page/rendershortcodes/) `/methods/page/rendershortcodes/` — Renders all shortcodes in the content of the given page, preserving the surrounding markup. _(modified 2025-08-23T12:39:28+02:00)_
+- [RenderString](https://gohugo.io/methods/page/renderstring/) `/methods/page/renderstring/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2026-06-05T09:14:31-07:00)_
+- [Resources](https://gohugo.io/methods/page/resources/) `/methods/page/resources/` — Returns a collection of page resources. _(modified 2026-06-05T09:14:31-07:00)_
+- [Rotate](https://gohugo.io/methods/page/rotate/) `/methods/page/rotate/` — Returns a collection of pages that vary along the specified dimension while sharing the current page’s values for the other dimensions, including the current page, sorted by the dimension’s default sort order. _(modified 2026-02-25T10:29:05+01:00)_
+- [Scratch](https://gohugo.io/methods/page/scratch/) `/methods/page/scratch/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2026-06-05T10:13:37-07:00)_
+- [Section](https://gohugo.io/methods/page/section/) `/methods/page/section/` — Returns the name of the top-level section in which the given page resides. _(modified 2026-06-05T09:14:31-07:00)_
+- [Sections](https://gohugo.io/methods/page/sections/) `/methods/page/sections/` — Returns a collection of section pages, one for each immediate descendant section of the given page. _(modified 2025-04-10T13:04:51+02:00)_
+- [Site](https://gohugo.io/methods/page/site/) `/methods/page/site/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2026-06-05T09:14:31-07:00)_
+- [Sitemap](https://gohugo.io/methods/page/sitemap/) `/methods/page/sitemap/` — Returns the sitemap settings for the given page as defined in front matter, falling back to the sitemap settings as defined in your project configuration. _(modified 2026-06-05T09:14:31-07:00)_
+- [Sites](https://gohugo.io/methods/page/sites/) `/methods/page/sites/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2026-06-05T10:13:37-07:00)_
+- [Slug](https://gohugo.io/methods/page/slug/) `/methods/page/slug/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2025-04-10T13:04:51+02:00)_
+- [Store](https://gohugo.io/methods/page/store/) `/methods/page/store/` — Returns a persistent data structure for storing and manipulating keyed values, scoped to the current page. _(modified 2026-05-28T12:03:21-07:00)_
+- [Summary](https://gohugo.io/methods/page/summary/) `/methods/page/summary/` — Returns the summary of the given page. _(modified 2026-06-05T09:14:31-07:00)_
+- [TableOfContents](https://gohugo.io/methods/page/tableofcontents/) `/methods/page/tableofcontents/` — Returns a table of contents for the given page. _(modified 2026-06-05T09:14:31-07:00)_
+- [Title](https://gohugo.io/methods/page/title/) `/methods/page/title/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2026-06-05T09:14:31-07:00)_
+- [TranslationKey](https://gohugo.io/methods/page/translationkey/) `/methods/page/translationkey/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2026-03-16T11:13:34-07:00)_
+- [Translations](https://gohugo.io/methods/page/translations/) `/methods/page/translations/` — Returns all translations of the given page, excluding the current language, sorted by language weight then language name. _(modified 2026-05-18T16:01:58-07:00)_
+- [Truncated](https://gohugo.io/methods/page/truncated/) `/methods/page/truncated/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2026-06-05T09:14:31-07:00)_
+- [Type](https://gohugo.io/methods/page/type/) `/methods/page/type/` — Returns the content type of the given page. _(modified 2026-06-05T09:14:31-07:00)_
+- [Weight](https://gohugo.io/methods/page/weight/) `/methods/page/weight/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2025-04-10T13:04:51+02:00)_
+- [WordCount](https://gohugo.io/methods/page/wordcount/) `/methods/page/wordcount/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2026-06-05T09:14:31-07:00)_
+- [Pager methods](https://gohugo.io/methods/pager/) `/methods/pager/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2026-02-25T10:29:05+01:00)_
+- [First](https://gohugo.io/methods/pager/first/) `/methods/pager/first/` — Returns the first pager in the pager collection. _(modified 2025-04-10T13:04:51+02:00)_
+- [HasNext](https://gohugo.io/methods/pager/hasnext/) `/methods/pager/hasnext/` — Reports whether there is a pager after the current pager. _(modified 2025-04-10T13:04:51+02:00)_
+- [HasPrev](https://gohugo.io/methods/pager/hasprev/) `/methods/pager/hasprev/` — Reports whether there is a pager before the current pager. _(modified 2025-04-10T13:04:51+02:00)_
+- [Last](https://gohugo.io/methods/pager/last/) `/methods/pager/last/` — Returns the last pager in the pager collection. _(modified 2025-04-10T13:04:51+02:00)_
+- [Next](https://gohugo.io/methods/pager/next/) `/methods/pager/next/` — Returns the next pager in the pager collection. _(modified 2025-04-10T13:04:51+02:00)_
+- [NumberOfElements](https://gohugo.io/methods/pager/numberofelements/) `/methods/pager/numberofelements/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2025-04-10T13:04:51+02:00)_
+- [PageGroups](https://gohugo.io/methods/pager/pagegroups/) `/methods/pager/pagegroups/` — Returns the page groups in the current pager. _(modified 2026-06-05T09:14:31-07:00)_
+- [PageNumber](https://gohugo.io/methods/pager/pagenumber/) `/methods/pager/pagenumber/` — Returns the current pager’s number within the pager collection. _(modified 2025-04-10T13:04:51+02:00)_
+- [Pagers](https://gohugo.io/methods/pager/pagers/) `/methods/pager/pagers/` — Returns the pagers collection. _(modified 2025-04-10T13:04:51+02:00)_
+- [PagerSize](https://gohugo.io/methods/pager/pagersize/) `/methods/pager/pagersize/` — Returns the number of pages per pager. _(modified 2026-06-05T09:14:31-07:00)_
+- [Pages](https://gohugo.io/methods/pager/pages/) `/methods/pager/pages/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2025-07-07T13:17:48+02:00)_
+- [Prev](https://gohugo.io/methods/pager/prev/) `/methods/pager/prev/` — Returns the previous pager in the pager collection. _(modified 2025-04-10T13:04:51+02:00)_
+- [TotalNumberOfElements](https://gohugo.io/methods/pager/totalnumberofelements/) `/methods/pager/totalnumberofelements/` — Hugo Documentation _(modified 2025-04-10T13:04:51+02:00)_
+- [TotalPages](https://gohugo.io/methods/pager/totalpages/) `/methods/pager/totalpages/` — Returns the number of pagers in the pager collection. _(modified 2025-04-10T13:04:51+02:00)_
+- [URL](https://gohugo.io/methods/pager/url/) `/methods/pager/url/` — Returns the URL of the current pager relative to the site root. _(modified 2025-04-10T13:04:51+02:00)_
+- [Pages methods](https://gohugo.io/methods/pages/) `/methods/pages/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2025-04-10T13:04:51+02:00)_
+- [ByDate](https://gohugo.io/methods/pages/bydate/) `/methods/pages/bydate/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2026-06-05T09:14:31-07:00)_
+- [ByExpiryDate](https://gohugo.io/methods/pages/byexpirydate/) `/methods/pages/byexpirydate/` — Returns the given page collection sorted by expiration date in ascending order. _(modified 2026-06-05T09:14:31-07:00)_
+- [ByLanguage](https://gohugo.io/methods/pages/bylanguage/) `/methods/pages/bylanguage/` — Returns the given page collection sorted by language. _(modified 2026-02-25T10:29:05+01:00)_
+- [ByLastmod](https://gohugo.io/methods/pages/bylastmod/) `/methods/pages/bylastmod/` — Returns the given page collection sorted by last modification date in ascending order. _(modified 2026-06-05T09:14:31-07:00)_
+- [ByLength](https://gohugo.io/methods/pages/bylength/) `/methods/pages/bylength/` — Hugo Documentation _(modified 2025-04-10T13:04:51+02:00)_
+- [ByLinkTitle](https://gohugo.io/methods/pages/bylinktitle/) `/methods/pages/bylinktitle/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2025-04-10T13:04:51+02:00)_
+- [ByParam](https://gohugo.io/methods/pages/byparam/) `/methods/pages/byparam/` — Returns the given page collection sorted by the given parameter in ascending order. _(modified 2026-02-25T10:29:05+01:00)_
+- [ByPublishDate](https://gohugo.io/methods/pages/bypublishdate/) `/methods/pages/bypublishdate/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2026-06-05T09:14:31-07:00)_
+- [ByTitle](https://gohugo.io/methods/pages/bytitle/) `/methods/pages/bytitle/` — Hugo Documentation _(modified 2025-04-10T13:04:51+02:00)_
+- [ByWeight](https://gohugo.io/methods/pages/byweight/) `/methods/pages/byweight/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2025-04-10T13:04:51+02:00)_
+- [GroupBy](https://gohugo.io/methods/pages/groupby/) `/methods/pages/groupby/` — Returns the given page collection grouped by the given field in ascending order. _(modified 2025-04-10T13:04:51+02:00)_
+- [GroupByDate](https://gohugo.io/methods/pages/groupbydate/) `/methods/pages/groupbydate/` — Returns the given page collection grouped by date in descending order. _(modified 2026-06-05T09:14:31-07:00)_
+- [GroupByExpiryDate](https://gohugo.io/methods/pages/groupbyexpirydate/) `/methods/pages/groupbyexpirydate/` — Returns the given page collection grouped by expiration date in descending order. _(modified 2026-06-05T09:14:31-07:00)_
+- [GroupByLastmod](https://gohugo.io/methods/pages/groupbylastmod/) `/methods/pages/groupbylastmod/` — Returns the given page collection grouped by last modification date in descending order. _(modified 2026-06-05T09:14:31-07:00)_
+- [GroupByParam](https://gohugo.io/methods/pages/groupbyparam/) `/methods/pages/groupbyparam/` — Returns the given page collection grouped by the given parameter in ascending order. _(modified 2025-04-10T13:04:51+02:00)_
+- [GroupByParamDate](https://gohugo.io/methods/pages/groupbyparamdate/) `/methods/pages/groupbyparamdate/` — Returns the given page collection grouped by the given date parameter in descending order. _(modified 2026-06-05T09:14:31-07:00)_
+- [GroupByPublishDate](https://gohugo.io/methods/pages/groupbypublishdate/) `/methods/pages/groupbypublishdate/` — Returns the given page collection grouped by publish date in descending order. _(modified 2026-06-05T09:14:31-07:00)_
+- [Len](https://gohugo.io/methods/pages/len/) `/methods/pages/len/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2025-04-10T13:04:51+02:00)_
+- [Limit](https://gohugo.io/methods/pages/limit/) `/methods/pages/limit/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2025-04-10T13:04:51+02:00)_
+- [Next](https://gohugo.io/methods/pages/next/) `/methods/pages/next/` — Returns the next page in a page collection, relative to the given page. _(modified 2025-04-10T13:04:51+02:00)_
+- [Prev](https://gohugo.io/methods/pages/prev/) `/methods/pages/prev/` — Returns the previous page in a page collection, relative to the given page. _(modified 2025-04-10T13:04:51+02:00)_
+- [Related](https://gohugo.io/methods/pages/related/) `/methods/pages/related/` — Returns a collection of pages related to the given page. _(modified 2026-06-05T09:14:31-07:00)_
+- [Reverse](https://gohugo.io/methods/pages/reverse/) `/methods/pages/reverse/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2025-04-10T13:04:51+02:00)_
+- [Resource methods](https://gohugo.io/methods/resource/) `/methods/resource/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2026-02-25T10:29:05+01:00)_
+- [Colors](https://gohugo.io/methods/resource/colors/) `/methods/resource/colors/` — HUGO News Docs Themes Community GitHub Built with Hugo v0.163.0 _(modified 2026-05-28T11:02:30-07:00)_
+- [Content](https://gohugo.io/methods/resource/content/) `/methods/resource/content/` — Returns the content of the given resource. _(modified 2026-06-05T09:14:31-07:00)_
+- [Crop](https://gohugo.io/methods/resource/crop/) `/methods/resource/crop/` — Applicable to images, returns a new image resource cropped according to the given processing specification. _(modified 2026-06-05T09:14:31-07:00)_
+- [Data](https://gohugo.io/methods/resource/data/) `/methods/resource/data/` — Applicable to resources returned by the resources.GetRemote function, returns information from the HTTP response. _(modified 2026-06-05T09:14:31-07:00)_
+- [Err](https://gohugo.io/methods/resource/err/) `/methods/resource/err/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2026-06-05T10:13:37-07:00)_
+- [Exif](https://gohugo.io/methods/resource/exif/) `/methods/resource/exif/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2026-06-05T10:13:37-07:00)_
+- [Fill](https://gohugo.io/methods/resource/fill/) `/methods/resource/fill/` — Applicable to images, returns a new image resource cropped and resized according to the given processing specification. _(modified 2026-06-05T09:14:31-07:00)_
+- [Filter](https://gohugo.io/methods/resource/filter/) `/methods/resource/filter/` — Applicable to images, applies one or more image filters to the given image resource. _(modified 2026-02-27T08:51:14-08:00)_
+- [Fit](https://gohugo.io/methods/resource/fit/) `/methods/resource/fit/` — Applicable to images, returns a new image resource downscaled to fit according to the given processing specification. _(modified 2026-06-05T09:14:31-07:00)_
+- [Height](https://gohugo.io/methods/resource/height/) `/methods/resource/height/` — Applicable to images, returns the height of the given resource. _(modified 2026-02-27T08:51:14-08:00)_
+- [MediaType](https://gohugo.io/methods/resource/mediatype/) `/methods/resource/mediatype/` — Returns a media type object for the given resource. _(modified 2026-05-28T11:02:30-07:00)_
+- [Meta](https://gohugo.io/methods/resource/meta/) `/methods/resource/meta/` — Applicable to images, returns an object containing Exif, IPTC, and XMP metadata for supported image formats. _(modified 2026-06-05T09:14:31-07:00)_
+- [Name](https://gohugo.io/methods/resource/name/) `/methods/resource/name/` — Returns the name of the given resource as optionally defined in front matter, falling back to its file path. _(modified 2025-08-23T12:39:28+02:00)_
+- [Params](https://gohugo.io/methods/resource/params/) `/methods/resource/params/` — Returns a map of resource parameters as defined in front matter. _(modified 2026-06-05T09:14:31-07:00)_
+- [Permalink](https://gohugo.io/methods/resource/permalink/) `/methods/resource/permalink/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2025-04-10T13:04:51+02:00)_
+- [Process](https://gohugo.io/methods/resource/process/) `/methods/resource/process/` — Applicable to images, returns a new image resource processed according to the given processing specification. _(modified 2026-06-05T09:14:31-07:00)_
+- [Publish](https://gohugo.io/methods/resource/publish/) `/methods/resource/publish/` — Publishes the given resource. _(modified 2025-04-10T13:04:51+02:00)_
+- [RelPermalink](https://gohugo.io/methods/resource/relpermalink/) `/methods/resource/relpermalink/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2025-04-10T13:04:51+02:00)_
+- [Resize](https://gohugo.io/methods/resource/resize/) `/methods/resource/resize/` — Applicable to images, returns a new image resource resized according to the given processing specification. _(modified 2026-06-05T09:14:31-07:00)_
+- [ResourceType](https://gohugo.io/methods/resource/resourcetype/) `/methods/resource/resourcetype/` — Returns the main type of the given resource’s media type. _(modified 2025-07-07T13:17:48+02:00)_
+- [Title](https://gohugo.io/methods/resource/title/) `/methods/resource/title/` — Returns the title of the given resource as optionally defined in front matter, falling back to a relative path or hashed file name depending on resource type. _(modified 2025-04-10T13:04:51+02:00)_
+- [Width](https://gohugo.io/methods/resource/width/) `/methods/resource/width/` — Applicable to images, returns the width of the given resource. _(modified 2026-02-27T08:51:14-08:00)_
+- [Shortcode methods](https://gohugo.io/methods/shortcode/) `/methods/shortcode/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2025-04-10T13:04:51+02:00)_
+- [Get](https://gohugo.io/methods/shortcode/get/) `/methods/shortcode/get/` — Returns the value of the given argument. _(modified 2025-07-07T13:17:48+02:00)_
+- [Inner](https://gohugo.io/methods/shortcode/inner/) `/methods/shortcode/inner/` — Returns the content between opening and closing shortcode tags, applicable when the shortcode call includes a closing tag. _(modified 2026-06-05T09:14:31-07:00)_
+- [InnerDeindent](https://gohugo.io/methods/shortcode/innerdeindent/) `/methods/shortcode/innerdeindent/` — Returns the content between opening and closing shortcode tags, with indentation removed, applicable when the shortcode call includes a closing tag. _(modified 2026-06-05T09:14:31-07:00)_
+- [IsNamedParams](https://gohugo.io/methods/shortcode/isnamedparams/) `/methods/shortcode/isnamedparams/` — Reports whether the shortcode call uses named arguments. _(modified 2025-08-23T12:39:28+02:00)_
+- [Name](https://gohugo.io/methods/shortcode/name/) `/methods/shortcode/name/` — Returns the shortcode file name, excluding the file extension. _(modified 2025-07-07T13:17:48+02:00)_
+- [Ordinal](https://gohugo.io/methods/shortcode/ordinal/) `/methods/shortcode/ordinal/` — Returns the zero-based ordinal of the shortcode in relation to its parent. _(modified 2026-06-05T09:14:31-07:00)_
+- [Page](https://gohugo.io/methods/shortcode/page/) `/methods/shortcode/page/` — Returns the Page object from which the shortcode was called. _(modified 2025-07-07T13:17:48+02:00)_
+- [Params](https://gohugo.io/methods/shortcode/params/) `/methods/shortcode/params/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2025-07-07T13:17:48+02:00)_
+- [Parent](https://gohugo.io/methods/shortcode/parent/) `/methods/shortcode/parent/` — Returns the parent shortcode context in nested shortcodes. _(modified 2025-07-07T13:17:48+02:00)_
+- [Position](https://gohugo.io/methods/shortcode/position/) `/methods/shortcode/position/` — Returns the file name and position from which the shortcode was called. _(modified 2025-07-07T13:17:48+02:00)_
+- [Ref](https://gohugo.io/methods/shortcode/ref/) `/methods/shortcode/ref/` — Returns the absolute URL of the page with the given path, language, and output format. _(modified 2025-04-10T13:04:51+02:00)_
+- [RelRef](https://gohugo.io/methods/shortcode/relref/) `/methods/shortcode/relref/` — Returns the relative URL of the page with the given path, language, and output format. _(modified 2025-04-10T13:04:51+02:00)_
+- [Scratch](https://gohugo.io/methods/shortcode/scratch/) `/methods/shortcode/scratch/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2026-06-05T10:13:37-07:00)_
+- [Site](https://gohugo.io/methods/shortcode/site/) `/methods/shortcode/site/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2026-06-05T09:14:31-07:00)_
+- [Store](https://gohugo.io/methods/shortcode/store/) `/methods/shortcode/store/` — Returns a persistent data structure for storing and manipulating keyed values, scoped to the current shortcode. _(modified 2026-06-05T09:14:31-07:00)_
+- [Site methods](https://gohugo.io/methods/site/) `/methods/site/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2026-02-25T10:29:05+01:00)_
+- [AllPages](https://gohugo.io/methods/site/allpages/) `/methods/site/allpages/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2026-06-05T10:13:37-07:00)_
+- [BaseURL](https://gohugo.io/methods/site/baseurl/) `/methods/site/baseurl/` — Returns the base URL as defined in your project configuration. _(modified 2026-06-05T09:14:31-07:00)_
+- [BuildDrafts](https://gohugo.io/methods/site/builddrafts/) `/methods/site/builddrafts/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2026-06-05T10:13:37-07:00)_
+- [Config](https://gohugo.io/methods/site/config/) `/methods/site/config/` — Returns a subset of your project configuration. _(modified 2026-05-31T13:39:09-07:00)_
+- [Copyright](https://gohugo.io/methods/site/copyright/) `/methods/site/copyright/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2026-02-25T10:29:05+01:00)_
+- [Data](https://gohugo.io/methods/site/data/) `/methods/site/data/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2026-06-05T10:13:37-07:00)_
+- [Dimension](https://gohugo.io/methods/site/dimension/) `/methods/site/dimension/` — Returns the dimension object for the given dimension for the given site. _(modified 2026-02-25T10:29:05+01:00)_
+- [GetPage](https://gohugo.io/methods/site/getpage/) `/methods/site/getpage/` — Returns a Page object from the given path. _(modified 2026-06-05T09:14:31-07:00)_
+- [Home](https://gohugo.io/methods/site/home/) `/methods/site/home/` — Returns the home Page object for the given site. _(modified 2026-02-25T10:29:05+01:00)_
+- [IsDefault](https://gohugo.io/methods/site/isdefault/) `/methods/site/isdefault/` — Reports whether the given site is the default site across all dimensions. _(modified 2026-03-16T11:13:34-07:00)_
+- [Language](https://gohugo.io/methods/site/language/) `/methods/site/language/` — Returns the Language object for the given site. _(modified 2026-06-05T09:14:31-07:00)_
+- [LanguagePrefix](https://gohugo.io/methods/site/languageprefix/) `/methods/site/languageprefix/` — Returns the URL language prefix, if any, for the given site. _(modified 2026-03-16T11:13:34-07:00)_
+- [Languages](https://gohugo.io/methods/site/languages/) `/methods/site/languages/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2026-06-05T10:13:37-07:00)_
+- [Lastmod](https://gohugo.io/methods/site/lastmod/) `/methods/site/lastmod/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2026-06-05T09:14:31-07:00)_
+- [MainSections](https://gohugo.io/methods/site/mainsections/) `/methods/site/mainsections/` — Returns a slice of the main section names as defined in your project configuration, falling back to the top-level section with the most pages. _(modified 2026-05-18T16:01:58-07:00)_
+- [Menus](https://gohugo.io/methods/site/menus/) `/methods/site/menus/` — Returns a collection of menu objects for the given site. _(modified 2026-06-05T09:14:31-07:00)_
+- [Pages](https://gohugo.io/methods/site/pages/) `/methods/site/pages/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2026-06-05T09:14:31-07:00)_
+- [Param](https://gohugo.io/methods/site/param/) `/methods/site/param/` — Returns the site parameter with the given key. _(modified 2026-02-25T10:29:05+01:00)_
+- [Params](https://gohugo.io/methods/site/params/) `/methods/site/params/` — Returns a map of custom parameters as defined in your project configuration. _(modified 2026-06-05T09:14:31-07:00)_
+- [RegularPages](https://gohugo.io/methods/site/regularpages/) `/methods/site/regularpages/` — Returns a collection of all regular pages. _(modified 2026-06-05T09:14:31-07:00)_
+- [Role](https://gohugo.io/methods/site/role/) `/methods/site/role/` — Returns the Role object for the given site. _(modified 2026-05-28T11:02:30-07:00)_
+- [Sections](https://gohugo.io/methods/site/sections/) `/methods/site/sections/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2025-04-10T13:04:51+02:00)_
+- [Sites](https://gohugo.io/methods/site/sites/) `/methods/site/sites/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2026-06-05T10:13:37-07:00)_
+- [Store](https://gohugo.io/methods/site/store/) `/methods/site/store/` — Returns a persistent data structure for storing and manipulating keyed values, scoped to the current site. _(modified 2026-05-28T12:03:21-07:00)_
+- [Taxonomies](https://gohugo.io/methods/site/taxonomies/) `/methods/site/taxonomies/` — Returns a data structure containing the site’s Taxonomy objects, the terms within each Taxonomy object, and the pages to which the terms are assigned. _(modified 2026-05-31T13:39:09-07:00)_
+- [Title](https://gohugo.io/methods/site/title/) `/methods/site/title/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2026-02-25T10:29:05+01:00)_
+- [Version](https://gohugo.io/methods/site/version/) `/methods/site/version/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2026-05-28T11:02:30-07:00)_
+- [Taxonomy methods](https://gohugo.io/methods/taxonomy/) `/methods/taxonomy/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2026-02-25T10:29:05+01:00)_
+- [Alphabetical](https://gohugo.io/methods/taxonomy/alphabetical/) `/methods/taxonomy/alphabetical/` — Returns an ordered taxonomy, sorted alphabetically by term. _(modified 2025-04-10T13:04:51+02:00)_
+- [ByCount](https://gohugo.io/methods/taxonomy/bycount/) `/methods/taxonomy/bycount/` — Returns an ordered taxonomy, sorted by the number of pages associated with each term. _(modified 2025-12-19T10:07:30+01:00)_
+- [Count](https://gohugo.io/methods/taxonomy/count/) `/methods/taxonomy/count/` — Returns the number of number of weighted pages to which the given term has been assigned. _(modified 2026-05-18T16:01:58-07:00)_
+- [Get](https://gohugo.io/methods/taxonomy/get/) `/methods/taxonomy/get/` — Returns a slice of weighted pages to which the given term has been assigned. _(modified 2026-06-05T09:14:31-07:00)_
+- [Page](https://gohugo.io/methods/taxonomy/page/) `/methods/taxonomy/page/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2026-02-14T12:14:33+01:00)_
+- [Time methods](https://gohugo.io/methods/time/) `/methods/time/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2026-02-25T10:29:05+01:00)_
+- [Add](https://gohugo.io/methods/time/add/) `/methods/time/add/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2025-04-10T13:04:51+02:00)_
+- [AddDate](https://gohugo.io/methods/time/adddate/) `/methods/time/adddate/` — Returns the time corresponding to adding the given number of years, months, and days to the given time.Time value. _(modified 2026-06-05T09:14:31-07:00)_
+- [After](https://gohugo.io/methods/time/after/) `/methods/time/after/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2025-04-10T13:04:51+02:00)_
+- [Before](https://gohugo.io/methods/time/before/) `/methods/time/before/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2025-04-10T13:04:51+02:00)_
+- [Day](https://gohugo.io/methods/time/day/) `/methods/time/day/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2025-04-10T13:04:51+02:00)_
+- [Equal](https://gohugo.io/methods/time/equal/) `/methods/time/equal/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2025-04-10T13:04:51+02:00)_
+- [Format](https://gohugo.io/methods/time/format/) `/methods/time/format/` — Returns a textual representation of the time.Time value formatted according to the layout string. _(modified 2026-05-31T13:39:09-07:00)_
+- [Hour](https://gohugo.io/methods/time/hour/) `/methods/time/hour/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2025-04-10T13:04:51+02:00)_
+- [IsDST](https://gohugo.io/methods/time/isdst/) `/methods/time/isdst/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2025-04-10T13:04:51+02:00)_
+- [IsZero](https://gohugo.io/methods/time/iszero/) `/methods/time/iszero/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2025-04-10T13:04:51+02:00)_
+- [Local](https://gohugo.io/methods/time/local/) `/methods/time/local/` — Hugo Documentation _(modified 2025-04-10T13:04:51+02:00)_
+- [Minute](https://gohugo.io/methods/time/minute/) `/methods/time/minute/` — Hugo Documentation _(modified 2025-04-10T13:04:51+02:00)_
+- [Month](https://gohugo.io/methods/time/month/) `/methods/time/month/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2025-04-10T13:04:51+02:00)_
+- [Nanosecond](https://gohugo.io/methods/time/nanosecond/) `/methods/time/nanosecond/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2025-04-10T13:04:51+02:00)_
+- [Round](https://gohugo.io/methods/time/round/) `/methods/time/round/` — Returns the result of rounding TIME to the nearest multiple of DURATION since January 1, 0001, 00:00:00 UTC. _(modified 2025-08-23T12:39:28+02:00)_
+- [Second](https://gohugo.io/methods/time/second/) `/methods/time/second/` — Hugo Documentation _(modified 2025-04-10T13:04:51+02:00)_
+- [Sub](https://gohugo.io/methods/time/sub/) `/methods/time/sub/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2025-04-10T13:04:51+02:00)_
+- [Truncate](https://gohugo.io/methods/time/truncate/) `/methods/time/truncate/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2025-08-23T12:39:28+02:00)_
+- [Unix](https://gohugo.io/methods/time/unix/) `/methods/time/unix/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2026-06-05T09:14:31-07:00)_
+- [UnixMicro](https://gohugo.io/methods/time/unixmicro/) `/methods/time/unixmicro/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2026-06-05T09:14:31-07:00)_
+- [UnixMilli](https://gohugo.io/methods/time/unixmilli/) `/methods/time/unixmilli/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2026-06-05T09:14:31-07:00)_
+- [UnixNano](https://gohugo.io/methods/time/unixnano/) `/methods/time/unixnano/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2026-06-05T09:14:31-07:00)_
+- [UTC](https://gohugo.io/methods/time/utc/) `/methods/time/utc/` — Hugo Documentation _(modified 2025-04-10T13:04:51+02:00)_
+- [Weekday](https://gohugo.io/methods/time/weekday/) `/methods/time/weekday/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2025-04-10T13:04:51+02:00)_
+- [Year](https://gohugo.io/methods/time/year/) `/methods/time/year/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2025-04-10T13:04:51+02:00)_
+- [YearDay](https://gohugo.io/methods/time/yearday/) `/methods/time/yearday/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2025-04-10T13:04:51+02:00)_
+
+## quick-reference
+
+- [Quick reference guides](https://gohugo.io/quick-reference/) `/quick-reference/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2025-04-10T13:04:51+02:00)_
+- [Emojis](https://gohugo.io/quick-reference/emojis/) `/quick-reference/emojis/` — Include emoji shortcodes in your Markdown or templates. _(modified 2026-06-05T09:14:31-07:00)_
+- [Functions](https://gohugo.io/quick-reference/functions/) `/quick-reference/functions/` — A quick reference guide to Hugo’s functions, grouped by namespace. Aliases, if any, appear in parentheses to the right of the function name. _(modified 2025-04-10T13:04:51+02:00)_
+- [Glob patterns](https://gohugo.io/quick-reference/glob-patterns/) `/quick-reference/glob-patterns/` — A quick reference guide to glob pattern syntax and matching rules for wildcards, character sets, and delimiters, featuring illustrative examples. _(modified 2026-02-14T12:14:33+01:00)_
+- [Glossary](https://gohugo.io/quick-reference/glossary/) `/quick-reference/glossary/` — Terms commonly used throughout the documentation. _(modified 2025-07-07T13:17:48+02:00)_
+- [Methods](https://gohugo.io/quick-reference/methods/) `/quick-reference/methods/` — A quick reference guide to Hugo’s methods, grouped by object. _(modified 2025-04-10T13:04:51+02:00)_
+- [Page collections](https://gohugo.io/quick-reference/page-collections/) `/quick-reference/page-collections/` — A quick reference guide to Hugo’s page collections. _(modified 2026-02-27T08:51:14-08:00)_
+- [Syntax highlighting styles](https://gohugo.io/quick-reference/syntax-highlighting-styles/) `/quick-reference/syntax-highlighting-styles/` — Highlight code examples using one of these styles. _(modified 2026-06-05T09:14:31-07:00)_
+
+## render-hooks
+
+- [Render hooks](https://gohugo.io/render-hooks/) `/render-hooks/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2025-08-23T12:39:28+02:00)_
+- [Blockquote render hooks](https://gohugo.io/render-hooks/blockquotes/) `/render-hooks/blockquotes/` — Create blockquote render hook templates to override the rendering of Markdown blockquotes to HTML. _(modified 2026-06-05T09:14:31-07:00)_
+- [Code block render hooks](https://gohugo.io/render-hooks/code-blocks/) `/render-hooks/code-blocks/` — Create code block render hook templates to override the rendering of Markdown code blocks to HTML. _(modified 2026-06-05T09:14:31-07:00)_
+- [Heading render hooks](https://gohugo.io/render-hooks/headings/) `/render-hooks/headings/` — Create heading render hook templates to override the rendering of Markdown headings to HTML. _(modified 2026-06-05T10:13:37-07:00)_
+- [Image render hooks](https://gohugo.io/render-hooks/images/) `/render-hooks/images/` — Create image render hook templates to override the rendering of Markdown images to HTML. _(modified 2026-06-05T09:14:31-07:00)_
+- [Introduction](https://gohugo.io/render-hooks/introduction/) `/render-hooks/introduction/` — An introduction to Hugo’s render hooks. _(modified 2026-06-05T09:14:31-07:00)_
+- [Link render hooks](https://gohugo.io/render-hooks/links/) `/render-hooks/links/` — Create a link render hook to override the rendering of Markdown links to HTML. _(modified 2026-06-05T09:14:31-07:00)_
+- [Passthrough render hooks](https://gohugo.io/render-hooks/passthrough/) `/render-hooks/passthrough/` — Create passthrough render hook templates to override the rendering of text snippets captured by the Goldmark Passthrough extension. _(modified 2026-06-08T07:53:30-07:00)_
+- [Table render hooks](https://gohugo.io/render-hooks/tables/) `/render-hooks/tables/` — HUGO News Docs Themes Community GitHub Built with Hugo v0.163.0 _(modified 2026-06-05T09:14:31-07:00)_
+
+## shortcodes
+
+- [Shortcodes](https://gohugo.io/shortcodes/) `/shortcodes/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2025-04-10T13:04:51+02:00)_
+- [Details shortcode](https://gohugo.io/shortcodes/details/) `/shortcodes/details/` — Insert an HTML details element into your content using the details shortcode. _(modified 2026-06-05T09:14:31-07:00)_
+- [Figure shortcode](https://gohugo.io/shortcodes/figure/) `/shortcodes/figure/` — Insert an HTML figure element into your content using the figure shortcode. _(modified 2026-06-05T09:14:31-07:00)_
+- [Highlight shortcode](https://gohugo.io/shortcodes/highlight/) `/shortcodes/highlight/` — Insert syntax-highlighted code into your content using the highlight shortcode. _(modified 2026-06-05T09:14:31-07:00)_
+- [Instagram shortcode](https://gohugo.io/shortcodes/instagram/) `/shortcodes/instagram/` — Embed an Instagram post in your content using the instagram shortcode. _(modified 2026-06-05T09:14:31-07:00)_
+- [Param shortcode](https://gohugo.io/shortcodes/param/) `/shortcodes/param/` — Insert a parameter from front matter or your project configuration into your content using the param shortcode. _(modified 2026-06-05T09:14:31-07:00)_
+- [QR shortcode](https://gohugo.io/shortcodes/qr/) `/shortcodes/qr/` — Insert a QR code into your content using the qr shortcode. _(modified 2026-06-05T09:14:31-07:00)_
+- [Ref shortcode](https://gohugo.io/shortcodes/ref/) `/shortcodes/ref/` — Insert a permalink to the given page reference using the ref shortcode. _(modified 2026-06-05T09:14:31-07:00)_
+- [Relref shortcode](https://gohugo.io/shortcodes/relref/) `/shortcodes/relref/` — Insert a relative permalink to the given page reference using the relref shortcode. _(modified 2026-06-05T09:14:31-07:00)_
+- [Vimeo shortcode](https://gohugo.io/shortcodes/vimeo/) `/shortcodes/vimeo/` — Embed a Vimeo video in your content using the vimeo shortcode. _(modified 2026-06-05T09:14:31-07:00)_
+- [X shortcode](https://gohugo.io/shortcodes/x/) `/shortcodes/x/` — Embed an X post in your content using the x shortcode. _(modified 2026-06-05T09:14:31-07:00)_
+- [YouTube shortcode](https://gohugo.io/shortcodes/youtube/) `/shortcodes/youtube/` — Embed a YouTube video in your content using the youtube shortcode. _(modified 2026-05-31T13:39:09-07:00)_
+
+## templates
+
+- [Templates](https://gohugo.io/templates/) `/templates/` — Built with Hugo [v0.163.0](https://github.com/gohugoio/hugo/releases/tag/v0.163.0) _(modified 2025-04-10T13:04:51+02:00)_
+- [Custom 404 page](https://gohugo.io/templates/404/) `/templates/404/` — Create a template to render a 404 error page. _(modified 2026-06-05T09:14:31-07:00)_
+- [Embedded partial templates](https://gohugo.io/templates/embedded/) `/templates/embedded/` — Hugo provides embedded partial templates for common use cases. _(modified 2026-06-05T09:14:31-07:00)_
+- [Introduction to templating](https://gohugo.io/templates/introduction/) `/templates/introduction/` — An introduction to Hugo’s templating syntax. _(modified 2026-06-05T09:14:31-07:00)_
+- [Template lookup order](https://gohugo.io/templates/lookup-order/) `/templates/lookup-order/` — Hugo uses the rules below to select a template for a given page, starting from the most specific. _(modified 2025-07-07T13:17:48+02:00)_
+- [Menu templates](https://gohugo.io/templates/menu/) `/templates/menu/` — Create templates to render one or more menus. _(modified 2026-06-05T09:14:31-07:00)_
+- [New template system in Hugo v0.146.0](https://gohugo.io/templates/new-templatesystem-overview/) `/templates/new-templatesystem-overview/` — Overview of the new template system in Hugo v0.146.0. _(modified 2026-06-05T09:14:31-07:00)_
+- [Pagination](https://gohugo.io/templates/pagination/) `/templates/pagination/` — Split a list page into two or more subsets. _(modified 2026-06-05T09:14:31-07:00)_
+- [Partial decorators](https://gohugo.io/templates/partial-decorators/) `/templates/partial-decorators/` — Use partial decorators to create reusable wrapper components that enclose and compose template content. _(modified 2026-06-05T10:13:37-07:00)_
+- [robots.txt template](https://gohugo.io/templates/robots/) `/templates/robots/` — Hugo can generate a customized robots.txt in the same way as any other template. _(modified 2026-06-05T09:14:31-07:00)_
+- [RSS templates](https://gohugo.io/templates/rss/) `/templates/rss/` — Use the embedded RSS template, or create your own. _(modified 2026-06-05T09:14:31-07:00)_
+- [Shortcode templates](https://gohugo.io/templates/shortcode/) `/templates/shortcode/` — Create custom shortcodes to simplify and standardize content creation. _(modified 2026-06-05T09:14:31-07:00)_
+- [Sitemap templates](https://gohugo.io/templates/sitemap/) `/templates/sitemap/` — Hugo provides built-in sitemap templates. _(modified 2026-05-31T13:39:09-07:00)_
+- [Template types](https://gohugo.io/templates/types/) `/templates/types/` — Create templates of different types to render your content, resources, and data. _(modified 2026-06-05T09:14:31-07:00)_
