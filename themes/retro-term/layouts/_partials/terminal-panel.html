@@ -1,15 +1,20 @@
-{{- $title := default "terminal" .title -}}
-{{- $prompt := default "guest@retro-term:~$" .prompt -}}
-{{- $lines := default (slice "status --all" "ready.") .lines -}}
-<section class="terminal-panel sl" aria-label="{{ $title }}">
-  <div class="terminal-panel__chrome">
-    <span>{{ $title }}</span>
-    <span>tty0</span>
-  </div>
-  <ol class="terminal-panel__lines">
-    {{- range $lines }}
-      <li><span class="terminal-panel__prompt">{{ $prompt }}</span> {{ . }}</li>
-    {{- end }}
-    <li><span class="terminal-panel__prompt">{{ $prompt }}</span> <span class="cursor" aria-hidden="true">_</span></li>
-  </ol>
+{{- $title := default "terminal" .title -}} {{- $prompt := default
+"guest@retro-term:~$" .prompt -}} {{- $lines := default (slice "status --all"
+"ready.") .lines -}}
+<section class="terminal-panel" aria-label="{{ $title }}">
+    <div class="terminal-panel__chrome">
+        <span>{{ $title }}</span>
+        <span>tty0</span>
+    </div>
+    <ol class="terminal-panel__lines">
+        {{- range $lines }}
+        <li>
+            <span class="terminal-panel__prompt">{{ $prompt }}</span> {{ . }}
+        </li>
+        {{- end }}
+        <li>
+            <span class="terminal-panel__prompt">{{ $prompt }}</span>
+            <span class="cursor" aria-hidden="true">_</span>
+        </li>
+    </ol>
 </section>

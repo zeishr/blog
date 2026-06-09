@@ -5,22 +5,6 @@
     clip-path: var(--rt-chamfer-lg);
 }
 
-.site-header__status {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    gap: var(--rt-step-sm) var(--rt-step-md);
-    padding: var(--rt-step-sm) var(--rt-card-padding);
-    color: var(--rt-text-secondary);
-    font-family: var(--rt-font-system);
-    font-size: 0.62rem;
-    line-height: 1.4;
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-    border-block-end: 1px solid var(--rt-border-primary);
-}
-
 .status-chip {
     display: inline-flex;
     align-items: center;

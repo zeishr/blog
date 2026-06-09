@@ -52,9 +52,8 @@ enableRobotsTXT = true
   author = 'Abel'
   description = 'A technical blog and portfolio for systems, security, and software architecture notes.'
   terminalPrompt = 'guest@retro-term:~$'
-  statusLabel = 'system online'
-  statusCode = '0x2A'
-  buildLabel = 'hugo v0.162.1 extended'
+
+  buildLabel = ''
 
   [params.home]
     eyebrow = 'retro-futurist technical log'

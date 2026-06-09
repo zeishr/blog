@@ -1,6 +1,6 @@
 {{ define "main" }} {{- $pages := .Pages.ByDate.Reverse -}} {{- $paginator :=
 .Paginate $pages -}}
-<section class="list-header sl" aria-labelledby="term-title">
+<section class="list-header" aria-labelledby="term-title">
     <p class="eyebrow">filtered archive</p>
     <h1 id="term-title">#{{ .Title }}</h1>
     {{ with .Content }}

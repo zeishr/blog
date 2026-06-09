@@ -1,6 +1,6 @@
 {{ define "main" }}
   <article class="article-shell">
-    <header class="article-header sl">
+    <header class="article-header">
       <p class="eyebrow">{{ with .Params.kicker }}{{ . }}{{ else }}{{ default "page" .Section }}{{ end }}</p>
       <h1>{{ .Title }}</h1>
       {{ with .Description }}<p class="article-header__summary">{{ . }}</p>{{ end }}

@@ -1,6 +1,6 @@
 {{ define "main" }} {{- $pages := .Pages.ByDate.Reverse -}} {{- $paginator :=
 .Paginate $pages -}}
-<section class="list-header sl" aria-labelledby="section-title">
+<section class="list-header" aria-labelledby="section-title">
     <p class="eyebrow">{{ default "archive" .Section }}</p>
     <h1 id="section-title">{{ .Title }}</h1>
     {{ with .Description }}

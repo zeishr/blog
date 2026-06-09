@@ -1,37 +1,55 @@
 :root {
-  color-scheme: dark;
-  --rt-surface: #131313;
-  --rt-surface-deep: #0c0c0c;
-  --rt-surface-base: #191919;
-  --rt-surface-card: #1d1d1d;
-  --rt-surface-elevated: #232323;
-  --rt-surface-bright: #3a3939;
-  --rt-border-primary: #252525;
-  --rt-border-muted: #363636;
-  --rt-outline: #9d8f7a;
-  --rt-outline-variant: #504534;
-  --rt-text-primary: #f0ede6;
-  --rt-text-secondary: #87847f;
-  --rt-text-muted: #4c4946;
-  --rt-primary: #e6a817;
-  --rt-primary-bright: #ffc553;
-  --rt-on-primary: #412d00;
-  --rt-tertiary: #6be3b2;
-  --rt-error: #d64b4b;
-  --rt-info: #5ba0c8;
-  --rt-primary-rgb: 230 168 23;
-  --rt-tertiary-rgb: 107 227 178;
-  --rt-error-rgb: 214 75 75;
-  --rt-font-prose: "Hanken Grotesk", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  --rt-font-system: "JetBrains Mono", "SFMono-Regular", Consolas, "Liberation Mono", monospace;
-  --rt-step-xs: 4px;
-  --rt-step-sm: 8px;
-  --rt-step-md: 16px;
-  --rt-step-lg: 24px;
-  --rt-page-margin: 22px;
-  --rt-card-padding: 14px;
-  --rt-max-width: 1180px;
-  --rt-readable-width: 760px;
-  --rt-chamfer-sm: polygon(6px 0, calc(100% - 6px) 0, 100% 6px, 100% calc(100% - 6px), calc(100% - 6px) 100%, 6px 100%, 0 calc(100% - 6px), 0 6px);
-  --rt-chamfer-lg: polygon(10px 0, calc(100% - 10px) 0, 100% 10px, 100% calc(100% - 10px), calc(100% - 10px) 100%, 10px 100%, 0 calc(100% - 10px), 0 10px);
+    color-scheme: dark;
+    --rt-surface: #131313;
+    --rt-surface-deep: #0c0c0c;
+    --rt-surface-base: #191919;
+    --rt-surface-card: #1d1d1d;
+    --rt-surface-elevated: #232323;
+    --rt-surface-bright: #3a3939;
+    --rt-border-primary: #252525;
+    --rt-border-muted: #363636;
+    --rt-outline: #9d8f7a;
+    --rt-outline-variant: #504534;
+    --rt-text-primary: #f0ede6;
+    --rt-text-secondary: #87847f;
+    --rt-text-muted: #4c4946;
+    --rt-primary: #e6a817;
+    --rt-primary-bright: #ffc553;
+    --rt-on-primary: #412d00;
+    --rt-tertiary: #6be3b2;
+    --rt-error: #d64b4b;
+    --rt-info: #5ba0c8;
+    --rt-primary-rgb: 230 168 23;
+    --rt-tertiary-rgb: 107 227 178;
+    --rt-error-rgb: 214 75 75;
+    --rt-font-prose:
+        "Hanken Grotesk", ui-sans-serif, system-ui, -apple-system,
+        BlinkMacSystemFont, "Segoe UI", sans-serif;
+    --rt-font-system:
+        "JetBrains Mono", "SFMono-Regular", Consolas, "Liberation Mono",
+        monospace;
+    --rt-step-xs: 4px;
+    --rt-step-sm: 8px;
+    --rt-step-md: 16px;
+    --rt-step-lg: 24px;
+    --rt-page-margin: 22px;
+    --rt-card-padding: 14px;
+    --rt-max-width: 1180px;
+    --rt-readable-width: 760px;
+    --rt-chamfer-sm: polygon(
+        6px 0,
+        100% 0,
+        100% calc(100% - 6px),
+        calc(100% - 6px) 100%,
+        0 100%,
+        0 6px
+    );
+    --rt-chamfer-lg: polygon(
+        10px 0,
+        100% 0,
+        100% calc(100% - 10px),
+        calc(100% - 10px) 100%,
+        0 100%,
+        0 10px
+    );
 }
