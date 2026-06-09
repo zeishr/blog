@@ -1,8 +1,6 @@
 .hero-grid {
     display: grid;
-    grid-template-columns: minmax(0, 1.14fr) minmax(320px, 0.86fr);
     gap: var(--rt-step-lg);
-    align-items: stretch;
 }
 
 .hero-copy,

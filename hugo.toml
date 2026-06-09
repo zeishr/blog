@@ -51,9 +51,7 @@ enableRobotsTXT = true
 [params]
   author = 'Abel'
   description = 'A technical blog and portfolio for systems, security, and software architecture notes.'
-  terminalPrompt = 'guest@retro-term:~$'
 
-  buildLabel = ''
 
   [params.home]
     eyebrow = 'retro-futurist technical log'
@@ -63,10 +61,3 @@ enableRobotsTXT = true
     primaryActionURL = '/posts/'
     secondaryActionLabel = 'view projects'
     secondaryActionURL = '/projects/'
-    terminalTitle = 'boot sequence'
-    terminalLines = [
-      'mount /notes --mode=read',
-      'load portfolio index',
-      'sync threat models',
-      'ready.'
-    ]

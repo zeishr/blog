@@ -1,15 +1,8 @@
 <footer class="site-footer">
     <div class="site-footer__panel">
-        <div>
-            <p class="site-footer__label">session closed</p>
-            <p>
-                {{ with site.Copyright }}{{ . }}{{ else }}© {{ now.Year }} {{
-                site.Title }}{{ end }}
-            </p>
-        </div>
-        <div class="site-footer__meta">
-            <span>{{ default "hugo extended" site.Params.buildLabel }}</span>
-            <span>{{ len site.RegularPages }} records indexed</span>
-        </div>
+        <p>
+            {{ with site.Copyright }}{{ . }}{{ else }}© {{ now.Year }} {{
+            site.Title }}{{ end }}
+        </p>
     </div>
 </footer>

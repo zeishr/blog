@@ -18,10 +18,6 @@
             >
         </div>
     </div>
-
-    {{ partial "terminal-panel.html" (dict "title" (default "boot sequence"
-    $home.terminalTitle) "lines" $home.terminalLines "prompt"
-    site.Params.terminalPrompt) }}
 </section>
 
 {{ with .Content }}
