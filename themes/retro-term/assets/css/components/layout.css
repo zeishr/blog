@@ -105,17 +105,13 @@
     grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
-.post-list {
-    max-width: 900px;
-}
-
 .article-header {
     display: grid;
     gap: var(--rt-step-md);
 }
 
 .article-content {
-    width: min(100%, var(--rt-readable-width));
+    width: 100%;
 }
 
 @media (max-width: 1024px) {
