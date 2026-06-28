@@ -1,0 +1,39 @@
+{{- $links := site.Params.contactLinks -}}
+{{- if $links -}}
+<nav class="contact-panel" aria-label="contact links">
+  <ul class="contact-row">
+    {{- range $links -}}
+      {{- $url := .url -}}
+      {{- if $url -}}
+        {{- $name := lower (.name | default .label) -}}
+        {{- $label := .label | default (title $name) -}}
+        {{- $value := .value | default .handle -}}
+        {{- if not $value -}}
+          {{- $value = replaceRE "^mailto:" "" $url -}}
+          {{- $value = replaceRE "^https?://(www\\.)?" "" $value -}}
+          {{- $value = replaceRE "/$" "" $value -}}
+        {{- end -}}
+        {{- $isMail := strings.HasPrefix $url "mailto:" -}}
+        {{- $isExternal := and (not $isMail) (or (strings.HasPrefix $url "https://") (strings.HasPrefix $url "http://")) -}}
+        {{- $ariaLabel := printf "%s" $label -}}
+        {{- with $value -}}{{- $ariaLabel = printf "%s: %s" $label . -}}{{- end -}}
+        <li class="contact-row__item">
+          {{- if $isExternal -}}
+            <a class="contact-link" href="{{ $url | safeURL }}" aria-label="{{ $ariaLabel }}" target="_blank" rel="me noopener noreferrer">
+          {{- else -}}
+            <a class="contact-link" href="{{ $url | safeURL }}" aria-label="{{ $ariaLabel }}">
+          {{- end -}}
+              <span class="contact-link__mark" aria-hidden="true">
+                {{ partial "icon.html" (dict "name" $name "class" "contact-link__icon") }}
+              </span>
+              <span class="contact-link__copy">
+                <span class="contact-link__label">{{ $label }}</span>
+                {{ with $value }}<span class="contact-link__value">{{ . }}</span>{{ end }}
+              </span>
+            </a>
+        </li>
+      {{- end -}}
+    {{- end -}}
+  </ul>
+</nav>
+{{- end -}}

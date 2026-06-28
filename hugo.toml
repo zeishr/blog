@@ -107,6 +107,36 @@ enableRobotsTXT = true
     name = 'x'
     url = 'https://x.com/zeishr_'
 
+  [[params.contactLinks]]
+    name = 'github'
+    label = 'GitHub'
+    value = 'zeishr'
+    url = 'https://github.com/zeishr'
+
+  [[params.contactLinks]]
+    name = 'linkedin'
+    label = 'LinkedIn'
+    value = 'theo-abel'
+    url = 'https://www.linkedin.com/in/theo-abel/'
+
+  [[params.contactLinks]]
+    name = 'x'
+    label = 'X'
+    value = '@zeishr_'
+    url = 'https://x.com/zeishr_'
+
+  [[params.contactLinks]]
+    name = 'email'
+    label = 'Email'
+    value = 'theo.abel53@gmail.com'
+    url = 'mailto:theo.abel53@gmail.com'
+
+  [[params.contactLinks]]
+    name = 'discord'
+    label = 'Discord'
+    value = 'zeishr'
+    url = 'https://discordapp.com/users/219853842093834240'
+
   [params.home]
     eyebrow = 'cybersecurity and software notes'
     title = 'Curiosity below the surface'

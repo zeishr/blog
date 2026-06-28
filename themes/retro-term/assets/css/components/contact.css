@@ -1,0 +1,112 @@
+.contact-panel {
+    margin-block: var(--rt-step-md) var(--rt-step-lg);
+}
+
+.contact-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: var(--rt-step-sm);
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.prose .contact-row {
+    padding-inline-start: 0;
+}
+
+.contact-row__item {
+    min-width: 0;
+}
+
+.contact-link {
+    display: flex;
+    align-items: center;
+    gap: var(--rt-step-sm);
+    min-height: 64px;
+    padding: 0.75rem;
+    color: var(--rt-text-primary);
+    text-decoration: none;
+    background: var(--rt-surface-card);
+    border: 1px solid var(--rt-border-primary);
+    border-inline-start: 2px solid var(--rt-border-muted);
+    clip-path: var(--rt-chamfer-sm);
+    transition:
+        color 160ms ease,
+        background-color 160ms ease,
+        border-color 160ms ease;
+}
+
+.prose .contact-link {
+    text-decoration: none;
+}
+
+.contact-link:hover,
+.contact-link:focus-visible {
+    color: var(--rt-primary-bright);
+    background: color-mix(
+        in srgb,
+        var(--rt-surface-card),
+        var(--rt-primary) 6%
+    );
+    border-color: var(--rt-border-muted);
+    border-inline-start-color: var(--rt-primary);
+}
+
+.contact-link:focus-visible {
+    outline: 2px solid var(--rt-primary-bright);
+    outline-offset: 3px;
+}
+
+.contact-link__mark {
+    display: grid;
+    flex: 0 0 auto;
+    place-items: center;
+    width: 34px;
+    height: 34px;
+    color: var(--rt-primary-bright);
+    background: rgb(var(--rt-primary-rgb) / 0.08);
+    border: 1px solid rgb(var(--rt-primary-rgb) / 0.24);
+    clip-path: var(--rt-chamfer-sm);
+}
+
+.contact-link__icon {
+    width: 18px;
+    height: 18px;
+}
+
+.contact-link__copy {
+    display: grid;
+    gap: 2px;
+    min-width: 0;
+}
+
+.contact-link__label {
+    font-family: var(--rt-font-system);
+    font-size: 0.72rem;
+    font-weight: 700;
+    line-height: 1.2;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+.contact-link__value {
+    overflow: hidden;
+    color: var(--rt-text-secondary);
+    font-family: var(--rt-font-system);
+    font-size: 0.68rem;
+    line-height: 1.35;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.contact-link:hover .contact-link__value,
+.contact-link:focus-visible .contact-link__value {
+    color: var(--rt-text-primary);
+}
+
+@media (max-width: 560px) {
+    .contact-row {
+        grid-template-columns: 1fr;
+    }
+}
