@@ -5,8 +5,6 @@ description: |
   instrumentation, reverse engineering, game security research, and fuzzing.
 ---
 
-This portfolio groups the public repositories I consider representative of my work. Archived projects stay visible when they are useful as research notes, historical experiments, or implementation references.
-
 ## Focus areas
 
 - **Systems security, virtualization, and memory:** hypervisors, virtual machine introspection, memory-forensics libraries, and MMU reconstruction tooling.
