@@ -1,16 +1,17 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://theoabel.com/'
 locale = 'en-US'
-title = 'retro.term'
+title = 'theoabel.com'
 theme = 'retro-term'
-copyright = '© 2026 retro.term'
+copyright = '© Théo Abel'
 summaryLength = 24
 enableRobotsTXT = true
 
 [pagination]
-  pagerSize = 6
+  pagerSize = 12
 
 [taxonomies]
   tag = 'tags'
+  category = 'categories'
   series = 'series'
 
 [menus]
@@ -25,19 +26,29 @@ enableRobotsTXT = true
     weight = 20
 
   [[menus.main]]
+    name = 'Writeups'
+    pageRef = '/writeups'
+    weight = 30
+
+  [[menus.main]]
     name = 'Projects'
     pageRef = '/projects'
-    weight = 30
+    weight = 40
 
   [[menus.main]]
     name = 'About'
     pageRef = '/about'
-    weight = 40
+    weight = 50
 
   [[menus.main]]
     name = 'Tags'
     pageRef = '/tags'
-    weight = 50
+    weight = 60
+
+  [[menus.main]]
+    name = 'Categories'
+    pageRef = '/categories'
+    weight = 70
 
 [markup]
   [markup.highlight]
@@ -49,14 +60,13 @@ enableRobotsTXT = true
     min = '0.162.1'
 
 [params]
-  author = 'Abel'
-  description = 'A technical blog and portfolio for systems, security, and software architecture notes.'
-
+  author = 'Théo Abel'
+  description = 'Personal blog - Cybersecurity, Self-hosting, Development, etc.'
 
   [params.home]
-    eyebrow = 'retro-futurist technical log'
-    title = 'notes from the command line'
-    intro = 'A compact field notebook for systems design, software architecture, security research, and experiments.'
+    eyebrow = 'cybersecurity and software notes'
+    title = 'What will you learn today?'
+    intro = 'Experiments, projects, research, writeups, and notes about programming, cybersecurity, and low-level systems.'
     primaryActionLabel = 'read posts'
     primaryActionURL = '/posts/'
     secondaryActionLabel = 'view projects'
