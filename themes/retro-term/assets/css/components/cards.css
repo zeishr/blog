@@ -84,6 +84,11 @@
     flex-wrap: wrap;
 }
 
+.term-stack {
+    display: grid;
+    gap: var(--rt-step-xs);
+}
+
 .tag-list {
     display: flex;
     flex-wrap: wrap;

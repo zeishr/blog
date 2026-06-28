@@ -21,5 +21,9 @@
   </header>
 
   {{ with $summary }}<p class="post-card__summary">{{ . | plainify | replaceRE `\s+` ` ` | truncate 168 }}</p>{{ end }}
-  {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
+  <div class="term-stack">
+    {{ partial "terms.html" (dict "taxonomy" "categories" "page" .) }}
+    {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
+    {{ partial "terms.html" (dict "taxonomy" "series" "page" .) }}
+  </div>
 </article>

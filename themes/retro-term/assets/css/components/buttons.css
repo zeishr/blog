@@ -39,3 +39,12 @@
 .button--ghost {
     background: var(--rt-surface-base);
 }
+
+.shortcode-button {
+    width: max-content;
+    margin-block: var(--rt-step-sm);
+}
+
+.prose .shortcode-button {
+    text-decoration: none;
+}

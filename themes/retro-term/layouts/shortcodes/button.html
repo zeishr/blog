@@ -1,0 +1,5 @@
+{{- $href := (.Get "href") | default "#" | replaceRE "^<|>$" "" -}}
+{{- $target := .Get "target" -}}
+<a class="button button--ghost shortcode-button" href="{{ $href }}"{{ with $target }} target="{{ . }}"{{ if eq . "_blank" }} rel="noopener noreferrer"{{ end }}{{ end }}>
+  {{- .Inner | plainify -}}
+</a>

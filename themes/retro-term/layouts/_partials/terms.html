@@ -1,8 +1,14 @@
-{{- $page := .page -}} {{- $taxonomy := .taxonomy -}} {{- with $page.GetTerms
-$taxonomy }}
+{{- $page := .page -}} {{- $taxonomy := .taxonomy -}} {{- $prefix := "#" -}} {{-
+if eq $taxonomy "categories" -}} {{- $prefix = "cat:" -}} {{- else if eq
+$taxonomy "series" -}} {{- $prefix = "series:" -}} {{- end -}} {{- with
+$page.GetTerms $taxonomy }}
 <ul class="tag-list" aria-label="{{ $taxonomy }}">
     {{- range . }}
-    <li><a class="tag" href="{{ .RelPermalink }}">#{{ .LinkTitle }}</a></li>
+    <li>
+        <a class="tag" href="{{ .RelPermalink }}"
+            >{{ $prefix }}{{ .LinkTitle }}</a
+        >
+    </li>
     {{- end }}
 </ul>
 {{- end }}

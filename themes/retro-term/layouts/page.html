@@ -18,7 +18,11 @@
         {{ with .Params.status }}<span class="status-chip"><span class="status-chip__dot" aria-hidden="true"></span>{{ . }}</span>{{ end }}
       </div>
 
-      {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
+      <div class="term-stack">
+        {{ partial "terms.html" (dict "taxonomy" "categories" "page" .) }}
+        {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
+        {{ partial "terms.html" (dict "taxonomy" "series" "page" .) }}
+      </div>
     </header>
 
     {{- with $externalURL }}
