@@ -30,5 +30,6 @@ You can browse the current portfolio on the [projects page]({{< relref "/project
 
 - [GitHub](https://github.com/zeishr)
 - [LinkedIn](https://www.linkedin.com/in/theo-abel/)
+- [X (Twitter)](https://x.com/zeishr_)
 - [Email](mailto:theo.abel53@gmail.com)
 - [Discord](https://discordapp.com/users/219853842093834240)

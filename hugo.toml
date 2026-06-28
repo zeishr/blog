@@ -74,6 +74,7 @@ enableRobotsTXT = true
   authorEmail = 'theo.abel53@gmail.com'
   description = 'Tooling for computer security, OS internals, binary analysis, reverse engineering, game security research, and fuzzing.'
   defaultSocialImage = '/android-chrome-512x512.png'
+  xHandle = '@zeishr_'
   keywords = [
     'cybersecurity',
     'systems security',
@@ -101,6 +102,10 @@ enableRobotsTXT = true
   [[params.socialLinks]]
     name = 'linkedin'
     url = 'https://www.linkedin.com/in/theo-abel/'
+
+  [[params.socialLinks]]
+    name = 'x'
+    url = 'https://x.com/zeishr_'
 
   [params.home]
     eyebrow = 'cybersecurity and software notes'

@@ -68,7 +68,10 @@ end }} {{ with .fediverse }}<meta
 />{{ end }} {{ end }} {{ range site.Params.socialLinks }} {{ with .url }}{{ if
 not (strings.HasPrefix . "mailto:") }}<link rel="me" href="{{ . }}" />{{ end
 }}{{ end }} {{ end }} {{ template "_internal/opengraph.html" . }} {{ template
-"_internal/twitter_cards.html" . }} {{ with $socialImage }}
+"_internal/twitter_cards.html" . }} {{ with site.Params.xHandle }}
+<meta name="twitter:site" content="{{ . }}" />
+<meta name="twitter:creator" content="{{ . }}" />
+{{ end }} {{ with $socialImage }}
 <meta property="og:image" content="{{ . }}" />
 <meta name="twitter:image" content="{{ . }}" />
 {{ end }} {{ partial "schema.html" . }} {{ hugo.Generator }}
