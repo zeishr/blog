@@ -29,16 +29,18 @@ const getLineNumbers = (block) => {
 };
 
 const getRelativeAnchor = (block, numbers) => {
-  const highlightedLine = block.querySelector(".lntd:last-child .hl");
+  const highlightedLine = block.querySelector(".lntd:last-child .hl, code .hl");
   if (!highlightedLine) {
     return Number(
       numbers[0]?.dataset.absoluteLine ?? numbers[0]?.textContent.trim() ?? 1,
     );
   }
 
-  const codeLines = [...block.querySelectorAll(".cl")];
+  const codeLines = [
+    ...block.querySelectorAll(".lntd:last-child .line, code .line"),
+  ];
   const highlightedIndex = codeLines.findIndex(
-    (line) => line.contains(highlightedLine) || line === highlightedLine,
+    (line) => line === highlightedLine || line.contains(highlightedLine),
   );
   return Number(
     numbers[highlightedIndex]?.dataset.absoluteLine ??
@@ -65,9 +67,7 @@ const renderLineNumbers = (block) => {
     const rendered = isRelative
       ? String(Math.abs(absolute - anchor))
       : String(absolute);
-    line.textContent = line.classList.contains("lnt")
-      ? `${rendered}\n`
-      : rendered;
+    line.textContent = rendered;
   });
 };
 

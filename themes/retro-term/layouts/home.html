@@ -26,8 +26,7 @@
 "posts").ByDate.Reverse) -}}
 <section class="section-block" aria-labelledby="recent-posts-title">
     <div class="section-heading">
-        <p class="eyebrow">latest records</p>
-        <h2 id="recent-posts-title">recent posts</h2>
+        <h2 class="eyebrow" id="recent-posts-title">Recent posts</h2>
         <a class="section-heading__link" href="{{ `/posts/` | relURL }}"
             >view all</a
         >
@@ -39,29 +38,11 @@
     </div>
 </section>
 
-{{- $writeups := first 3 ((where site.RegularPages "Section"
-"writeups").ByDate.Reverse) -}}
-<section class="section-block" aria-labelledby="recent-writeups-title">
-    <div class="section-heading">
-        <p class="eyebrow">challenge logs</p>
-        <h2 id="recent-writeups-title">recent writeups</h2>
-        <a class="section-heading__link" href="{{ `/writeups/` | relURL }}"
-            >view all</a
-        >
-    </div>
-    <div class="card-grid">
-        {{ range $writeups }} {{ partial "post-card.html" . }} {{ else }}
-        <p class="empty-state">no writeups indexed yet.</p>
-        {{ end }}
-    </div>
-</section>
-
 {{- $projects := first 3 ((where site.RegularPages "Section"
 "projects").ByDate.Reverse) -}}
 <section class="section-block" aria-labelledby="projects-title">
     <div class="section-heading">
-        <p class="eyebrow">portfolio index</p>
-        <h2 id="projects-title">selected projects</h2>
+        <h2 class="eyebrow" id="projects-title">Recent projects</h2>
         <a class="section-heading__link" href="{{ `/projects/` | relURL }}"
             >view all</a
         >
