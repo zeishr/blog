@@ -65,7 +65,7 @@ enableRobotsTXT = true
 
   [params.home]
     eyebrow = 'cybersecurity and software notes'
-    title = 'What will you learn today?'
+    title = 'Curiosity below the surface'
     intro = 'Research notes, writeups, and project logs around systems security, binary analysis, instrumentation, reverse engineering, and fuzzing.'
     primaryActionLabel = 'read posts'
     primaryActionURL = '/posts/'
