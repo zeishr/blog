@@ -2,7 +2,7 @@
 title: "pyDFIRRam"
 description: "Volatility 3-based Python library for scripted and notebook-driven memory-forensics workflows."
 status: "active"
-weight: 60
+date: 2023-07-20T12:57:16Z
 categories: ["Systems security"]
 tags: ["python", "volatility", "dfir", "memory-forensics", "notebooks"]
 ---

@@ -2,7 +2,7 @@
 title: "xenith"
 description: "Research-focused hypervisor for Xen-based debugging, virtual machine introspection, and automation."
 status: "archived"
-weight: 10
+date: 2025-01-26T23:59:38Z
 categories: ["Systems security"]
 tags: ["rust", "xen", "hypervisor", "debugging", "vmi", "automation"]
 ---

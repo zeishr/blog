@@ -2,7 +2,7 @@
 title: "mono-injector"
 description: "Rust CLI and GUI for injecting managed assemblies into Unity and other Mono-hosted Windows processes."
 status: "active"
-weight: 90
+date: 2026-05-02T16:22:57Z
 categories: ["Runtime instrumentation"]
 tags: ["rust", "windows", "mono", "unity", "process-injection", "gui"]
 ---

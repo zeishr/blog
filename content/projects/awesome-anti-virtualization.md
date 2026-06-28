@@ -2,7 +2,7 @@
 title: "awesome-anti-virtualization"
 description: "Curated reference list for anti-virtualization and VM-detection techniques."
 status: "active"
-weight: 30
+date: 2025-02-05T19:31:48Z
 categories: ["Research operations"]
 tags: ["anti-virtualization", "vm-detection", "research", "curated-list"]
 ---

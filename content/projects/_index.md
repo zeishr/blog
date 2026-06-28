@@ -14,4 +14,4 @@ This portfolio groups the public repositories I consider representative of my wo
 - **Runtime instrumentation and game security:** process injection, Mono runtime inspection, and controlled client-side experiments.
 - **Research operations:** curated knowledge bases, reproducible development shells, automation, and documentation.
 
-The records below mirror my current GitHub portfolio first. Older migrated projects remain available afterward as historical notes.
+The records below mirror my public portfolio and are ordered by repository creation month, newest first. Older migrated projects remain visible as historical notes where useful.

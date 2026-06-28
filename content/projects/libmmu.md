@@ -2,7 +2,7 @@
 title: "libMMU"
 description: "Rust crate for rebuilding virtual address spaces from memory dumps."
 status: "archived"
-weight: 40
+date: 2024-03-11T19:47:23Z
 categories: ["Systems security"]
 tags: ["rust", "nix", "memory-forensics", "mmu", "virtual-memory"]
 ---

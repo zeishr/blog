@@ -2,7 +2,7 @@
 title: "Specialized RAG"
 description: "A local retrieval-augmented generation setup built around Docker, Ollama, and Kotaemon."
 status: "historical"
-weight: 210
+date: 2025-01-04T13:54:43Z
 categories: ["Older migrated work"]
 tags: ["docker", "ollama", "kotaemon", "ai", "rag"]
 ---

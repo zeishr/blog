@@ -2,7 +2,7 @@
 title: "strafthack"
 description: "Managed Unity mod for STRAFTAT private-session testing and controlled client-side experimentation."
 status: "active"
-weight: 110
+date: 2026-05-02T09:26:37Z
 categories: ["Runtime instrumentation"]
 tags: ["csharp", "unity", "game-security", "modding", "runtime-instrumentation"]
 ---

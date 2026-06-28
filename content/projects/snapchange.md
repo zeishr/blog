@@ -2,7 +2,7 @@
 title: "snapchange"
 description: "Fork of awslabs' KVM snapshot fuzzer with tooling, templates, diagnostics, and dependency updates."
 status: "archived"
-weight: 80
+date: 2024-09-13T12:36:43Z
 categories: ["Fuzzing"]
 tags: ["rust", "python", "kvm", "snapshot-fuzzing", "fuzzing"]
 ---

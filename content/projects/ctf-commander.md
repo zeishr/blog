@@ -2,7 +2,7 @@
 title: "ctf-commander"
 description: "A CLI and TUI tool for interacting with cybersecurity platforms from the terminal."
 status: "historical"
-weight: 220
+date: 2024-03-05T19:15:48Z
 categories: ["Older migrated work"]
 tags: ["rust", "cli", "tui", "rest-api", "ctf"]
 ---

@@ -2,7 +2,7 @@
 title: "mono-rt"
 description: "Dynamic Rust bindings to the Mono runtime for injected tooling and runtime inspection."
 status: "active"
-weight: 100
+date: 2026-05-02T16:29:56Z
 categories: ["Runtime instrumentation"]
 tags: ["rust", "mono", "runtime", "instrumentation", "bindings"]
 ---

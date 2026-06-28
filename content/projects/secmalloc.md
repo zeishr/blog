@@ -2,7 +2,7 @@
 title: "secmalloc"
 description: "Secure allocator experiment around malloc, realloc, and free-style semantics."
 status: "archived"
-weight: 70
+date: 2024-07-17T12:33:53Z
 categories: ["Systems security"]
 tags: ["c", "linux", "allocator", "heap-security", "memory-allocation"]
 ---

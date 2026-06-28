@@ -2,7 +2,7 @@
 title: "mmushell"
 description: "Substantial fork of EURECOM's memory-forensics PoC with packaging, documentation, and architecture cleanup."
 status: "archived"
-weight: 50
+date: 2024-04-14T15:23:05Z
 categories: ["Systems security"]
 tags: ["python", "memory-forensics", "mmu", "nix", "mkdocs"]
 ---

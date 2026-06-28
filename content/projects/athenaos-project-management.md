@@ -2,7 +2,7 @@
 title: "AthenaOS project management"
 description: "Project management work around AthenaOS, an Arch Linux and NixOS-based cybersecurity distribution."
 status: "historical"
-weight: 230
+date: 2022-06-14T21:39:15Z
 categories: ["Older migrated work"]
 tags: ["project-management", "nix", "linux", "cybersecurity"]
 ---

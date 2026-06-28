@@ -2,7 +2,7 @@
 title: "blackpill"
 description: "Linux rootkit research project combining a Rust kernel module, eBPF networking, and a custom type-2 hypervisor."
 status: "archived"
-weight: 20
+date: 2024-09-19T09:10:45Z
 categories: ["Systems security"]
 tags: ["rust", "linux", "kernel", "rootkit", "ebpf", "kvm", "hypervisor"]
 ---

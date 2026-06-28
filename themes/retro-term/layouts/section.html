@@ -1,9 +1,6 @@
-{{ define "main" }} {{- $pages := .Pages.ByDate.Reverse -}} {{- if eq .Section
-"projects" -}} {{- $pages = .Pages.ByWeight -}} {{- end -}} {{- $paginator :=
-.Paginate $pages -}}
+{{ define "main" }} {{- $pages := .Pages.ByDate.Reverse -}}
 
 <section class="list-header" aria-labelledby="section-title">
-    <p class="eyebrow">{{ default "archive" .Section }}</p>
     <h1 id="section-title">{{ .Title }}</h1>
     {{ with .Description }}
     <p>{{ . }}</p>
@@ -12,10 +9,17 @@
     {{ end }}
 </section>
 
+{{ if eq .Section "projects" }}
+<div class="post-list post-list--infinite">
+    {{ range $pages }} {{ partial "post-card.html" . }} {{ else }}
+    <p class="empty-state">no records indexed in this section yet.</p>
+    {{ end }}
+</div>
+{{ else }} {{- $paginator := .Paginate $pages -}}
 <div class="post-list">
     {{ range $paginator.Pages }} {{ partial "post-card.html" . }} {{ else }}
     <p class="empty-state">no records indexed in this section yet.</p>
     {{ end }}
 </div>
 
-{{ partial "pagination.html" $paginator }} {{ end }}
+{{ partial "pagination.html" $paginator }} {{ end }} {{ end }}
