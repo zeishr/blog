@@ -347,7 +347,7 @@ According to the `ssh-keygen` manual:
  -D pkcs11 Download the public keys provided by the PKCS#11 shared library pkcs11 . When used in combination with -s , this option indicates that a CA key resides in a PKCS#11 token (see the CERTIFICATES section for details).
 ```
 
-**Première tentative**
+**First attempt**
 
 Naively, I'm using a shared object with a main that reads and displays the characters contained in the `/flag` file.
 
