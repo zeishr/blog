@@ -1,6 +1,6 @@
 baseURL = 'https://theoabel.com/'
 locale = 'en-US'
-title = 'theoabel.com'
+title = 'zeishr'
 theme = 'retro-term'
 copyright = '© Théo Abel'
 summaryLength = 24
