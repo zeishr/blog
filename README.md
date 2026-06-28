@@ -61,4 +61,4 @@ This is automatically done by GitHub Actions when you push to the `main` branch,
 
 ## 📜 License
 
-This work is licensed under a [Creative Commons Attribution 4.0 International License][LICENSE].
+This work is licensed under a [Creative Commons Attribution 4.0 International License](LICENSE).
