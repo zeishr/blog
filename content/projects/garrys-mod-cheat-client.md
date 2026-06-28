@@ -1,11 +1,14 @@
-+++
-title = "Garry's Mod cheat client"
-date = 2020-01-01T00:00:00Z
-description = "A Lua client project for Garry's Mod."
-tags = ['lua']
-status = '2020'
-+++
+---
+title: "Pity"
+description: "Legacy Garry's Mod scripting project kept as an archive."
+status: "archived"
+weight: 120
+categories: ["Runtime instrumentation"]
+tags: ["lua", "garrys-mod", "game-security", "legacy"]
+---
 
-A Lua client project for Garry's Mod.
+Pity is a legacy Garry's Mod scripting project kept as an archive.
 
-{{< button href="https://github.com/theo-abel/Pity" target="_blank" >}}repository{{< /button >}}
+It remains visible as an older game-security and scripting experiment.
+
+{{< button href="https://github.com/zeishr/Pity" target="_blank" >}}repository{{< /button >}}

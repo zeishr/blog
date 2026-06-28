@@ -61,12 +61,12 @@ enableRobotsTXT = true
 
 [params]
   author = 'Théo Abel'
-  description = 'Personal blog - Cybersecurity, Self-hosting, Development, etc.'
+  description = 'Tooling for computer security, OS internals, binary analysis, reverse engineering, game security research, and fuzzing.'
 
   [params.home]
     eyebrow = 'cybersecurity and software notes'
     title = 'What will you learn today?'
-    intro = 'Experiments, projects, research, writeups, and notes about programming, cybersecurity, and low-level systems.'
+    intro = 'Research notes, writeups, and project logs around systems security, binary analysis, instrumentation, reverse engineering, and fuzzing.'
     primaryActionLabel = 'read posts'
     primaryActionURL = '/posts/'
     secondaryActionLabel = 'view projects'

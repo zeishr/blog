@@ -1,35 +1,34 @@
 ---
 title: "About"
-description: "Passionate about infosec and programming!"
+description: "Tooling for computer security, OS internals, binary analysis, reverse engineering, game security research, and fuzzing."
 kicker: "operator profile"
 ---
 
-## Blog
+I work on tooling for computer security, OS internals, binary analysis, instrumentation, reverse engineering, game security research, and fuzzing.
 
-On this site, you will find my experiments, projects, research, writeups, and probably other things I haven't thought of while writing this.
+This blog is where I publish research notes, implementation write-ups, CTF writeups, project logs, and references I want to keep searchable outside of GitHub.
 
-Here you will find articles about various topics, including:
+## Technical focus
 
-- x86-64 architecture and operating systems
-- Software development (architecture, good practices, etc.)
-- Debugging
-- Reverse engineering
-- Memory forensics
+- **Systems security:** hypervisors, virtual machine introspection, debuggers, and low-level inspection tooling.
+- **Binary analysis and instrumentation:** runtime internals, process injection, and controlled experimentation on native or managed targets.
+- **Research operations:** curated knowledge bases, reproducible environments, documentation, and automation for security research workflows.
+- **Vulnerability research tooling:** snapshot-based, stateful, and structure-aware fuzzing techniques.
 
-## Whoami
+## Public work
 
-Currently a student at [École 2600](https://ecole2600.com/), a school specializing in cybersecurity. I enjoy CTF challenges and participate in them from time to time on online platforms or in person. I like to learn new things and share my knowledge with others. I also enjoy writing articles about various topics, including programming, cybersecurity, and research subjects.
+My public portfolio is centered on security tooling and substantial research forks:
 
-I am passionate about programming and have experience in various languages, including Rust, Python, C, C++, Ruby and Java. I have a strong interest in low-level programming and operating systems, which has led me to explore topics such as x86-64 architecture and hypervisors. I have a solid understanding of computer science fundamentals, including data structures, algorithms, and software design patterns. I am always looking for new challenges and opportunities to learn and grow as a developer.
+- systems security, virtualization, and memory forensics
+- fuzzing infrastructure and snapshot-based fuzzing workflows
+- runtime instrumentation and game security research
+- curated references for anti-virtualization and VM-detection techniques
 
-I am also interested in the whole cybersecurity ecosystem, including offensive and defensive security. I have experience with various tools and techniques used in penetration testing, vulnerability assessment and research, and incident response. I am always looking to improve my skills and stay up-to-date with the latest trends and technologies in the field.
+You can browse the current portfolio on the [projects page]({{< relref "/projects" >}}) or directly on [GitHub](https://github.com/zeishr).
 
-As an open-source enthusiast, I believe in the power of collaboration and community. I enjoy contributing to open-source projects and collaborating with other developers to create innovative solutions to complex problems. I am always looking for new opportunities to learn and grow as a developer, and I am excited to share my knowledge and experiences with others through this blog.
+## Contact
 
-A GNU/Linux user for ~5 years, the terminal is currently in the top 3 of my best friends. I am a big fan of the [Arch Linux](https://archlinux.org/) distribution, which I have been using for a while now. I enjoy customizing my system and exploring the various tools and utilities available in the Arch Linux ecosystem.
-
-Feel free to contact me via:
-
+- [GitHub](https://github.com/zeishr)
 - [LinkedIn](https://www.linkedin.com/in/theo-abel/)
 - [Email](mailto:theo.abel53@gmail.com)
 - [Discord](https://discordapp.com/users/219853842093834240)

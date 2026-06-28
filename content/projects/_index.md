@@ -1,10 +1,17 @@
 ---
 title: "Projects"
 description: |
-  This is a collection of my projects. I work on various topics, including programming, cybersecurity and research subjects.
-  I hope you find something interesting to read!
+  Selected public repositories and substantial forks around systems security, binary analysis,
+  instrumentation, reverse engineering, game security research, and fuzzing.
 ---
 
-Those are my most important projects, that treats various topics among forensics, reverse engineering, hypervisors, and research subjects.
+This portfolio groups the public repositories I consider representative of my work. Archived projects stay visible when they are useful as research notes, historical experiments, or implementation references.
 
-I mainly work with Rust and Python but I also have some experience with C, C++ and Java. You will also find various usage of DevOps tools like Docker, Vagrant, Terraform, Ansible and Nix of which I am a big fan.
+## Focus areas
+
+- **Systems security, virtualization, and memory:** hypervisors, virtual machine introspection, memory-forensics libraries, and MMU reconstruction tooling.
+- **Fuzzing:** snapshot-based fuzzers and supporting tooling for vulnerability research workflows.
+- **Runtime instrumentation and game security:** process injection, Mono runtime inspection, and controlled client-side experiments.
+- **Research operations:** curated knowledge bases, reproducible development shells, automation, and documentation.
+
+The records below mirror my current GitHub portfolio first. Older migrated projects remain available afterward as historical notes.

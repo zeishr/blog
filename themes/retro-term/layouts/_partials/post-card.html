@@ -1,17 +1,22 @@
 {{- $externalURL := .Param "externalUrl" -}}
 {{- $summary := or .Description (.Param "summary") (.Summary | plainify) -}}
 {{- $url := default .RelPermalink $externalURL -}}
+{{- $showDate := and (not .Date.IsZero) (ne .Section "projects") -}}
+{{- $showReadingTime := and (not $externalURL) (gt .ReadingTime 0) (or (eq .Section "posts") (eq .Section "writeups")) -}}
 <article class="card post-card{{ with $externalURL }} post-card--external{{ end }}">
   <header class="post-card__header">
     <div class="meta-row">
       <span>{{ default .Kind .Section }}</span>
+      {{- with .Params.status -}}
+        <span>{{ . }}</span>
+      {{- end -}}
       {{- with $externalURL -}}
         <span class="post-card__source">external</span>
       {{- end -}}
-      {{- if not .Date.IsZero -}}
+      {{- if $showDate -}}
         <time datetime="{{ .Date | time.Format "2006-01-02T15:04:05-07:00" }}">{{ .Date | time.Format "2006.01.02" }}</time>
       {{- end -}}
-      {{- if and (not $externalURL) (gt .ReadingTime 0) -}}
+      {{- if $showReadingTime -}}
         <span>{{ .ReadingTime }} min read</span>
       {{- end -}}
     </div>

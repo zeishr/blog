@@ -1,5 +1,7 @@
-{{ define "main" }} {{- $pages := .Pages.ByDate.Reverse -}} {{- $paginator :=
+{{ define "main" }} {{- $pages := .Pages.ByDate.Reverse -}} {{- if eq .Section
+"projects" -}} {{- $pages = .Pages.ByWeight -}} {{- end -}} {{- $paginator :=
 .Paginate $pages -}}
+
 <section class="list-header" aria-labelledby="section-title">
     <p class="eyebrow">{{ default "archive" .Section }}</p>
     <h1 id="section-title">{{ .Title }}</h1>

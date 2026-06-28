@@ -1,11 +1,14 @@
-+++
-title = 'awesome-anti-virtualization'
-date = 2025-04-01T00:00:00Z
-description = 'A curated list of resources related to anti-virtualization techniques.'
-tags = ['anti-virtualization', 'research']
-status = '2025'
-+++
+---
+title: "awesome-anti-virtualization"
+description: "Curated reference list for anti-virtualization and VM-detection techniques."
+status: "active"
+weight: 30
+categories: ["Research operations"]
+tags: ["anti-virtualization", "vm-detection", "research", "curated-list"]
+---
 
-A curated list of resources related to anti-virtualization techniques containing references to books, papers, blog posts, and other written resources.
+awesome-anti-virtualization is a curated reference list for anti-virtualization and VM-detection techniques.
 
-{{< button href="https://github.com/theo-abel/awesome-anti-virtualization" target="_blank" >}}repository{{< /button >}}
+The repository collects papers, blog posts, books, and implementation references useful when studying how software detects, evades, or reacts to virtualized environments.
+
+{{< button href="https://github.com/zeishr/awesome-anti-virtualization" target="_blank" >}}repository{{< /button >}}

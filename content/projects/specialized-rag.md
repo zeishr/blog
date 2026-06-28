@@ -1,11 +1,14 @@
-+++
-title = 'Specialized RAG'
-date = 2025-03-01T00:00:00Z
-description = 'A local retrieval-augmented generation setup built around Docker, Ollama, and Kotaemon.'
-tags = ['docker', 'ollama', 'kotaemon', 'ai']
-status = '2025'
-+++
+---
+title: "Specialized RAG"
+description: "A local retrieval-augmented generation setup built around Docker, Ollama, and Kotaemon."
+status: "historical"
+weight: 210
+categories: ["Older migrated work"]
+tags: ["docker", "ollama", "kotaemon", "ai", "rag"]
+---
 
-Specialized RAG helps anyone set up a specialized local retrieval-augmented generation workflow on Linux through Kotaemon and Ollama.
+Specialized RAG helps set up a specialized local retrieval-augmented generation workflow on Linux through Kotaemon and Ollama.
+
+This entry is kept as migrated historical project content from the previous blog.
 
 {{< button href="https://github.com/theo-abel/specialized-rag" target="_blank" >}}repository{{< /button >}}

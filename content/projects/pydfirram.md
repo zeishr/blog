@@ -1,11 +1,14 @@
-+++
-title = 'PyDFIRRam'
-date = 2024-11-01T00:00:00Z
-description = 'A Python library leveraging Volatility 3 to simplify and enhance memory forensics.'
-tags = ['python', 'dfir', 'memory-forensics', 'volatility']
-status = '2024'
-+++
+---
+title: "pyDFIRRam"
+description: "Volatility 3-based Python library for scripted and notebook-driven memory-forensics workflows."
+status: "active"
+weight: 60
+categories: ["Systems security"]
+tags: ["python", "volatility", "dfir", "memory-forensics", "notebooks"]
+---
 
-PyDFIRRam is a Python library leveraging Volatility 3 to simplify and enhance memory forensics. It streamlines the research, parsing, and analysis of memory dumps, allowing users to focus on data rather than commands.
+pyDFIRRam is a Volatility 3-based Python library for scripted and notebook-driven memory-forensics workflows.
+
+It focuses on making memory analysis easier to automate, compose, and reuse from Python rather than forcing every investigation through one-off command invocations.
 
 {{< button href="https://github.com/PyDFIR/pyDFIRRam" target="_blank" >}}repository{{< /button >}}

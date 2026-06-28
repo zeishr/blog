@@ -57,7 +57,7 @@
 </section>
 
 {{- $projects := first 3 ((where site.RegularPages "Section"
-"projects").ByDate.Reverse) -}}
+"projects").ByWeight) -}}
 <section class="section-block" aria-labelledby="projects-title">
     <div class="section-heading">
         <p class="eyebrow">portfolio index</p>

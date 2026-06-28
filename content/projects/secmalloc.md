@@ -1,11 +1,14 @@
-+++
-title = 'secmalloc'
-date = 2024-10-01T00:00:00Z
-description = 'An unoptimized secure implementation of malloc, realloc, and free-like functions.'
-tags = ['c', 'linux', 'memory-allocation', 'heap-security']
-status = '2024'
-+++
+---
+title: "secmalloc"
+description: "Secure allocator experiment around malloc, realloc, and free-style semantics."
+status: "archived"
+weight: 70
+categories: ["Systems security"]
+tags: ["c", "linux", "allocator", "heap-security", "memory-allocation"]
+---
 
-secmalloc is an unoptimized secure implementation of `malloc`, `realloc`, and `free`-like functions.
+secmalloc is a secure allocator experiment around `malloc`, `realloc`, and `free`-style semantics.
 
-{{< button href="https://github.com/theo-abel/secmalloc" target="_blank" >}}repository{{< /button >}}
+It is archived as a small C implementation exercise around heap allocation behavior and allocator hardening ideas.
+
+{{< button href="https://github.com/zeishr/secmalloc" target="_blank" >}}repository{{< /button >}}
