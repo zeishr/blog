@@ -1,15 +1,43 @@
 {{- $title := cond .IsHome site.Title (printf "%s | %s" .Title site.Title) -}}
-{{- $description := or .Description (.Param "summary") site.Params.description
--}} {{- $canonicalURL := default .Permalink (.Param "externalUrl") -}}
+{{- $descriptionOrder := site.Params.seo.metaDescriptionOrder | default (slice
+"summary" "description" "site") -}} {{- $description := "" -}} {{- range
+$descriptionOrder -}} {{- if not $description -}} {{- if eq . "summary" -}} {{-
+with ($.Param "summary") -}} {{- $description = . -}} {{- else -}} {{- with
+$.Summary -}}{{- $description = . -}}{{- end -}} {{- end -}} {{- else if eq .
+"description" -}} {{- with $.Description -}}{{- $description = . -}}{{- end -}}
+{{- else if eq . "site" -}} {{- with site.Params.description -}}{{- $description
+= . -}}{{- end -}} {{- end -}} {{- end -}} {{- end -}} {{- $description =
+$description | plainify | replaceRE `\s+` ` ` -}} {{- $canonicalURL := default
+.Permalink (.Param "externalUrl") -}} {{- $keywords := .Params.tags | default
+site.Params.keywords -}} {{- $robots := .Param "robots" | default
+site.Params.robots -}} {{- $author := site.Params.author | default site.Title
+-}} {{- $hasSocialImage := false -}} {{- with .Params.images -}}{{-
+$hasSocialImage = true -}}{{- end -}} {{- if not $hasSocialImage -}} {{- if gt
+(len (.Resources.ByType "image")) 0 -}}{{- $hasSocialImage = true -}}{{- end -}}
+{{- end -}} {{- $socialImage := "" -}} {{- if not $hasSocialImage -}} {{- with
+site.Params.defaultSocialImage -}}{{- $socialImage = . | absURL -}}{{- end -}}
+{{- end -}}
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>{{ $title }}</title>
-{{ with $description }}<meta
-    name="description"
-    content="{{ . | plainify | replaceRE `\s+` ` ` }}"
-/>{{ end }}
+<meta name="title" content="{{ $title }}" />
+{{ with $description }}<meta name="description" content="{{ . }}" />{{ end }} {{
+with $author }}<meta name="author" content="{{ . }}" />{{ end }} {{ with
+$keywords }}<meta name="keywords" content="{{ delimit . `, ` }}" />{{ end }} {{
+with $robots }}<meta name="robots" content="{{ . }}" />{{ end }}
 <meta name="theme-color" content="#131313" />
+<meta name="color-scheme" content="dark light" />
 <link rel="canonical" href="{{ $canonicalURL }}" />
+{{ if .IsTranslated }} {{ range .AllTranslations }}<link
+    rel="alternate"
+    hreflang="{{ .Language.Locale | default .Language.Lang }}"
+    href="{{ .Permalink }}"
+/>{{ end }} {{ end }} {{ range .AlternativeOutputFormats }}<link
+    rel="{{ .Rel }}"
+    type="{{ .MediaType.Type }}"
+    href="{{ .Permalink }}"
+    title="{{ site.Title }}"
+/>{{ end }}
 <link rel="icon" href="{{ `favicon.ico` | relURL }}" sizes="any" />
 <link
     rel="icon"
@@ -28,6 +56,21 @@
 <link rel="license" href="{{ `licenses/fonts.txt` | relURL }}" />
 <link rel="license" href="{{ `fonts/hanken-grotesk/OFL.txt` | relURL }}" />
 <link rel="license" href="{{ `fonts/jetbrains-mono/OFL.txt` | relURL }}" />
-{{ hugo.Generator }}
+{{ with site.Params.verification }} {{ with .google }}<meta
+    name="google-site-verification"
+    content="{{ . }}"
+/>{{ end }} {{ with .bing }}<meta name="msvalidate.01" content="{{ . }}" />{{
+end }} {{ with .pinterest }}<meta name="p:domain_verify" content="{{ . }}" />{{
+end }} {{ with .yandex }}<meta name="yandex-verification" content="{{ . }}" />{{
+end }} {{ with .fediverse }}<meta
+    name="fediverse:creator"
+    content="{{ . }}"
+/>{{ end }} {{ end }} {{ range site.Params.socialLinks }} {{ with .url }}{{ if
+not (strings.HasPrefix . "mailto:") }}<link rel="me" href="{{ . }}" />{{ end
+}}{{ end }} {{ end }} {{ template "_internal/opengraph.html" . }} {{ template
+"_internal/twitter_cards.html" . }} {{ with $socialImage }}
+<meta property="og:image" content="{{ . }}" />
+<meta name="twitter:image" content="{{ . }}" />
+{{ end }} {{ partial "schema.html" . }} {{ hugo.Generator }}
 <link rel="stylesheet" href="{{ `css/fonts.css` | relURL }}" />
 {{ partialCached "head/css.html" . }} {{ partialCached "head/js.html" . }}

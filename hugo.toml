@@ -1,10 +1,19 @@
 baseURL = 'https://theoabel.com/'
+defaultContentLanguage = 'en'
 locale = 'en-US'
 title = 'zeishr'
 theme = 'retro-term'
 copyright = '© Théo Abel'
 summaryLength = 24
 enableRobotsTXT = true
+
+[outputs]
+  home = ['HTML', 'RSS']
+
+[sitemap]
+  changefreq = 'weekly'
+  filename = 'sitemap.xml'
+  priority = 0.5
 
 [pagination]
   pagerSize = 12
@@ -60,8 +69,38 @@ enableRobotsTXT = true
     min = '0.162.1'
 
 [params]
+  env = 'production'
   author = 'Théo Abel'
+  authorEmail = 'theo.abel53@gmail.com'
   description = 'Tooling for computer security, OS internals, binary analysis, reverse engineering, game security research, and fuzzing.'
+  defaultSocialImage = '/android-chrome-512x512.png'
+  keywords = [
+    'cybersecurity',
+    'systems security',
+    'binary analysis',
+    'reverse engineering',
+    'fuzzing',
+    'memory forensics',
+    'runtime instrumentation'
+  ]
+  robots = 'index,follow'
+  enableStructuredBreadcrumbs = true
+
+  [params.seo]
+    metaDescriptionOrder = ['summary', 'description', 'site']
+
+  [params.sitemap]
+    excludedKinds = ['taxonomy', 'term']
+
+  [params.verification]
+
+  [[params.socialLinks]]
+    name = 'github'
+    url = 'https://github.com/zeishr'
+
+  [[params.socialLinks]]
+    name = 'linkedin'
+    url = 'https://www.linkedin.com/in/theo-abel/'
 
   [params.home]
     eyebrow = 'cybersecurity and software notes'

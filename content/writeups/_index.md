@@ -1,7 +1,8 @@
 ---
 title: "Writeups"
 description: |
-  My different writeups of CTF or challenges on various platforms.
+  Practical CTF and challenge writeups focused on binary exploitation, reverse engineering,
+  Linux internals, and security research techniques.
 cascade:
   showReadingTime: false
 ---

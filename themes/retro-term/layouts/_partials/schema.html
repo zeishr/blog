@@ -1,0 +1,92 @@
+{{- $authorName := site.Params.author | default site.Title -}}
+{{- $author := dict "@type" "Person" "@id" (printf "%s#person" site.Home.Permalink) "name" $authorName "url" site.Home.Permalink -}}
+{{- with site.Params.authorEmail -}}{{- $author = merge $author (dict "email" .) -}}{{- end -}}
+{{- $sameAs := slice -}}
+{{- range site.Params.socialLinks -}}
+  {{- with .url -}}
+    {{- if not (strings.HasPrefix . "mailto:") -}}
+      {{- $sameAs = $sameAs | append . -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- if gt (len $sameAs) 0 -}}{{- $author = merge $author (dict "sameAs" $sameAs) -}}{{- end -}}
+
+{{- $language := default site.Language.Lang site.Language.Locale -}}
+{{- $descriptionOrder := site.Params.seo.metaDescriptionOrder | default (slice "summary" "description" "site") -}}
+{{- $description := "" -}}
+{{- range $descriptionOrder -}}
+  {{- if not $description -}}
+    {{- if eq . "summary" -}}
+      {{- with ($.Param "summary") -}}
+        {{- $description = . -}}
+      {{- else -}}
+        {{- with $.Summary -}}{{- $description = . -}}{{- end -}}
+      {{- end -}}
+    {{- else if eq . "description" -}}
+      {{- with $.Description -}}{{- $description = . -}}{{- end -}}
+    {{- else if eq . "site" -}}
+      {{- with site.Params.description -}}{{- $description = . -}}{{- end -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- $description = $description | plainify | replaceRE `\s+` ` ` -}}
+
+{{- $image := "" -}}
+{{- with .Params.images -}}
+  {{- $image = index . 0 | absURL -}}
+{{- else -}}
+  {{- with .Resources.GetMatch "feature*" -}}{{- $image = .Permalink -}}{{- end -}}
+  {{- if not $image -}}{{- with .Resources.GetMatch "featured*" -}}{{- $image = .Permalink -}}{{- end -}}{{- end -}}
+  {{- if not $image -}}{{- with .Resources.GetMatch "cover*" -}}{{- $image = .Permalink -}}{{- end -}}{{- end -}}
+  {{- if not $image -}}{{- with .Resources.GetMatch "thumbnail*" -}}{{- $image = .Permalink -}}{{- end -}}{{- end -}}
+  {{- if not $image -}}{{- with site.Params.defaultSocialImage -}}{{- $image = . | absURL -}}{{- end -}}{{- end -}}
+{{- end -}}
+
+{{- $graph := slice -}}
+{{- if .IsHome -}}
+  {{- $node := dict "@type" "WebSite" "@id" (printf "%s#website" site.Home.Permalink) "url" site.Home.Permalink "name" site.Title "description" (or $description site.Params.description) "inLanguage" $language "publisher" $author -}}
+  {{- with $image -}}{{- $node = merge $node (dict "image" (slice .)) -}}{{- end -}}
+  {{- $graph = $graph | append $node -}}
+{{- else -}}
+  {{- $schemaType := "WebPage" -}}
+  {{- if or (eq .Kind "section") (eq .Kind "taxonomy") (eq .Kind "term") -}}
+    {{- $schemaType = "CollectionPage" -}}
+  {{- end -}}
+  {{- if eq .Kind "page" -}}
+    {{- if eq .Section "posts" -}}
+      {{- $schemaType = "BlogPosting" -}}
+    {{- else if eq .Section "writeups" -}}
+      {{- $schemaType = "TechArticle" -}}
+    {{- else if eq .Section "projects" -}}
+      {{- $schemaType = "CreativeWork" -}}
+    {{- end -}}
+  {{- end -}}
+  {{- $node := dict "@type" $schemaType "@id" (printf "%s#webpage" .Permalink) "url" .Permalink "name" .Title "headline" .Title "inLanguage" $language "author" $author "publisher" $author "mainEntityOfPage" (dict "@type" "WebPage" "@id" .Permalink) "isAccessibleForFree" true -}}
+  {{- with $description -}}{{- $node = merge $node (dict "description" .) -}}{{- end -}}
+  {{- if not .Date.IsZero -}}{{- $node = merge $node (dict "datePublished" (.Date.Format "2006-01-02T15:04:05-07:00") "dateCreated" (.Date.Format "2006-01-02T15:04:05-07:00")) -}}{{- end -}}
+  {{- if not .Lastmod.IsZero -}}{{- $node = merge $node (dict "dateModified" (.Lastmod.Format "2006-01-02T15:04:05-07:00")) -}}{{- end -}}
+  {{- if gt .WordCount 0 -}}{{- $node = merge $node (dict "wordCount" .WordCount) -}}{{- end -}}
+  {{- with .Params.tags -}}
+    {{- $node = merge $node (dict "keywords" (delimit . ", ")) -}}
+  {{- else -}}
+    {{- with site.Params.keywords -}}{{- $node = merge $node (dict "keywords" (delimit . ", ")) -}}{{- end -}}
+  {{- end -}}
+  {{- with .CurrentSection -}}{{- with .Title -}}{{- $node = merge $node (dict "articleSection" .) -}}{{- end -}}{{- end -}}
+  {{- with .Param "externalUrl" -}}{{- $node = merge $node (dict "sameAs" .) -}}{{- end -}}
+  {{- with $image -}}{{- $node = merge $node (dict "image" (slice .)) -}}{{- end -}}
+  {{- $graph = $graph | append $node -}}
+{{- end -}}
+
+{{- if and (not .IsHome) site.Params.enableStructuredBreadcrumbs -}}
+  {{- $items := slice -}}
+  {{- range .Ancestors.Reverse -}}
+    {{- $items = $items | append (dict "@type" "ListItem" "position" (add (len $items) 1) "name" (or .LinkTitle .Title site.Title) "item" .Permalink) -}}
+  {{- end -}}
+  {{- $items = $items | append (dict "@type" "ListItem" "position" (add (len $items) 1) "name" (or .LinkTitle .Title site.Title) "item" .Permalink) -}}
+  {{- if gt (len $items) 1 -}}
+    {{- $graph = $graph | append (dict "@type" "BreadcrumbList" "@id" (printf "%s#breadcrumb" .Permalink) "itemListElement" $items) -}}
+  {{- end -}}
+{{- end -}}
+
+{{- $schema := dict "@context" "https://schema.org" "@graph" $graph -}}
+<script type="application/ld+json">{{ $schema | jsonify | safeJS }}</script>

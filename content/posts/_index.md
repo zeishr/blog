@@ -1,6 +1,6 @@
 ---
 title: "Posts"
 description: |
-  This is a collection of my posts. I write about various topics, including programming, cybersecurity and research subjects.
-  I hope you find something interesting to read!
+  Research notes and technical articles about systems security, OS internals, binary analysis,
+  reverse engineering, fuzzing, and security tooling.
 ---
