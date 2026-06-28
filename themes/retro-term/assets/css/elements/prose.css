@@ -1,5 +1,6 @@
 .prose {
     width: 100%;
+    min-width: 0;
     color: var(--rt-text-primary);
     font-size: 15px;
     line-height: 24px;
