@@ -1,6 +1,10 @@
-+++
-title = 'Posts'
-description = 'Technical notes, research logs, and implementation write-ups.'
-+++
+---
+title: "Posts"
+description: |
+  This is a collection of my posts. I write about various topics, including programming, cybersecurity and research subjects.
+  I hope you find something interesting to read!
+---
 
-The posts archive is optimized for compact metadata, tags, and long-form technical reading.
+This is a collection of my posts. I write about various topics, including programming, cybersecurity and research subjects.
+
+I hope you find something interesting to read!
