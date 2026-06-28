@@ -23,6 +23,26 @@ just serve
 
 This will start a local server at `http://localhost:1313` where you can see the blog.
 
+### External posts
+
+External articles are represented as normal post bundles with an `externalUrl` field. The archive cards link directly to the external article, while the local permalink remains available as a lightweight source page.
+
+```yaml
+---
+title: "External article title"
+date: 2026-06-28
+externalUrl: "https://example.com/article"
+summary: "Short archive summary."
+tags: ["systems"]
+---
+```
+
+You can scaffold one with:
+
+```bash
+hugo new content posts/my-external-post/index.md --kind external-post
+```
+
 ### Build
 
 To build the blog, you can use the following command:

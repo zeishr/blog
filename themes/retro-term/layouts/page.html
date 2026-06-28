@@ -1,25 +1,38 @@
 {{ define "main" }}
+  {{- $externalURL := .Param "externalUrl" -}}
+  {{- $summary := or .Description (.Param "summary") -}}
   <article class="article-shell">
     <header class="article-header">
       <p class="eyebrow">{{ with .Params.kicker }}{{ . }}{{ else }}{{ default "page" .Section }}{{ end }}</p>
       <h1>{{ .Title }}</h1>
-      {{ with .Description }}<p class="article-header__summary">{{ . }}</p>{{ end }}
+      {{ with $summary }}<p class="article-header__summary">{{ . | plainify | replaceRE `\s+` ` ` }}</p>{{ end }}
 
       <div class="meta-row meta-row--wrap">
         {{- if not .Date.IsZero -}}
           <time datetime="{{ .Date | time.Format "2006-01-02T15:04:05-07:00" }}">{{ .Date | time.Format "2006.01.02" }}</time>
         {{- end -}}
-        {{- if gt .ReadingTime 0 -}}
+        {{- if and (not $externalURL) (gt .ReadingTime 0) -}}
           <span>{{ .ReadingTime }} min read</span>
         {{- end -}}
+        {{ with $externalURL }}<a class="status-chip status-chip--link" href="{{ . }}" target="_blank" rel="noopener noreferrer"><span class="status-chip__dot" aria-hidden="true"></span>external article</a>{{ end }}
         {{ with .Params.status }}<span class="status-chip"><span class="status-chip__dot" aria-hidden="true"></span>{{ . }}</span>{{ end }}
       </div>
 
       {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
     </header>
 
-    <div class="prose article-content">
-      {{ .Content }}
-    </div>
+    {{- with $externalURL }}
+      <aside class="content-card external-post" aria-labelledby="external-post-title">
+        <p class="eyebrow" id="external-post-title">external article</p>
+        <p>This post is published off-site. Use the source link to read the full article.</p>
+        <a class="button button--primary" href="{{ . }}" target="_blank" rel="noopener noreferrer">read external post</a>
+      </aside>
+    {{- end }}
+
+    {{- with .Content }}
+      <div class="prose article-content">
+        {{ . }}
+      </div>
+    {{- end }}
   </article>
 {{ end }}

@@ -23,6 +23,19 @@
     border-radius: 50%;
 }
 
+.status-chip--link {
+    color: var(--rt-primary-bright);
+    text-decoration: none;
+}
+
+.status-chip--link .status-chip__dot {
+    background: var(--rt-primary);
+}
+
+.status-chip--link:hover {
+    color: var(--rt-primary);
+}
+
 .site-header__main {
     display: flex;
     align-items: center;

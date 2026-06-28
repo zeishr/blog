@@ -1,11 +1,15 @@
 {{- $title := cond .IsHome site.Title (printf "%s | %s" .Title site.Title) -}}
-{{- $description := or .Description site.Params.description -}}
+{{- $description := or .Description (.Param "summary") site.Params.description
+-}} {{- $canonicalURL := default .Permalink (.Param "externalUrl") -}}
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>{{ $title }}</title>
-{{ with $description }}<meta name="description" content="{{ . }}" />{{ end }}
+{{ with $description }}<meta
+    name="description"
+    content="{{ . | plainify | replaceRE `\s+` ` ` }}"
+/>{{ end }}
 <meta name="theme-color" content="#131313" />
-<link rel="canonical" href="{{ .Permalink }}" />
+<link rel="canonical" href="{{ $canonicalURL }}" />
 <link rel="license" href="{{ `licenses/fonts.txt` | relURL }}" />
 <link rel="license" href="{{ `fonts/hanken-grotesk/OFL.txt` | relURL }}" />
 <link rel="license" href="{{ `fonts/jetbrains-mono/OFL.txt` | relURL }}" />
