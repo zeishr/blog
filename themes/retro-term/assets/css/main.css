@@ -4,6 +4,8 @@
 @import "components/buttons.css";
 @import "components/cards.css";
 @import "components/terminal.css";
+@import "components/syntax.css";
+@import "components/code.css";
 @import "components/header.css";
 @import "components/footer.css";
 @import "components/layout.css";

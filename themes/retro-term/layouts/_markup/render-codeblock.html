@@ -1,0 +1,44 @@
+{{- $attrs := .Attributes -}}
+{{- $file := or (index $attrs "file") (index $attrs "filename") (index $attrs "title") -}}
+{{- $lineMode := default "absolute" (or (index $attrs "lineMode") (index $attrs "lineNumbers") (index $attrs "lineNumberMode")) | lower -}}
+{{- $language := default "text" .Type -}}
+{{- $opts := .Options -}}
+{{- if not (isset $opts "lineNos") -}}
+  {{- $opts = merge $opts (dict "lineNos" "table") -}}
+{{- end -}}
+{{- if not (isset $opts "lineNumbersInTable") -}}
+  {{- $opts = merge $opts (dict "lineNumbersInTable" true) -}}
+{{- end -}}
+{{- $lineNosValue := printf "%v" (index $opts "lineNos") | lower -}}
+{{- $lineNosEnabled := ne $lineNosValue "false" -}}
+{{- $blockID := printf "code-block-%d" .Ordinal -}}
+{{- $opts = merge $opts (dict "wrapperClass" "highlight code-block__highlight" "lineAnchors" $blockID) -}}
+{{- if not (transform.CanHighlight .Type) -}}
+  {{- $opts = merge $opts (dict "type" "text") -}}
+{{- end -}}
+{{- $result := transform.HighlightCodeBlock . $opts -}}
+<figure class="code-block" data-code-block data-line-mode="{{ $lineMode }}" data-line-nos="{{ $lineNosEnabled }}">
+  <figcaption class="code-block__bar">
+    <span class="code-block__meta">
+      {{- with $file -}}
+        <span class="code-block__file">{{ . }}</span>
+      {{- else -}}
+        <span class="code-block__file">untitled</span>
+      {{- end -}}
+      <span class="code-block__language">{{ $language }}</span>
+    </span>
+    <span class="code-block__actions">
+      {{- if $lineNosEnabled -}}
+        <button class="code-block__button" type="button" data-code-line-toggle aria-label="toggle relative line numbers">rel</button>
+      {{- end -}}
+      <button class="code-block__button code-block__copy" type="button" data-code-copy aria-label="copy code">
+        <svg class="code-block__copy-icon" viewBox="0 0 16 16" width="14" height="14" aria-hidden="true" focusable="false">
+          <path d="M5 1h8v10h-2V3H5V1Z" />
+          <path d="M3 5h8v10H3V5Zm2 2v6h4V7H5Z" />
+        </svg>
+        <span class="code-block__copy-text">copy</span>
+      </button>
+    </span>
+  </figcaption>
+  {{ $result.Wrapped }}
+</figure>
